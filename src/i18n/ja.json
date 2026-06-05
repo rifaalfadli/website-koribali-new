@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "services": "サービス",
+    "projects": "プロジェクト",
+    "partners": "パートナー",
+    "about": "私たちについて",
+    "insight": "インサイト",
+    "contact": "お問い合わせ"
+  },
+  "common": {
+    "contactUs": "お問い合わせ",
+    "readMore": "続きを読む",
+    "seeDetails": "詳細を見る",
+    "learnMore": "さらに詳しく"
+  },
+  "footer": {
+    "company": "会社情報",
+    "services": "当社のサービス",
+    "info": "情報",
+    "copyright": "Koribali. All Rights Reserved."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "partners": "Partners",
+    "about": "About Us",
+    "insight": "Insight",
+    "contact": "Contact"
+  },
+  "common": {
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "seeDetails": "See Details",
+    "learnMore": "Learn More"
+  },
+  "footer": {
+    "company": "Company",
+    "services": "Our Services",
+    "info": "Information",
+    "copyright": "Koribali. All Rights Reserved."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "services": "Layanan",
+    "projects": "Project",
+    "partners": "Mitra",
+    "about": "Tentang Kami",
+    "insight": "Insight",
+    "contact": "Kontak"
+  },
+  "common": {
+    "contactUs": "Hubungi Kami",
+    "readMore": "Baca Selengkapnya",
+    "seeDetails": "Lihat Detail",
+    "learnMore": "Pelajari Lebih Lanjut"
+  },
+  "footer": {
+    "company": "Perusahaan",
+    "services": "Layanan Kami",
+    "info": "Informasi",
+    "copyright": "Koribali. Hak Cipta Dilindungi."
+  }
+}
