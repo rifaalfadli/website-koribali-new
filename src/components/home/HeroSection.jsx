@@ -9,23 +9,23 @@ const slides = [
     id: 1,
     image: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
     title: 'Desain Teknik & Rekayasa Struktur Presisi',
-    subtitle: 'Solusi perancangan teknik sipil dari gambar kerja 2D, visualisasi 3D, hingga laporan kalkulasi struktur yang terverifikasi.',
+    subtitle: 'Solusi perancangan infrastruktur dari gambar kerja 2D, pemodelan 3D, hingga laporan kalkulasi struktur yang terverifikasi dan memenuhi standar keamanan.',
     primaryAction: { label: 'Lihat Layanan Civil', path: '/layanan#civil' },
   },
-  // SLIDE 2: Sinkron dengan Services "IT & Digital Solutions" (Termasuk Integrasi Inventor)
+  // SLIDE 2: Sinkron dengan Services "IT & Digital Solutions" (Fokus Digitalisasi)
   {
     id: 2,
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    title: 'Web App & Otomatisasi Sistem Digital',
-    subtitle: 'Membangun ekosistem digital mulai dari website, sistem informasi, hingga otomatisasi desain parametrik yang terintegrasi dengan Autodesk Inventor.',
+    title: 'Digitalisasi Sistem & Aplikasi Custom',
+    subtitle: 'Tinggalkan proses manual yang usang. Kami membangun ekosistem digital dari website profesional hingga sistem informasi terpusat untuk otomatisasi bisnis Anda.',
     primaryAction: { label: 'Eksplorasi Solusi IT', path: '/layanan#it' },
   },
   // SLIDE 3: Sinkron dengan Services "Data & Analytics"
   {
     id: 3,
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    title: 'Analisis Data & Pengambilan Keputusan',
-    subtitle: 'Ubah data mentah menjadi wawasan bisnis melalui layanan analitik, visualisasi, dan pembuatan dashboard interaktif yang cerdas.',
+    title: 'Analisis Data & Business Intelligence',
+    subtitle: 'Ubah tumpukan data operasional menjadi strategi bisnis yang terukur melalui layanan analitik, visualisasi, dan pembuatan dashboard interaktif.',
     primaryAction: { label: 'Pelajari Layanan Data', path: '/layanan#data' },
   }
 ];

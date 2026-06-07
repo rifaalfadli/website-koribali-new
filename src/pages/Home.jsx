@@ -4,7 +4,6 @@ import HeroSection from '../components/home/HeroSection';
 import TrustBar from '../components/home/TrustBar';
 import ClientSlider from '../components/home/ClientSlider';
 import ServicesSection from '../components/home/ServicesSection';
-import FeaturedProject from '../components/home/FeaturedProject';
 import WhyChooseUs from '../components/home/WhyChooseUs';
 import TechStack from '../components/home/TechStack';
 import ProjectPreview from '../components/home/ProjectPreview';
@@ -24,7 +23,6 @@ const Home = () => {
         <TrustBar />
         <ClientSlider />
         <ServicesSection />
-        {/* <FeaturedProject /> */}
         <WhyChooseUs />
         <TechStack />
         <ProjectPreview />

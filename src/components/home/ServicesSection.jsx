@@ -3,66 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Check, ArrowRight } from 'lucide-react';
 
-const services = [
-  {
-    id: 'civil',
-    tag: 'Civil Engineering',
-    title: 'Desain Teknik & Rekayasa Struktur',
-    description: 'Kami mengerjakan perancangan teknik sipil mulai dari gambar kerja 2D, visualisasi 3D, hingga laporan kalkulasi struktur yang terverifikasi — khusus untuk kebutuhan infrastruktur dan pole jalanan.',
-    features: [
-      'Desain 2D dengan AutoCAD',
-      'Desain 3D dengan Autodesk Inventor',
-      'Kalkulasi Beban & Analisis Struktur',
-      'Laporan Teknik & Report Keamanan',
-      'Desain Pole & Infrastruktur Jalan',
-      'Desain Rambu Lalu Lintas',
-      'Gambar Kerja Detail (Shop Drawing)',
-      'Konsultasi Teknik Sipil',
-    ],
-    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    reversed: false,
-    bgPattern: false,
-  },
-  {
-    id: 'it',
-    tag: 'IT & Digital Solutions',
-    title: 'Pengembangan Web, Sistem & Aplikasi Digital',
-    description: 'Dari website company profile hingga sistem informasi kompleks dan integrasi web dengan Autodesk Inventor — kami membangun solusi digital yang mendukung operasional dan transformasi bisnis Anda.',
-    features: [
-      'Website Company Profile & Landing Page',
-      'Sistem Informasi & Aplikasi Web Custom',
-      'Integrasi Web dengan Autodesk Inventor',
-      'Otomatisasi Proses Desain Parametrik',
-      'API Development & Integration',
-      'Progressive Web App (PWA)',
-      'Sistem CRM, ERP, & HRIS',
-      'Konsultasi Arsitektur Sistem Digital',
-    ],
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    reversed: true,
-    bgPattern: true,
-  },
-  {
-    id: 'data',
-    tag: 'Data & Analytics',
-    title: 'Analisis Data & Sistem Pengambilan Keputusan',
-    description: 'Ubah data mentah menjadi wawasan bisnis yang actionable. Kami menyediakan layanan analitik data, visualisasi, dan dashboard interaktif yang terintegrasi langsung dengan sistem Anda.',
-    features: [
-      'Data Cleaning & Processing',
-      'Analisis Statistik & Prediktif',
-      'Dashboard Interaktif & Visualisasi Data',
-      'Business Intelligence (BI) Report',
-      'Integrasi Data dengan Sistem Web',
-      'Monitoring & Reporting Otomatis',
-      'Data Pipeline & ETL',
-      'Konsultasi Strategi Data',
-    ],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    reversed: false,
-    bgPattern: false,
-  },
-];
-
+import { services } from '../../data/services';
 const ServicesSection = () => {
   return (
     <div id="services" className="text-white">

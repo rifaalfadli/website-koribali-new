@@ -4,36 +4,15 @@ import { ArrowRight, Calendar } from 'lucide-react';
 import Button from '../ui/Button';
 import SectionWrapper from '../ui/SectionWrapper';
 import SectionHeading from '../ui/SectionHeading';
-
-// Data khusus untuk Home, disesuaikan dengan 3 pilar Koribali
-const previewArticles = [
-  {
-    id: 'tren-material-struktur',
-    category: 'Civil Engineering',
-    title: 'Tren Perancangan Struktur Cerdas untuk Infrastruktur Masa Depan',
-    date: '2026-06-02',
-    author: 'Vannto',
-    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'integrasi-web-inventor',
-    category: 'IT & Digital Solutions',
-    title: 'Masa Depan Manufaktur: Integrasi Web Apps dengan Autodesk Inventor',
-    date: '2026-05-28',
-    author: 'Rifa',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'dashboard-bi-keputusan',
-    category: 'Data & Analytics',
-    title: 'Memaksimalkan Akurasi Keputusan Bisnis Melalui Dashboard Interaktif',
-    date: '2026-05-20',
-    author: 'Balqis',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  }
-];
+import { articles } from '../../data/articles';
 
 const InsightPreview = () => {
+  // Ambil 1 artikel pertama dari masing-masing kategori layanan
+  const targetCategories = ['Civil Engineering', 'IT & Digital Solutions', 'Data & Analytics'];
+  const previewArticles = targetCategories
+    .map(category => articles.find(article => article.category === category))
+    .filter(Boolean); // Hapus hasil undefined jika ada yang tidak ditemukan
+    
   return (
     <SectionWrapper className="bg-slate-950">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">

@@ -1,10 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Target, Lightbulb, Users, Shield, Zap, Code2 } from 'lucide-react';
-import Breadcrumb from '../components/ui/Breadcrumb';
-import SectionHeading from '../components/ui/SectionHeading';
+import { Target, Lightbulb, Users, Shield, Zap, Code2, Check, Eye } from 'lucide-react';
 import SectionWrapper from '../components/ui/SectionWrapper';
+import SectionHeading from '../components/ui/SectionHeading';
 import CTASection from '../components/home/CTASection';
+import ClientSlider from '../components/home/ClientSlider';
+import WhyChooseUs from '../components/home/WhyChooseUs';
+import PageHero from '../components/ui/PageHero';
+import TechStack from '../components/home/TechStack';
+import ProjectPreview from '../components/home/ProjectPreview';
 
 const About = () => {
   const values = [
@@ -16,6 +20,17 @@ const About = () => {
     { icon: Code2, title: 'Kualitas', desc: 'Kode yang bersih dan struktur fisik yang kokoh sesuai standar nasional.' }
   ];
 
+  const galleryPhotos = [
+    { id: 1, src: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80", heightClass: "h-64 md:h-80" },
+    { id: 2, src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80", heightClass: "h-80 md:h-96" },
+    { id: 3, src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80", heightClass: "h-96 md:h-[28rem]" },
+    { id: 4, src: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&q=80", heightClass: "h-80 md:h-96" },
+    { id: 5, src: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=800&q=80", heightClass: "h-72 md:h-[22rem]" },
+    // Perubahannya ada di baris ini (id 6)
+    // Tinggi ditambah menjadi h-[22rem] untuk mobile dan h-[26rem] untuk desktop
+    { id: 6, src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80", heightClass: "h-[22rem] md:h-[26rem]" },
+  ];
+
   return (
     <>
       <Helmet>
@@ -23,20 +38,29 @@ const About = () => {
         <meta name="description" content="Koribali adalah pelopor integrasi teknik sipil dan teknologi informasi di Indonesia." />
       </Helmet>
 
-      <div className="pt-10">
-        <SectionWrapper className="pb-8">
-          <Breadcrumb items={[{ label: 'Tentang Kami' }]} />
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white font-display leading-tight mb-6">
-              Membangun Infrastruktur yang Lebih Cerdas dengan Teknologi Terkini
-            </h1>
-          </div>
-        </SectionWrapper>
+      <PageHero
+        title="Membangun Infrastruktur yang Lebih Cerdas dengan Teknologi Terkini"
+        description="Berawal dari keresahan melihat gap antara proses rekayasa teknik sipil tradisional dengan pesatnya laju digitalisasi, Koribali hadir sebagai jembatan yang menyatukan kedua dunia tersebut."
+        breadcrumbs={[{ label: 'Tentang Kami' }]}
+      />
+
+      <div className="pt-10 bg-slate-950">
 
         {/* About Us Narrative */}
-        <SectionWrapper className="pt-0 pb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="text-slate-300 space-y-6 leading-relaxed text-lg">
+        <SectionWrapper className="pt-0 pb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+            {/* Kolom Teks (Kiri) */}
+            <div className="lg:col-span-7 text-slate-300 space-y-6 leading-relaxed text-lg">
+              <div className="mb-8">
+                <span className="text-red-500 font-bold uppercase tracking-widest text-sm mb-4 block">
+                  Tentang Kami
+                </span>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display leading-tight">
+                  Sinergi <span className="text-red-500">Rekayasa Sipil</span> & Inovasi Digital
+                </h2>
+              </div>
+
               <p>
                 Berawal dari keresahan melihat gap antara proses rekayasa teknik sipil tradisional dengan pesatnya laju digitalisasi, Koribali hadir sebagai jembatan yang menyatukan kedua dunia tersebut.
               </p>
@@ -44,87 +68,124 @@ const About = () => {
                 Kami percaya bahwa infrastruktur fisik dan infrastruktur digital tidak seharusnya dibangun secara terpisah. Ketika software engineering dan civil engineering berjalan beriringan, terciptalah efisiensi yang luar biasa, mulai dari tahap kalkulasi desain hingga pemeliharaan aset.
               </p>
               <p>
-                Tim kami terdiri dari insinyur sipil tersertifikasi dan pengembang perangkat lunak berpengalaman yang berbicara dalam satu "bahasa": Solusi.
+                Tim kami terdiri dari insinyur sipil tersertifikasi dan pengembang perangkat lunak berpengalaman yang berbicara dalam satu "bahasa": <strong>Solusi</strong>.
               </p>
             </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-square bg-slate-800 rounded-2xl overflow-hidden relative border border-slate-700">
-                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800" alt="Civil Engineering" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-cyan-900/40 mix-blend-multiply" />
+
+            {/* Kolom Gambar (Kanan) - Layout 3 Foto Asimetris/Masonry */}
+            <div className="lg:col-span-5 grid grid-cols-2 gap-4 lg:gap-6 relative group mt-8 lg:mt-0 h-full min-h-[500px]">
+              {/* Efek Glow di belakang gambar */}
+              <div className="absolute inset-0 bg-red-900/20 blur-[60px] rounded-full transform -translate-x-4 translate-y-4 -z-10 opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
+
+              {/* Sub-kolom Kiri: 2 Foto (Square & Portrait) */}
+              <div className="flex flex-col gap-4 lg:gap-6 pt-8 lg:pt-12">
+                <div className="aspect-square bg-slate-900 rounded-3xl overflow-hidden relative border border-slate-800 shadow-xl group-hover:-translate-y-2 transition-transform duration-500">
+                  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800" alt="Civil Engineering" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-red-950/40 mix-blend-multiply pointer-events-none" />
+                </div>
+                <div className="aspect-[4/5] bg-slate-900 rounded-3xl overflow-hidden relative border border-slate-800 shadow-xl group-hover:-translate-y-1 transition-transform duration-500 delay-100">
+                  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Software Engineering" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-slate-950/60 mix-blend-multiply pointer-events-none" />
+                </div>
               </div>
-              <div className="aspect-square bg-slate-800 rounded-2xl overflow-hidden relative border border-slate-700 mt-8">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Software Engineering" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-blue-900/40 mix-blend-multiply" />
+
+              {/* Sub-kolom Kanan: 1 Foto Besar Memanjang */}
+              <div className="flex flex-col gap-4 lg:gap-6 pt-8 lg:pt-12 pb-8 h-full">
+                <div className="w-full h-full min-h-[300px] bg-slate-900 rounded-3xl overflow-hidden relative border border-slate-800 shadow-xl group-hover:translate-y-2 transition-transform duration-500">
+                  {/* Gambar diset absolute agar membentang mengikuti tinggi container */}
+                  <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800" alt="Engineering Team" className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-red-950/20 mix-blend-multiply pointer-events-none" />
+                </div>
               </div>
+
             </div>
+
           </div>
         </SectionWrapper>
 
         {/* Visi Misi */}
-        <SectionWrapper className="bg-slate-900/50 border-y border-slate-800 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-slate-950/50 p-8 rounded-3xl border border-slate-800 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 blur-[50px] rounded-full group-hover:bg-cyan-500/20 transition-colors" />
-              <h2 className="text-3xl font-bold text-white font-display mb-6">Visi</h2>
-              <p className="text-slate-300 text-lg leading-relaxed relative z-10">
+        <SectionWrapper className="bg-slate-900/30 border-y border-slate-900">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Kartu Visi */}
+            <div className="bg-slate-900 border border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-red-900/50 hover:shadow-2xl hover:shadow-red-900/10 transition-all duration-300">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-red-600/10 blur-[50px] rounded-full group-hover:bg-red-500/20 transition-colors" />
+              <h2 className="text-3xl font-bold text-white font-display mb-6 flex items-center">
+                <span className="w-8 h-1 bg-red-500 mr-4 rounded-full"></span> Visi
+              </h2>
+              <p className="text-slate-400 text-lg leading-relaxed relative z-10">
                 Menjadi pelopor integrasi teknologi informasi dan rekayasa sipil terkemuka di Asia Tenggara, mewujudkan infrastruktur yang cerdas, efisien, dan berkelanjutan.
               </p>
             </div>
-            <div className="bg-slate-950/50 p-8 rounded-3xl border border-slate-800 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 blur-[50px] rounded-full group-hover:bg-indigo-500/20 transition-colors" />
-              <h2 className="text-3xl font-bold text-white font-display mb-6">Misi</h2>
-              <ul className="text-slate-300 space-y-4 text-lg leading-relaxed relative z-10 list-disc pl-5">
-                <li>Mengotomatisasi proses desain dan kalkulasi rekayasa.</li>
-                <li>Membangun ekosistem digital untuk manajemen aset infrastruktur.</li>
-                <li>Menghasilkan produk rekayasa berstandar SNI yang diakui secara global.</li>
+
+            {/* Kartu Misi */}
+            <div className="bg-slate-900 border border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-red-900/50 hover:shadow-2xl hover:shadow-red-900/10 transition-all duration-300">
+              <div className="absolute bottom-0 left-0 w-40 h-40 bg-red-900/20 blur-[50px] rounded-full group-hover:bg-red-600/20 transition-colors" />
+              <h2 className="text-3xl font-bold text-white font-display mb-6 flex items-center">
+                <span className="w-8 h-1 bg-red-500 mr-4 rounded-full"></span> Misi
+              </h2>
+              <ul className="text-slate-400 space-y-4 text-lg leading-relaxed relative z-10">
+                <li className="flex items-start">
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-500 mr-3 flex-shrink-0" />
+                  Mengotomatisasi proses desain dan kalkulasi rekayasa.
+                </li>
+                <li className="flex items-start">
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-500 mr-3 flex-shrink-0" />
+                  Membangun ekosistem digital untuk manajemen aset infrastruktur.
+                </li>
+                <li className="flex items-start">
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-500 mr-3 flex-shrink-0" />
+                  Menghasilkan produk rekayasa berstandar SNI yang diakui secara global.
+                </li>
               </ul>
             </div>
           </div>
         </SectionWrapper>
 
-        {/* Keunggulan */}
-        <SectionWrapper>
-          <SectionHeading title="Nilai & Keunggulan Kami" className="text-center flex flex-col items-center" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {values.map((val, idx) => {
-              const Icon = val.icon;
-              return (
-                <div key={idx} className="bg-slate-900/30 border border-slate-800 rounded-2xl p-6 hover:border-cyan-500/30 transition-colors">
-                  <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-5 text-cyan-400">
-                    <Icon className="w-6 h-6" />
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-3">{val.title}</h3>
-                  <p className="text-slate-400 leading-relaxed text-sm">{val.desc}</p>
+        {/* Galeri Kegiatan (Pinterest Style / Masonry Layout) */}
+        <SectionWrapper className="pb-24 pt-24">
+          <div className="text-center mb-16 max-w-2xl mx-auto">
+            <span className="text-red-500 font-bold uppercase tracking-widest text-sm mb-4 block">
+              Galeri Kegiatan
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display mb-6">
+              Momen & Aktivitas
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex flex-col gap-6">
+              {galleryPhotos.slice(0, 3).map((photo) => (
+                <div key={photo.id} className="relative group rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-xl transition-all duration-500">
+                  <div className="absolute inset-0 bg-red-900/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0" />
+                  <img
+                    src={photo.src}
+                    alt={`Kegiatan ${photo.id}`}
+                    className={`w-full ${photo.heightClass} object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105 relative z-10`}
+                  />
+                  <div className="absolute inset-0 bg-slate-950/30 group-hover:bg-transparent transition-colors duration-500 pointer-events-none z-20" />
                 </div>
-              );
-            })}
-          </div>
-        </SectionWrapper>
-
-        {/* Teknologi & Tools */}
-        <SectionWrapper className="pt-0">
-          <SectionHeading title="Teknologi yang Kami Gunakan" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
-              <h3 className="text-lg font-bold text-white mb-6 border-b border-slate-800 pb-4">Engineering Software</h3>
-              <div className="flex flex-wrap gap-3">
-                {['AutoCAD', 'Civil 3D', 'SAP2000', 'ETABS', 'Revit', 'Autodesk Inventor'].map((t) => (
-                  <span key={t} className="bg-slate-800 text-slate-300 px-4 py-2 rounded-lg text-sm font-medium">{t}</span>
-                ))}
-              </div>
+              ))}
             </div>
-            <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
-              <h3 className="text-lg font-bold text-white mb-6 border-b border-slate-800 pb-4">Development Stack</h3>
-              <div className="flex flex-wrap gap-3">
-                {['React', 'Next.js', 'Node.js', 'Python', 'PostgreSQL', 'AWS', 'Docker', 'TensorFlow'].map((t) => (
-                  <span key={t} className="bg-slate-800 text-slate-300 px-4 py-2 rounded-lg text-sm font-medium">{t}</span>
-                ))}
-              </div>
+            <div className="flex flex-col gap-6">
+              {galleryPhotos.slice(3, 6).map((photo) => (
+                <div key={photo.id} className="relative group rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-xl transition-all duration-500">
+                  <div className="absolute inset-0 bg-red-900/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0" />
+                  <img
+                    src={photo.src}
+                    alt={`Kegiatan ${photo.id}`}
+                    className={`w-full ${photo.heightClass} object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105 relative z-10`}
+                  />
+                  <div className="absolute inset-0 bg-slate-950/30 group-hover:bg-transparent transition-colors duration-500 pointer-events-none z-20" />
+                </div>
+              ))}
             </div>
           </div>
         </SectionWrapper>
 
+        <ClientSlider />
+        <WhyChooseUs />
+        <TechStack />
+        <ProjectPreview />
         <CTASection />
       </div>
     </>

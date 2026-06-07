@@ -1,17 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Send } from 'lucide-react';
-import Button from '../ui/Button';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Send } from "lucide-react";
+import Button from "../ui/Button";
 
 const CTASection = () => {
   return (
-    // Margin negatif (-mb-24 pada mobile, -mb-32 pada desktop) adalah kunci 
+    // Margin negatif (-mb-24 pada mobile, -mb-32 pada desktop) adalah kunci
     // agar komponen ini "turun" dan menabrak/menimpa footer di bawahnya.
-    <div className="relative w-full px-4 md:px-8 mt-20 z-20 -mb-24 md:-mb-32">
-
+    <div className="relative w-full px-4 md:px-8 mt-20 z-20 -mb-24">
       {/* Container Utama CTA - Berbentuk kapsul/rounded besar */}
       <div className="max-w-5xl mx-auto bg-gradient-to-r from-slate-900 via-slate-900 to-red-950 rounded-[40px] overflow-hidden relative flex flex-col md:flex-row items-center">
-
         {/* Dekorasi Glow Latar Belakang */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-red-600/10 blur-[80px] pointer-events-none" />
 
@@ -22,11 +20,16 @@ const CTASection = () => {
             <span className="text-red-500">Solusi Terintegrasi</span>
           </h2>
           <p className="text-slate-300 mb-8 max-w-lg text-sm md:text-base leading-relaxed">
-            Mulai dari perancangan infrastruktur fisik, otomatisasi sistem web, hingga wawasan analitik data cerdas. Kami siap mengoptimalkan efisiensi dan pertumbuhan bisnis Anda.
+            Mulai dari perancangan infrastruktur fisik, otomatisasi sistem web,
+            hingga wawasan analitik data cerdas. Kami siap mengoptimalkan
+            efisiensi dan pertumbuhan bisnis Anda.
           </p>
 
           <Link to="/kontak">
-            <Button variant="primary" className="text-sm md:text-base px-8 py-3.5 group shadow-red-900/20">
+            <Button
+              variant="primary"
+              className="text-sm md:text-base px-8 py-3.5 group shadow-red-900/20"
+            >
               Konsultasi Sekarang
               <Send className="w-4 h-4 ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </Button>
@@ -47,7 +50,6 @@ const CTASection = () => {
             className="w-full h-full object-cover object-center opacity-60 mix-blend-lighten"
           />
         </div>
-
       </div>
     </div>
   );

@@ -1,10 +1,12 @@
-import React from 'react';
-import { partners } from '../../data/partners';
+import React from "react";
+import { partners } from "../../data/partners";
 
 const ClientSlider = () => {
   const fadeStyle = {
-    maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
-    WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+    maskImage:
+      "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+    WebkitMaskImage:
+      "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
   };
 
   return (
