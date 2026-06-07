@@ -27,18 +27,18 @@ const RelatedProjects = ({ category }) => {
             <div className="max-w-7xl mx-auto px-4 md:px-8">
 
                 {/* Header + Navigation Arrows */}
-                <div className="flex items-center justify-between mb-16">
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
                     <div>
                         <span className="text-red-500 font-bold uppercase tracking-widest text-sm">
                             Project Terkait
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-bold text-white font-display mt-3">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white font-display mt-3 pr-4 leading-tight">
                             Karya Unggulan {category === 'Civil Engineering' ? 'Infrastruktur' : category === 'IT & Digital Solutions' ? 'Sistem Digital' : 'Data & Analitik'}
                         </h2>
                     </div>
 
                     {/* Arrow Buttons + Counter */}
-                    <div className="flex items-center gap-4 shrink-0">
+                    <div className="flex items-center gap-4 shrink-0 self-start md:self-auto">
                         <span className="text-slate-500 text-sm tabular-nums">
                             {String(activeIndex + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
                         </span>

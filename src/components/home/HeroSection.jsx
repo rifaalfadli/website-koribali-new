@@ -64,9 +64,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 -z-10 bg-black/40 md:bg-gradient-to-r md:from-black/70 md:to-black/20" />
 
       {/* Container Utama */}
-      <div className="relative mx-auto flex h-[580px] md:h-[650px] lg:h-[715px] max-w-7xl flex-col justify-center px-6 sm:px-10 lg:px-16 w-full">
+      <div className="relative mx-auto flex min-h-[580px] h-auto py-20 md:py-0 md:min-h-0 md:h-[650px] lg:h-[715px] max-w-7xl flex-col justify-center px-6 sm:px-10 lg:px-16 w-full">
 
-        <div className="relative h-[320px] sm:h-[280px] md:h-[300px] flex flex-col justify-start w-full">
+        <div className="relative min-h-[320px] sm:min-h-[280px] md:min-h-0 md:h-[300px] flex flex-col justify-start w-full">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentSlide}
@@ -76,11 +76,11 @@ const HeroSection = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="max-w-[800px]"
             >
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-display max-w-[720px] leading-[1.1] tracking-tight mb-6 text-white drop-shadow-lg">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-display max-w-[720px] leading-[1.2] md:leading-[1.1] tracking-tight mb-4 md:mb-6 text-white drop-shadow-lg">
                 {slides[currentSlide].title}
               </h1>
 
-              <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 leading-relaxed drop-shadow-md">
+              <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 md:mb-8 leading-relaxed drop-shadow-md">
                 {slides[currentSlide].subtitle}
               </p>
 

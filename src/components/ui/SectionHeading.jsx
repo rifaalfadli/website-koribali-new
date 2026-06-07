@@ -7,7 +7,7 @@ const SectionHeading = ({ title, description, className = '' }) => {
         {title}
       </h2>
       {description && (
-        <p className="text-slate-400 mt-3 text-lg max-w-2xl">
+        <p className="text-slate-400 mt-3 text-base md:text-lg max-w-2xl">
           {description}
         </p>
       )}

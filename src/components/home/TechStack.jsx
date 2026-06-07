@@ -116,8 +116,8 @@ const TechStack = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto bg-slate-950 py-20 overflow-hidden border-t border-slate-900/50">
-      <div className="px-4 md:px-8 mb-12 text-center">
+    <section className="w-full max-w-[100vw] lg:max-w-6xl mx-auto bg-slate-950 py-20 overflow-hidden border-t border-slate-900/50">
+      <div className="w-full px-4 md:px-8 mb-12 text-center">
         {/* Menggunakan warna text-red-500 agar selaras dengan tema Dark Blood */}
         <div className="text-red-500 font-bold mb-3 uppercase tracking-widest text-xs md:text-sm">
           Teknologi & Tools

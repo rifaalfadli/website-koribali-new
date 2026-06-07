@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const PageHero = ({ title, description, breadcrumbs }) => {
   return (
     // 1. Ubah bg utama menjadi slate-900 agar satu tingkat lebih terang dari konten bawahnya
-    <div className="relative bg-slate-900 pt-24 pb-32 overflow-hidden border-b border-slate-800">
+    <div className="relative bg-slate-900 pt-28 pb-20 md:pt-24 md:pb-32 overflow-hidden border-b border-slate-800">
 
       {/* 2. Background Image: Naikkan opacity ke 40% dan ganti ke mix-blend-overlay agar warna asli gambar sedikit membaur cerah */}
       <div

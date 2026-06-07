@@ -112,7 +112,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center space-x-8 h-full">
+          <nav className="hidden lg:flex items-center space-x-8 h-full">
             {navLinks.map((link) => {
               if (link.path === '/layanan') {
                 return (
@@ -200,7 +200,7 @@ const Navbar = () => {
           </nav>
 
           {/* Actions */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
 
             {/* Language Switcher */}
             <div className="relative">
@@ -239,7 +239,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-slate-300 hover:text-red-500 transition-colors"
@@ -252,7 +252,7 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`md:hidden fixed inset-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-900 transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`lg:hidden fixed inset-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-900 transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         style={{ top: '80px' }}
       >

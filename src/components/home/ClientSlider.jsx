@@ -10,8 +10,8 @@ const ClientSlider = () => {
   };
 
   return (
-    <div className="py-16 max-w-6xl mx-auto bg-slate-950 overflow-hidden mt-8">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 mb-12 text-center">
+    <div className="py-16 w-full max-w-[100vw] lg:max-w-6xl mx-auto bg-slate-950 overflow-hidden mt-8">
+      <div className="w-full mx-auto px-4 md:px-8 mb-12 text-center">
         <h3 className="text-xl md:text-2xl font-bold text-white font-display">
           Dipercaya oleh <span className="text-red-500">100+</span> Client Kami
         </h3>

@@ -14,8 +14,8 @@ const CTASection = () => {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-red-600/10 blur-[80px] pointer-events-none" />
 
         {/* Konten Kiri (Teks & Tombol) */}
-        <div className="w-full md:w-3/5 p-8 md:p-10 relative z-10 text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-white font-display mb-4 leading-tight tracking-tight">
+        <div className="w-full md:w-3/5 p-6 sm:p-8 md:p-10 relative z-10 text-center md:text-left flex flex-col items-center md:items-start">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white font-display mb-4 leading-tight tracking-tight">
             Perkuat Bisnismu Dengan <br className="hidden lg:block" />
             <span className="text-red-500">Solusi Terintegrasi</span>
           </h2>
@@ -25,10 +25,10 @@ const CTASection = () => {
             efisiensi dan pertumbuhan bisnis Anda.
           </p>
 
-          <Link to="/kontak">
+          <Link to="/kontak" className="w-full sm:w-auto">
             <Button
               variant="primary"
-              className="text-sm md:text-base px-8 py-3.5 group shadow-red-900/20"
+              className="w-full text-sm md:text-base px-8 py-3.5 group shadow-red-900/20"
             >
               Konsultasi Sekarang
               <Send className="w-4 h-4 ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
