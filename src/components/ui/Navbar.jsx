@@ -57,6 +57,30 @@ const Navbar = () => {
   const changeLanguage = (code) => {
     i18n.changeLanguage(code);
     setIsLangDropdownOpen(false);
+    
+    // Set Google Translate cookie to auto-translate the whole DOM
+    const domain = window.location.hostname;
+    // Format: /source_lang/target_lang
+    const targetLang = code === 'ja' ? 'ja' : (code === 'en' ? 'en' : 'id');
+    
+    if (targetLang === 'id') {
+      // Clear translation if switching back to ID
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+      if (domain !== 'localhost') {
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=${domain};`;
+      }
+    } else {
+      // Set translation target
+      document.cookie = `googtrans=/id/${targetLang}; path=/;`;
+      if (domain !== 'localhost') {
+        document.cookie = `googtrans=/id/${targetLang}; path=/; domain=${domain};`;
+      }
+    }
+    
+    // Give cookie a tiny moment to save then reload the DOM
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
   };
 
   const renderServiceIcon = (idx) => {
