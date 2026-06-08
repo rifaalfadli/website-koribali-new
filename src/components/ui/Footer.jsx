@@ -57,10 +57,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li><Link to="/tentang-kami" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Tentang Kami</Link></li>
               <li><Link to="/project" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Portofolio & Project</Link></li>
-              <li><Link to="/mitra" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Klien & Kemitraan</Link></li>
+              <li><Link to="/tim-kami" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Tim Kami</Link></li>
               <li><Link to="/teknologi" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Teknologi & Infrastruktur</Link></li>
               <li><Link to="/privasi" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Kebijakan Privasi</Link></li>
               <li><Link to="/syarat" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Syarat & Ketentuan</Link></li>
+              <li><Link to="/mitra" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Klien & Kemitraan</Link></li>
             </ul>
           </div>
 
@@ -68,12 +69,9 @@ const Footer = () => {
           <div className="lg:col-span-3">
             <h4 className="text-lg font-semibold text-white mb-6">Layanan Kami</h4>
             <ul className="space-y-4">
-              <li><Link to="/layanan/sipil" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Perancangan Struktur Sipil</Link></li>
-              <li><Link to="/layanan/web-profile" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Website Company Profile</Link></li>
-              <li><Link to="/layanan/sistem-informasi" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Pengembangan Sistem Informasi</Link></li>
-              <li><Link to="/layanan/inventor" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Integrasi Web & Autodesk Inventor</Link></li>
-              <li><Link to="/layanan/data" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Analisis Data & Dashboard BI</Link></li>
-              <li><Link to="/layanan/maintenance" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Maintenance & Support Sistem</Link></li>
+              <li><Link to="/layanan/civil-endineering" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Desain Teknik & Rekayasa Struktur Profesional</Link></li>
+              <li><Link to="/layanan/it-solutions" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Pengembangan Sistem Web & Aplikasi Custom</Link></li>
+              <li><Link to="/layanan/data-analytics" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Analisis Data & Dashboard Business Intelligence</Link></li>
             </ul>
           </div>
 
@@ -82,8 +80,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-6">Informasi</h4>
             <ul className="space-y-4">
               <li><Link to="/insight" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Blog & Insight</Link></li>
-              <li><Link to="/karir" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Karir</Link></li>
-              <li><Link to="/magang" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Program Magang</Link></li>
+              {/* <li><Link to="/karir" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Karir</Link></li>
+              <li><Link to="/magang" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Program Magang</Link></li> */}
               <li><Link to="/kontak" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Hubungi Kami</Link></li>
             </ul>
           </div>

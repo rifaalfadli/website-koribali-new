@@ -14,6 +14,11 @@ import Contact from './pages/Contact';
 import Insight from './pages/Insight';
 import InsightDetail from './pages/InsightDetail';
 import NotFound from './pages/NotFound';
+import Team from './pages/Team';
+import Technology from './pages/Technology';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import Faq from './pages/Faq';
 
 import Login from './pages/dashboard/Login';
 import DashboardLayout from './components/dashboard/DashboardLayout';
@@ -39,6 +44,13 @@ function App() {
       <Route path="/insight" element={<Layout><Insight /></Layout>} />
       <Route path="/insight/:slug" element={<Layout><InsightDetail /></Layout>} />
       <Route path="/kontak" element={<Layout><Contact /></Layout>} />
+      
+      {/* New Footer Linked Pages */}
+      <Route path="/tim-kami" element={<Layout><Team /></Layout>} />
+      <Route path="/teknologi" element={<Layout><Technology /></Layout>} />
+      <Route path="/privasi" element={<Layout><Privacy /></Layout>} />
+      <Route path="/syarat" element={<Layout><Terms /></Layout>} />
+      <Route path="/faq" element={<Layout><Faq /></Layout>} />
       
       {/* Auth & Dashboard Routes */}
       <Route path="/login" element={<Login />} />

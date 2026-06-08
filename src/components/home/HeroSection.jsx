@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const slides = [
-  // SLIDE 1: Sinkron dengan Services "Civil Engineering"
+  // SLIDE 1: Civil Engineering — konstruksi/struktur bangunan nyata
   {
     id: 1,
     image: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
@@ -12,7 +12,7 @@ const slides = [
     subtitle: 'Solusi perancangan infrastruktur dari gambar kerja 2D, pemodelan 3D, hingga laporan kalkulasi struktur yang terverifikasi dan memenuhi standar keamanan.',
     primaryAction: { label: 'Lihat Layanan Civil', path: '/layanan#civil' },
   },
-  // SLIDE 2: Sinkron dengan Services "IT & Digital Solutions" (Fokus Digitalisasi)
+  // SLIDE 2: IT & Digital Solutions — coding / developer workspace
   {
     id: 2,
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
@@ -20,10 +20,10 @@ const slides = [
     subtitle: 'Tinggalkan proses manual yang usang. Kami membangun ekosistem digital dari website profesional hingga sistem informasi terpusat untuk otomatisasi bisnis Anda.',
     primaryAction: { label: 'Eksplorasi Solusi IT', path: '/layanan#it' },
   },
-  // SLIDE 3: Sinkron dengan Services "Data & Analytics"
+  // SLIDE 3: Data & Analytics — grafik / analitik bisnis
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
     title: 'Analisis Data & Business Intelligence',
     subtitle: 'Ubah tumpukan data operasional menjadi strategi bisnis yang terukur melalui layanan analitik, visualisasi, dan pembuatan dashboard interaktif.',
     primaryAction: { label: 'Pelajari Layanan Data', path: '/layanan#data' },
@@ -76,7 +76,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="max-w-[800px]"
             >
-              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-display max-w-[720px] leading-[1.2] md:leading-[1.1] tracking-tight mb-4 md:mb-6 text-white drop-shadow-lg">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-display max-w-[760px] leading-[1.2] md:leading-[1.1] tracking-tight mb-4 md:mb-6 text-white drop-shadow-lg">
                 {slides[currentSlide].title}
               </h1>
 
