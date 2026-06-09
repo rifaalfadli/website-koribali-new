@@ -50,7 +50,7 @@ const Projects = () => {
 
       <div className="pt-10 bg-slate-950">
 
-        {/* Filter Tabs - Diubah ke Tema Merah */}
+        {/* Filter Tabs - Diubah ke Tema Biru */}
         <SectionWrapper className="pt-0 pb-12">
           <div className="flex flex-wrap gap-3 border-b border-slate-800 pb-4 justify-center md:justify-start">
             {categories.map((cat) => (
@@ -58,7 +58,7 @@ const Projects = () => {
                 key={cat}
                 onClick={() => handleTabChange(cat)}
                 className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 border ${activeTab === cat
-                  ? 'bg-red-600 border-red-500 text-white shadow-[0_0_15px_rgba(239,68,68,0.4)]'
+                  ? 'bg-blue-600 border-blue-500 text-white shadow-[0_0_15px_rgba(59,130,246,0.4)]'
                   : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white hover:border-slate-700'
                   }`}
               >
@@ -68,7 +68,7 @@ const Projects = () => {
           </div>
         </SectionWrapper>
 
-        {/* Projects Grid - Diubah ke Tema Merah & Dark Blood */}
+        {/* Projects Grid - Diubah ke Tema Biru & Deep Blue */}
         <SectionWrapper className="pt-0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-6">
             {visibleProjects.map((project) => (
@@ -85,7 +85,7 @@ const Projects = () => {
 
                     {/* Badge Category (Pojok Kiri Atas) */}
                     <div className="absolute top-4 left-4">
-                      <span className="bg-black/60 backdrop-blur-md text-red-400 text-xs font-semibold px-3.5 py-1.5 rounded-full border border-red-900/40 uppercase tracking-wide">
+                      <span className="bg-black/60 backdrop-blur-md text-blue-400 text-xs font-semibold px-3.5 py-1.5 rounded-full border border-blue-900/40 uppercase tracking-wide">
                         {project.category}
                       </span>
                     </div>
@@ -93,7 +93,7 @@ const Projects = () => {
 
                   {/* Text Content */}
                   <div className="p-6 md:p-8 flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold text-white font-display mb-3 group-hover:text-red-400 transition-colors leading-snug line-clamp-2">
+                    <h3 className="text-xl font-bold text-white font-display mb-3 group-hover:text-blue-400 transition-colors leading-snug line-clamp-2">
                       {project.title}
                     </h3>
 
@@ -102,7 +102,7 @@ const Projects = () => {
                     </p>
 
                     {/* Tombol Footer Action */}
-                    <div className="mt-auto pt-4 flex items-center text-red-500 text-sm font-semibold group-hover:text-red-400 transition-colors border-t border-slate-800/50">
+                    <div className="mt-auto pt-4 flex items-center text-blue-500 text-sm font-semibold group-hover:text-blue-400 transition-colors border-t border-slate-800/50">
                       Lihat Detail Project
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
                     </div>
@@ -122,7 +122,7 @@ const Projects = () => {
 
         </SectionWrapper>
 
-        {/* Pagination Dynamic - Diubah ke Tema Merah */}
+        {/* Pagination Dynamic - Diubah ke Tema Biru */}
         {totalPages > 1 && (
           <SectionWrapper className="pt-0 pb-12">
             <div className="flex justify-center items-center space-x-2">
@@ -141,7 +141,7 @@ const Projects = () => {
                     key={pageNum}
                     onClick={() => handlePageChange(pageNum)}
                     className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all duration-300 border ${currentPage === pageNum
-                      ? 'bg-red-600 text-white shadow-[0_0_12px_rgba(239,68,68,0.5)] border-red-500'
+                      ? 'bg-blue-600 text-white shadow-[0_0_12px_rgba(59,130,246,0.5)] border-blue-500'
                       : 'bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-white border-slate-800 hover:border-slate-700'
                       }`}
                   >

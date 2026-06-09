@@ -22,7 +22,7 @@ const InsightPreview = () => {
           className="mb-6 md:mb-0"
         />
 
-        {/* Tombol Desktop dengan Efek Pill-Shape Dark Blood */}
+        {/* Tombol Desktop dengan Efek Pill-Shape Deep Blue */}
         <Link to="/insight" className="hidden md:block">
           <Button variant="ghost" className="group">
             Baca Semua Insight
@@ -34,7 +34,7 @@ const InsightPreview = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {previewArticles.map((article) => (
           <Link to={`/insight/${article.id}`} key={article.id} className="group cursor-pointer">
-            {/* Kartu Artikel dengan Hover Dark Blood Premium */}
+            {/* Kartu Artikel dengan Hover Deep Blue Premium */}
             <div className="flex flex-col h-full bg-slate-900 border border-slate-800 rounded-[1.5rem] overflow-hidden transition-all duration-300 hover:-translate-y-1">
 
               {/* Image Container dibuat full width menyesuaikan ProjectPreview */}
@@ -48,7 +48,7 @@ const InsightPreview = () => {
 
               <div className="p-6 md:p-8 flex flex-col flex-grow">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-red-500 text-xs font-bold uppercase tracking-wider">
+                  <span className="text-blue-500 text-xs font-bold uppercase tracking-wider">
                     {article.category}
                   </span>
                   <div className="flex items-center text-slate-500 text-xs font-medium">
@@ -57,13 +57,13 @@ const InsightPreview = () => {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-white font-display mb-4 group-hover:text-red-400 transition-colors leading-snug line-clamp-2">
+                <h3 className="text-xl font-bold text-white font-display mb-4 group-hover:text-blue-400 transition-colors leading-snug line-clamp-2">
                   {article.title}
                 </h3>
 
                 <div className="mt-auto flex items-center justify-between border-t border-slate-800/80 pt-5">
                   <span className="text-sm text-slate-400 font-medium">Oleh <span className="text-slate-300">{article.author}</span></span>
-                  <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-red-400 transition-colors group-hover:translate-x-1" />
+                  <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-blue-400 transition-colors group-hover:translate-x-1" />
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ const InsightPreview = () => {
         ))}
       </div>
 
-      {/* Tombol Mobile View dengan Hover Outline Merah */}
+      {/* Tombol Mobile View dengan Hover Outline Biru */}
       <div className="mt-10 text-center md:hidden">
         <Link to="/insight">
           <Button variant="secondary" className="w-full">

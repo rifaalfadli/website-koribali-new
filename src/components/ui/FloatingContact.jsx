@@ -15,12 +15,12 @@ const FloatingContact = () => {
     <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] flex flex-col space-y-5">
       {/* WhatsApp Button */}
       <div className="relative group">
-        <div className="absolute -inset-1 bg-red-800 rounded-full animate-ping opacity-50 duration-1000"></div>
+        <div className="absolute -inset-1 bg-blue-800 rounded-full animate-ping opacity-50 duration-1000"></div>
         <a
           href={waUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative flex items-center justify-center w-14 h-14 bg-red-800 hover:bg-red-900 text-white rounded-full shadow-lg shadow-red-900/30 transition-all duration-200 hover:scale-110 active:scale-95"
+          className="relative flex items-center justify-center w-14 h-14 bg-blue-800 hover:bg-blue-900 text-white rounded-full shadow-lg shadow-blue-600/30 transition-all duration-200 hover:scale-110 active:scale-95"
           aria-label="WhatsApp Kami"
         >
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
@@ -32,14 +32,14 @@ const FloatingContact = () => {
       {/* Location Button */}
       <div className="relative group">
         <div
-          className="absolute -inset-1 bg-red-800 rounded-full animate-ping opacity-50 duration-1000"
+          className="absolute -inset-1 bg-blue-800 rounded-full animate-ping opacity-50 duration-1000"
           style={{ animationDelay: '0.5s' }}
         ></div>
         <a
           href={locUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative flex items-center justify-center w-14 h-14 bg-red-800 hover:bg-red-900 text-white rounded-full shadow-lg shadow-red-900/30 transition-all duration-200 hover:scale-110 active:scale-95"
+          className="relative flex items-center justify-center w-14 h-14 bg-blue-800 hover:bg-blue-900 text-white rounded-full shadow-lg shadow-blue-600/30 transition-all duration-200 hover:scale-110 active:scale-95"
           aria-label="Lokasi Kami"
         >
           <MapPin className="w-7 h-7" />

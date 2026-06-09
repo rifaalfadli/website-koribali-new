@@ -9,15 +9,15 @@ const CTASection = () => {
     // agar komponen ini "turun" dan menabrak/menimpa footer di bawahnya.
     <div className="relative w-full px-4 md:px-8 mt-20 z-20 -mb-24">
       {/* Container Utama CTA - Berbentuk kapsul/rounded besar */}
-      <div className="max-w-5xl mx-auto bg-gradient-to-r from-slate-900 via-slate-900 to-red-950 rounded-[40px] overflow-hidden relative flex flex-col md:flex-row items-center">
+      <div className="max-w-5xl mx-auto bg-gradient-to-r from-slate-900 via-slate-900 to-blue-600 rounded-[40px] overflow-hidden relative flex flex-col md:flex-row items-center">
         {/* Dekorasi Glow Latar Belakang */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-red-600/10 blur-[80px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-600/10 blur-[80px] pointer-events-none" />
 
         {/* Konten Kiri (Teks & Tombol) */}
         <div className="w-full md:w-3/5 p-6 sm:p-8 md:p-10 relative z-10 text-center md:text-left flex flex-col items-center md:items-start">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white font-display mb-4 leading-tight tracking-tight">
             Perkuat Bisnismu Dengan <br className="hidden lg:block" />
-            <span className="text-red-500">Solusi Terintegrasi</span>
+            <span className="text-blue-500">Solusi Terintegrasi</span>
           </h2>
           <p className="text-slate-300 mb-8 max-w-lg text-sm md:text-base leading-relaxed">
             Mulai dari perancangan infrastruktur fisik, otomatisasi sistem web,
@@ -28,7 +28,7 @@ const CTASection = () => {
           <Link to="/kontak" className="w-full sm:w-auto">
             <Button
               variant="primary"
-              className="w-full text-sm md:text-base px-8 py-3.5 group shadow-red-900/20"
+              className="w-full text-sm md:text-base px-8 py-3.5 group shadow-blue-900/20"
             >
               Konsultasi Sekarang
               <Send className="w-4 h-4 ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

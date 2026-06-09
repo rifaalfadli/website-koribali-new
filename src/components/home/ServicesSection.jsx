@@ -29,8 +29,8 @@ const ServicesSection = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6 }}
                 >
-                  {/* Warna Tag Diubah ke Merah Terang */}
-                  <div className="text-red-500 font-bold mb-3 uppercase tracking-widest text-sm">
+                  {/* Warna Tag Diubah ke Biru Terang */}
+                  <div className="text-blue-500 font-bold mb-3 uppercase tracking-widest text-sm">
                     {service.tag}
                   </div>
 
@@ -45,18 +45,18 @@ const ServicesSection = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                     {service.features.map((feature, i) => (
                       <div key={i} className="flex items-start">
-                        {/* Lingkaran Centang Diubah ke Tema Merah */}
-                        <div className="mt-1 bg-red-900/40 p-1 rounded-full mr-3 shrink-0">
-                          <Check className="w-3.5 h-3.5 text-red-500" strokeWidth={3} />
+                        {/* Lingkaran Centang Diubah ke Tema Biru */}
+                        <div className="mt-1 bg-blue-900/40 p-1 rounded-full mr-3 shrink-0">
+                          <Check className="w-3.5 h-3.5 text-blue-500" strokeWidth={3} />
                         </div>
                         <span className="text-sm md:text-base text-slate-300 font-medium">{feature}</span>
                       </div>
                     ))}
                   </div>
 
-                  {/* Tombol Diubah ke Gradasi Dark Blood */}
+                  {/* Tombol Diubah ke Gradasi Deep Blue */}
                   <Link to={`/layanan/${service.id}`}>
-                    <button className="bg-gradient-to-r from-red-800 to-red-950 hover:from-red-700 hover:to-red-900 shadow-md shadow-red-900/30 hover:shadow-lg hover:shadow-red-900/40 text-white px-7 py-3 rounded-full font-semibold flex items-center transition-all duration-300 group hover:-translate-y-0.5">
+                    <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-md shadow-blue-600/30 hover:shadow-lg hover:shadow-blue-600/40 text-white px-7 py-3 rounded-full font-semibold flex items-center transition-all duration-300 group hover:-translate-y-0.5">
                       Lihat Selengkapnya
                       <div className="bg-white/10 p-1.5 rounded-full ml-3 group-hover:bg-white/20 transition-colors">
                         <ArrowRight className="w-4 h-4 text-white" />
@@ -80,8 +80,8 @@ const ServicesSection = () => {
                     alt={service.title}
                     className="w-full h-full object-cover"
                   />
-                  {/* Efek Glow di belakang gambar diubah ke Merah Gelap */}
-                  <div className={`absolute bottom-0 ${service.reversed ? 'left-0' : 'right-0'} w-40 h-40 bg-red-900/30 blur-[50px] rounded-full pointer-events-none`} />
+                  {/* Efek Glow di belakang gambar diubah ke Biru Gelap */}
+                  <div className={`absolute bottom-0 ${service.reversed ? 'left-0' : 'right-0'} w-40 h-40 bg-blue-900/30 blur-[50px] rounded-full pointer-events-none`} />
                 </motion.div>
               </div>
 

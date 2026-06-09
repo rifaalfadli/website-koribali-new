@@ -65,14 +65,14 @@ const ProjectPreview = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out opacity-80 group-hover:opacity-100"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-black/60 backdrop-blur-md text-red-400 text-xs font-semibold px-3.5 py-1.5 rounded-full border border-red-900/40 uppercase tracking-wide">
+                  <span className="bg-black/60 backdrop-blur-md text-blue-400 text-xs font-semibold px-3.5 py-1.5 rounded-full border border-blue-900/40 uppercase tracking-wide">
                     {project.category}
                   </span>
                 </div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-white font-display mb-3 group-hover:text-red-400 transition-colors leading-snug line-clamp-2">
+                <h3 className="text-xl font-bold text-white font-display mb-3 group-hover:text-blue-400 transition-colors leading-snug line-clamp-2">
                   {project.title}
                 </h3>
                 {/* flex-grow akan mendorong elemen Baca Selengkapnya ke paling bawah */}
@@ -80,7 +80,7 @@ const ProjectPreview = () => {
                   {project.shortDescription}
                 </p>
 
-                <div className="mt-auto pt-4 flex items-center text-red-500 text-sm font-semibold group-hover:text-red-400 transition-colors border-t border-slate-800/50">
+                <div className="mt-auto pt-4 flex items-center text-blue-500 text-sm font-semibold group-hover:text-blue-400 transition-colors border-t border-slate-800/50">
                   Baca Selengkapnya
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
                 </div>
@@ -99,7 +99,7 @@ const ProjectPreview = () => {
           aria-label="Proyek Sebelumnya"
           className={`w-12 h-12 flex items-center justify-center rounded-full border transition-all duration-300 ${currentPage === 0
             ? 'border-slate-800 text-slate-700 cursor-not-allowed'
-            : 'border-slate-700 text-slate-300 hover:border-red-500 hover:text-red-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-red-900/20'
+            : 'border-slate-700 text-slate-300 hover:border-blue-500 hover:text-blue-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-blue-900/20'
             }`}
         >
           <ChevronLeft className="w-6 h-6 ml-[-2px]" />
@@ -113,7 +113,7 @@ const ProjectPreview = () => {
               onClick={() => setCurrentPage(index)}
               aria-label={`Ke Halaman ${index + 1}`}
               className={`transition-all duration-500 rounded-full ${currentPage === index
-                ? 'w-10 h-2.5 bg-red-500 shadow-[0_0_12px_rgba(239,68,68,0.6)]'
+                ? 'w-10 h-2.5 bg-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.6)]'
                 : 'w-2.5 h-2.5 bg-slate-700 hover:bg-slate-500'
                 }`}
             />
@@ -126,7 +126,7 @@ const ProjectPreview = () => {
           aria-label="Proyek Selanjutnya"
           className={`w-12 h-12 flex items-center justify-center rounded-full border transition-all duration-300 ${currentPage === totalPages - 1
             ? 'border-slate-800 text-slate-700 cursor-not-allowed'
-            : 'border-slate-700 text-slate-300 hover:border-red-500 hover:text-red-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-red-900/20'
+            : 'border-slate-700 text-slate-300 hover:border-blue-500 hover:text-blue-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-blue-900/20'
             }`}
         >
           <ChevronRight className="w-6 h-6 mr-[-2px]" />

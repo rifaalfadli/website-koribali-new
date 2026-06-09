@@ -74,7 +74,7 @@ const InsightDetail = () => {
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
               </p>
               
-            <div className="bg-slate-900 border-l-4 border-red-500 p-6 my-10 rounded-r-xl">
+            <div className="bg-slate-900 border-l-4 border-blue-500 p-6 my-10 rounded-r-xl">
               <p className="text-lg italic text-slate-300 m-0">
                 "Integrasi teknologi bukan sekadar soal menambah software baru, melainkan tentang mengubah cara pikir (mindset) dari tradisional ke digital."
               </p>
@@ -92,7 +92,7 @@ const InsightDetail = () => {
           </div>
           
           <div className="mt-16 pt-8 border-t border-slate-800">
-            <Link to="/insight" className="inline-flex items-center text-slate-400 hover:text-red-400 transition-colors font-medium">
+            <Link to="/insight" className="inline-flex items-center text-slate-400 hover:text-blue-400 transition-colors font-medium">
               <ArrowLeft className="w-5 h-5 mr-2" />
               Kembali ke Daftar Insight
             </Link>
@@ -105,7 +105,7 @@ const InsightDetail = () => {
         <h2 className="text-2xl font-bold text-white mb-8 text-center font-display">Artikel Terkait</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {relatedArticles.map((relArticle) => (
-            <Link to={`/insight/${relArticle.id}`} key={relArticle.id} className="group flex flex-col h-full bg-slate-900 border border-slate-800 rounded-[2rem] overflow-hidden hover:-translate-y-1 hover:border-red-900/50 hover:shadow-xl hover:shadow-red-900/10 transition-all duration-300">
+            <Link to={`/insight/${relArticle.id}`} key={relArticle.id} className="group flex flex-col h-full bg-slate-900 border border-slate-800 rounded-[2rem] overflow-hidden hover:-translate-y-1 hover:border-blue-900/50 hover:shadow-xl hover:shadow-blue-900/10 transition-all duration-300">
               <div className="aspect-[4/3] bg-slate-950 relative overflow-hidden">
                 <img src={relArticle.image} alt={relArticle.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out opacity-80 group-hover:opacity-100" />
               </div>
@@ -114,11 +114,11 @@ const InsightDetail = () => {
                   <span className="text-slate-400 text-xs font-semibold">
                     {new Date(relArticle.date).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
                   </span>
-                  <span className="bg-slate-950 text-red-400 text-xs font-semibold px-3 py-1 rounded-full border border-slate-800">
+                  <span className="bg-slate-950 text-blue-400 text-xs font-semibold px-3 py-1 rounded-full border border-slate-800">
                     {relArticle.category}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-4 group-hover:text-red-400 transition-colors leading-snug line-clamp-2">
+                <h3 className="text-lg font-bold text-white mb-4 group-hover:text-blue-400 transition-colors leading-snug line-clamp-2">
                   {relArticle.title}
                 </h3>
               </div>

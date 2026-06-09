@@ -61,15 +61,15 @@ const WhyChooseUs = () => {
               className="h-full"
             >
               {/* Card BG dibuat solid (bg-slate-900) agar lebih kontras dari bg-slate-950 */}
-              <Card className="h-full flex flex-col p-6 bg-slate-900 border border-slate-800 hover:border-red-800/60 transition-colors group shadow-lg">
+              <Card className="h-full flex flex-col p-6 bg-slate-900 border border-slate-800 hover:border-blue-800/60 transition-colors group shadow-lg">
 
                 {/* Ikon Dibuat Solid Background seperti referensi gambar */}
-                <div className="w-14 h-14 rounded-[1rem] bg-red-800 flex items-center justify-center mb-6">
+                <div className="w-14 h-14 rounded-[1rem] bg-blue-800 flex items-center justify-center mb-6">
                   {/* Warna ikon diubah jadi putih murni dan sedikit ditebalkan */}
                   <Icon className="w-7 h-7 text-white" strokeWidth={2} />
                 </div>
 
-                <h4 className="text-xl font-bold text-white mb-3 font-display tracking-tight group-hover:text-red-400 transition-colors">
+                <h4 className="text-xl font-bold text-white mb-3 font-display tracking-tight group-hover:text-blue-400 transition-colors">
                   {reason.title}
                 </h4>
 

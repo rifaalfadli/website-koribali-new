@@ -39,13 +39,13 @@ const Footer = () => {
             {/* Ikon Sosial Media (Solid background membulat seperti di referensi) */}
             {/* Ikon Sosial Media diperbaiki agar lebih aman dari undefined error */}
             <div className="flex space-x-4">
-              <a href={company.socials?.instagram ?? '#'} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-red-950 hover:text-red-400 hover:border-red-900/50 transition-all">
+              <a href={company.socials?.instagram ?? '#'} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-950 hover:text-blue-400 hover:border-blue-900/50 transition-all">
                 <Mail className="w-4 h-4" />
               </a>
-              <a href={company.socials?.facebook ?? '#'} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-red-950 hover:text-red-400 hover:border-red-900/50 transition-all">
+              <a href={company.socials?.facebook ?? '#'} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-950 hover:text-blue-400 hover:border-blue-900/50 transition-all">
                 <MessageCircle className="w-4 h-4" />
               </a>
-              <a href={company.socials?.linkedin ?? '#'} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-red-950 hover:text-red-400 hover:border-red-900/50 transition-all">
+              <a href={company.socials?.linkedin ?? '#'} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-950 hover:text-blue-400 hover:border-blue-900/50 transition-all">
                 <Globe className="w-4 h-4" />
               </a>
             </div>
@@ -55,13 +55,13 @@ const Footer = () => {
           <div className="lg:col-span-3">
             <h4 className="text-lg font-semibold text-white mb-6">Perusahaan</h4>
             <ul className="space-y-4">
-              <li><Link to="/tentang-kami" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Tentang Kami</Link></li>
-              <li><Link to="/project" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Portofolio & Project</Link></li>
-              <li><Link to="/tim-kami" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Tim Kami</Link></li>
-              <li><Link to="/teknologi" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Teknologi & Infrastruktur</Link></li>
-              <li><Link to="/privasi" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Kebijakan Privasi</Link></li>
-              <li><Link to="/syarat" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Syarat & Ketentuan</Link></li>
-              <li><Link to="/mitra" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Klien & Kemitraan</Link></li>
+              <li><Link to="/tentang-kami" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Tentang Kami</Link></li>
+              <li><Link to="/project" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Portofolio & Project</Link></li>
+              <li><Link to="/tim-kami" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Tim Kami</Link></li>
+              <li><Link to="/teknologi" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Teknologi & Infrastruktur</Link></li>
+              <li><Link to="/privasi" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Kebijakan Privasi</Link></li>
+              <li><Link to="/syarat" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Syarat & Ketentuan</Link></li>
+              <li><Link to="/mitra" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Klien & Kemitraan</Link></li>
             </ul>
           </div>
 
@@ -69,9 +69,9 @@ const Footer = () => {
           <div className="lg:col-span-3">
             <h4 className="text-lg font-semibold text-white mb-6">Layanan Kami</h4>
             <ul className="space-y-4">
-              <li><Link to="/layanan/civil-endineering" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Desain Teknik & Rekayasa Struktur Profesional</Link></li>
-              <li><Link to="/layanan/it-solutions" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Pengembangan Sistem Web & Aplikasi Custom</Link></li>
-              <li><Link to="/layanan/data-analytics" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Analisis Data & Dashboard Business Intelligence</Link></li>
+              <li><Link to="/layanan/civil-endineering" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Desain Teknik & Rekayasa Struktur Profesional</Link></li>
+              <li><Link to="/layanan/it-solutions" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Pengembangan Sistem Web & Aplikasi Custom</Link></li>
+              <li><Link to="/layanan/data-analytics" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Analisis Data & Dashboard Business Intelligence</Link></li>
             </ul>
           </div>
 
@@ -79,10 +79,10 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <h4 className="text-lg font-semibold text-white mb-6">Informasi</h4>
             <ul className="space-y-4">
-              <li><Link to="/insight" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Blog & Insight</Link></li>
-              {/* <li><Link to="/karir" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Karir</Link></li>
-              <li><Link to="/magang" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Program Magang</Link></li> */}
-              <li><Link to="/kontak" className="text-slate-400 text-sm hover:text-red-400 transition-colors">Hubungi Kami</Link></li>
+              <li><Link to="/insight" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Blog & Insight</Link></li>
+              {/* <li><Link to="/karir" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Karir</Link></li>
+              <li><Link to="/magang" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Program Magang</Link></li> */}
+              <li><Link to="/kontak" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Hubungi Kami</Link></li>
             </ul>
           </div>
         </div>

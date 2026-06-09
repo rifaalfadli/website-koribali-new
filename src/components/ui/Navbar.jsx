@@ -123,12 +123,12 @@ const Navbar = () => {
                   >
                     <button
                       onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
-                      className={`flex items-center text-sm font-medium transition-colors hover:text-red-500 py-6 focus:outline-none ${location.pathname.startsWith('/layanan') || isServicesDropdownOpen ? 'text-red-500' : 'text-slate-300'
+                      className={`flex items-center text-sm font-medium transition-colors hover:text-blue-500 py-6 focus:outline-none ${location.pathname.startsWith('/layanan') || isServicesDropdownOpen ? 'text-blue-500' : 'text-slate-300'
                         }`}
                     >
                       {link.name}
                       <ChevronDown
-                        className={`w-4 h-4 ml-1 transition-transform duration-300 ${isServicesDropdownOpen ? 'rotate-180 text-red-500' : ''
+                        className={`w-4 h-4 ml-1 transition-transform duration-300 ${isServicesDropdownOpen ? 'rotate-180 text-blue-500' : ''
                           }`}
                       />
                     </button>
@@ -143,7 +143,7 @@ const Navbar = () => {
                           <h3 className="text-sm font-medium text-white">Layanan Kami</h3>
                           <Link
                             to="/layanan"
-                            className="text-red-500 hover:text-red-400 text-sm font-medium flex items-center transition-colors"
+                            className="text-blue-500 hover:text-blue-400 text-sm font-medium flex items-center transition-colors"
                             onClick={() => setIsServicesDropdownOpen(false)}
                           >
                             Lihat Semua
@@ -161,14 +161,14 @@ const Navbar = () => {
                             >
                               <div className="flex flex-row items-start gap-2 p-2 rounded-2xl hover:bg-slate-800/50 transition-all duration-300 border border-transparent">
 
-                                {/* Ikon Layanan - Berubah menjadi solid merah saat hover */}
-                                <div className="flex-shrink-0 w-14 h-14 bg-slate-950 border border-slate-800 rounded-full flex items-center justify-center text-red-500 group-hover/item:bg-red-600 group-hover/item:text-white group-hover/item:border-red-500 group-hover/item:shadow-lg group-hover/item:shadow-red-900/50 transition-all duration-300">
+                                {/* Ikon Layanan - Berubah menjadi solid biru saat hover */}
+                                <div className="flex-shrink-0 w-14 h-14 bg-slate-950 border border-slate-800 rounded-full flex items-center justify-center text-blue-500 group-hover/item:bg-blue-600 group-hover/item:text-white group-hover/item:border-blue-500 group-hover/item:shadow-lg group-hover/item:shadow-blue-900/50 transition-all duration-300">
                                   {renderServiceIcon(idx)}
                                 </div>
 
                                 {/* Teks Layout - Ukuran disesuaikan */}
                                 <div className="flex flex-col pt-1">
-                                  <h4 className="text-sm font-medium text-white mb-1.5 group-hover/item:text-red-400 transition-colors leading-tight">
+                                  <h4 className="text-sm font-medium text-white mb-1.5 group-hover/item:text-blue-400 transition-colors leading-tight">
                                     {service.title}
                                   </h4>
                                   <p className="text-sm text-slate-400 leading-relaxed line-clamp-2">
@@ -190,7 +190,7 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-sm font-medium transition-colors hover:text-red-500 flex items-center h-full ${location.pathname === link.path ? 'text-red-500' : 'text-slate-300'
+                  className={`text-sm font-medium transition-colors hover:text-blue-500 flex items-center h-full ${location.pathname === link.path ? 'text-blue-500' : 'text-slate-300'
                     }`}
                 >
                   {link.name}
@@ -219,7 +219,7 @@ const Navbar = () => {
                       key={lang.code}
                       onClick={() => changeLanguage(lang.code)}
                       className={`block w-full text-left px-4 py-2 text-sm transition-colors ${i18n.language === lang.code
-                        ? 'bg-slate-800 text-red-500 font-medium'
+                        ? 'bg-slate-800 text-blue-500 font-medium'
                         : 'text-slate-400 hover:bg-slate-800 hover:text-white'
                         }`}
                     >
@@ -230,9 +230,9 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* Tombol Hubungi Kami versi Gradien Dark Blood */}
+            {/* Tombol Hubungi Kami versi Gradien Deep Blue */}
             <Link to="/kontak">
-              <button className="bg-gradient-to-r from-red-800 to-red-950 hover:from-red-700 hover:to-red-900 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-md shadow-red-900/30 hover:shadow-lg hover:shadow-red-900/40 hover:-translate-y-0.5">
+              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-md shadow-blue-600/30 hover:shadow-lg hover:shadow-blue-600/40 hover:-translate-y-0.5">
                 {t('common.contactUs')}
               </button>
             </Link>
@@ -242,7 +242,7 @@ const Navbar = () => {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-slate-300 hover:text-red-500 transition-colors"
+              className="text-slate-300 hover:text-blue-500 transition-colors"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -264,12 +264,12 @@ const Navbar = () => {
                   <div key={link.path} className="flex flex-col">
                     <button
                       onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                      className={`flex items-center justify-between text-lg font-medium w-full text-left pb-2 transition-colors ${location.pathname.startsWith('/layanan') ? 'text-red-500' : 'text-slate-300 hover:text-white'
+                      className={`flex items-center justify-between text-lg font-medium w-full text-left pb-2 transition-colors ${location.pathname.startsWith('/layanan') ? 'text-blue-500' : 'text-slate-300 hover:text-white'
                         }`}
                     >
                       {link.name}
                       <ChevronDown
-                        className={`w-5 h-5 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180 text-red-500' : ''
+                        className={`w-5 h-5 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180 text-blue-500' : ''
                           }`}
                       />
                     </button>
@@ -284,7 +284,7 @@ const Navbar = () => {
                           <Link
                             key={service.id}
                             to={`/layanan/${service.id}`}
-                            className="text-slate-400 hover:text-red-400 text-sm block transition-colors"
+                            className="text-slate-400 hover:text-blue-400 text-sm block transition-colors"
                             onClick={() => setIsMobileMenuOpen(false)}
                           >
                             {service.title}
@@ -292,7 +292,7 @@ const Navbar = () => {
                         ))}
                         <Link
                           to="/layanan"
-                          className="text-red-500 hover:text-red-400 text-sm font-semibold pt-2 block transition-colors"
+                          className="text-blue-500 hover:text-blue-400 text-sm font-semibold pt-2 block transition-colors"
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
                           Lihat Semua Layanan
@@ -307,7 +307,7 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-lg font-medium pb-2 transition-colors ${location.pathname === link.path ? 'text-red-500' : 'text-slate-300 hover:text-white'
+                  className={`text-lg font-medium pb-2 transition-colors ${location.pathname === link.path ? 'text-blue-500' : 'text-slate-300 hover:text-white'
                     }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -323,7 +323,7 @@ const Navbar = () => {
                 key={lang.code}
                 onClick={() => changeLanguage(lang.code)}
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${i18n.language === lang.code
-                  ? 'bg-red-500/10 text-red-500 border border-red-500/30'
+                  ? 'bg-blue-500/10 text-blue-500 border border-blue-500/30'
                   : 'bg-slate-900 border border-slate-800 text-slate-400 hover:bg-slate-800'
                   }`}
               >
@@ -335,7 +335,7 @@ const Navbar = () => {
           <div className="pt-4 pb-10">
             {/* Tombol Hubungi Kami versi Mobile */}
             <Link to="/kontak" className="block w-full" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-gradient-to-r from-red-800 to-red-950 hover:from-red-700 hover:to-red-900 text-white w-full py-3.5 rounded-full text-base font-semibold transition-all duration-300 shadow-md shadow-red-900/30 hover:shadow-lg hover:shadow-red-900/40">
+              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white w-full py-3.5 rounded-full text-base font-semibold transition-all duration-300 shadow-md shadow-blue-600/30 hover:shadow-lg hover:shadow-blue-600/40">
                 {t('common.contactUs')}
               </button>
             </Link>

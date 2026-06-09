@@ -51,18 +51,18 @@ const HowWeWork = () => {
                         const Icon = item.icon;
                         return (
                             <div key={idx} className="relative flex flex-col items-center text-center group">
-                                {/* Lingkaran Ikon Tema Dark Blood */}
-                                <div className="w-20 h-20 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mb-6 relative z-10 group-hover:border-red-600 group-hover:bg-red-950/40 transition-all duration-300 shadow-lg group-hover:shadow-red-900/30 group-hover:-translate-y-1">
-                                    <Icon className="w-8 h-8 text-slate-400 group-hover:text-red-500 transition-colors duration-300" />
+                                {/* Lingkaran Ikon Tema Deep Blue */}
+                                <div className="w-20 h-20 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mb-6 relative z-10 group-hover:border-blue-600 group-hover:bg-blue-950/40 transition-all duration-300 shadow-lg group-hover:shadow-blue-600/30 group-hover:-translate-y-1">
+                                    <Icon className="w-8 h-8 text-slate-400 group-hover:text-blue-500 transition-colors duration-300" />
 
                                     {/* Badge Angka Step (01, 02, dst) */}
-                                    <div className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-red-600 border-4 border-slate-950 flex items-center justify-center text-[10px] font-bold text-white shadow-sm">
+                                    <div className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-blue-600 border-4 border-slate-950 flex items-center justify-center text-[10px] font-bold text-white shadow-sm">
                                         {item.step}
                                     </div>
                                 </div>
 
                                 {/* Teks Konten */}
-                                <h4 className="text-lg font-bold text-white mb-3 group-hover:text-red-400 transition-colors font-display">
+                                <h4 className="text-lg font-bold text-white mb-3 group-hover:text-blue-400 transition-colors font-display">
                                     {item.title}
                                 </h4>
                                 <p className="text-slate-400 text-sm leading-relaxed max-w-[260px]">

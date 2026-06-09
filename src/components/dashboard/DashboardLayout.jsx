@@ -90,7 +90,7 @@ const DashboardLayout = ({ children }) => {
         <div className="p-4 border-t border-slate-800">
           <button 
             onClick={handleLogout}
-            className="flex items-center w-full px-3 py-2.5 rounded-lg text-sm font-medium text-slate-400 hover:text-red-400 hover:bg-red-500/10 transition-colors"
+            className="flex items-center w-full px-3 py-2.5 rounded-lg text-sm font-medium text-slate-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors"
           >
             <LogOut className="w-4 h-4 mr-3" />
             Keluar
@@ -117,7 +117,7 @@ const DashboardLayout = ({ children }) => {
           <div className="flex items-center space-x-4">
             <button className="relative p-2 text-slate-400 hover:text-white transition-colors">
               <Bell className="w-5 h-5" />
-              <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full"></span>
+              <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-blue-500 rounded-full"></span>
             </button>
             
             <div className="h-8 w-px bg-slate-800 mx-2"></div>

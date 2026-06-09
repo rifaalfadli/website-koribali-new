@@ -55,7 +55,7 @@ const ServiceDetail = () => {
                 {service.title}
               </h2>
 
-              <h3 className="text-lg md:text-xl font-semibold text-red-500 mb-8 leading-snug">
+              <h3 className="text-lg md:text-xl font-semibold text-blue-500 mb-8 leading-snug">
                 {service.subtitle}
               </h3>
 
@@ -69,7 +69,7 @@ const ServiceDetail = () => {
               <ul className="space-y-3 mb-6">
                 {service.benefits?.map((benefit, idx) => (
                   <li key={idx} className="flex items-start">
-                    <div className="mt-1 w-1.5 h-1.5 rounded-full bg-red-500 mr-3 flex-shrink-0 shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
+                    <div className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0 shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
                     <span className="text-slate-300 font-medium">{benefit}</span>
                   </li>
                 ))}
@@ -93,7 +93,7 @@ const ServiceDetail = () => {
             {/* Kanan: Gambar Representatif dengan Efek Frame */}
             <div className="lg:col-span-5 relative">
               {/* Dekorasi Latar Belakang Gambar */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-red-900/20 to-slate-800 rounded-3xl transform translate-x-4 translate-y-4 -z-10" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-slate-800 rounded-3xl transform translate-x-4 translate-y-4 -z-10" />
 
               <div className="rounded-3xl overflow-hidden border border-slate-800 shadow-2xl relative z-10">
                 <img

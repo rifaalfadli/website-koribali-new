@@ -16,11 +16,11 @@ const PageHero = ({ title, description, breadcrumbs }) => {
         }}
       />
 
-      {/* 3. Gradasi: Gunakan red-900/50 di atas agar merahnya lebih 'menyala', memudar ke slate-950 di bawah agar menyatu dengan section selanjutnya */}
-      <div className="absolute inset-0 bg-gradient-to-b from-red-950/30 via-slate-900/70 to-slate-950 pointer-events-none" />
+      {/* 3. Gradasi: Gunakan blue-900/50 di atas agar birunya lebih 'menyala', memudar ke slate-950 di bawah agar menyatu dengan section selanjutnya */}
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-600/30 via-slate-900/70 to-slate-950 pointer-events-none" />
 
       {/* Tambahan: Glow effect radial di tengah agar teks lebih terbaca dan pop-up */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/20 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-8 text-center flex flex-col items-center justify-center">
         <h1 className="text-3xl md:text-5xl font-bold text-white font-display mb-6 leading-tight tracking-tight drop-shadow-lg">
@@ -35,18 +35,18 @@ const PageHero = ({ title, description, breadcrumbs }) => {
         {/* Centered Breadcrumb */}
         {breadcrumbs && breadcrumbs.length > 0 && (
           <div className="flex items-center justify-center space-x-2.5 text-xs md:text-sm font-medium">
-            <Link to="/" className="text-slate-300 hover:text-red-400 transition-colors">
+            <Link to="/" className="text-slate-300 hover:text-blue-400 transition-colors">
               Beranda
             </Link>
             {breadcrumbs.map((item, idx) => (
               <React.Fragment key={idx}>
                 <span className="text-slate-500">/</span>
                 {item.href ? (
-                  <Link to={item.href} className="text-slate-300 hover:text-red-400 transition-colors">
+                  <Link to={item.href} className="text-slate-300 hover:text-blue-400 transition-colors">
                     {item.label}
                   </Link>
                 ) : (
-                  <span className="text-red-400 font-bold drop-shadow-md">{item.label}</span>
+                  <span className="text-blue-400 font-bold drop-shadow-md">{item.label}</span>
                 )}
               </React.Fragment>
             ))}

@@ -86,7 +86,7 @@ const HeroSection = () => {
 
               <div className="flex flex-wrap items-center gap-4">
                 <Link to={slides[currentSlide].primaryAction.path}>
-                  <button className="bg-gradient-to-r from-red-800 to-red-950 hover:from-red-700 hover:to-red-900 text-white px-7 py-3.5 rounded-full font-semibold flex items-center transition-all duration-300 group shadow-md shadow-red-900/30 hover:shadow-lg hover:shadow-red-900/40 hover:-translate-y-0.5">
+                  <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-7 py-3.5 rounded-full font-semibold flex items-center transition-all duration-300 group shadow-md shadow-blue-600/30 hover:shadow-lg hover:shadow-blue-600/40 hover:-translate-y-0.5">
                     {slides[currentSlide].primaryAction.label}
                     <div className="bg-white/10 p-1.5 rounded-full ml-3 group-hover:bg-white/20 transition-colors">
                       <ArrowRight className="w-4 h-4 text-white" />
@@ -98,7 +98,7 @@ const HeroSection = () => {
           </AnimatePresence>
         </div>
 
-        {/* Slider Indicators Tema Dark Blood */}
+        {/* Slider Indicators Tema Deep Blue */}
         <div className="mt-12 flex w-full justify-center items-center gap-[0.5rem]">
           {slides.map((_, index) => (
             <button
@@ -106,7 +106,7 @@ const HeroSection = () => {
               onClick={() => setCurrentSlide(index)}
               aria-label={`Go to slide ${index + 1}`}
               className={`transition-all duration-300 ease-in-out rounded-full border ${currentSlide === index
-                ? 'w-[42px] h-[12px] bg-red-600 border-red-600 shadow-[0_4px_12px_rgba(220,38,38,0.5)]'
+                ? 'w-[42px] h-[12px] bg-blue-600 border-blue-600 shadow-[0_4px_12px_rgba(37,99,235,0.5)]'
                 : 'w-[12px] h-[12px] bg-white/40 border-white/30 hover:bg-white/70'
                 }`}
             />

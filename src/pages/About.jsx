@@ -53,11 +53,11 @@ const About = () => {
             {/* Kolom Teks (Kiri) */}
             <div className="lg:col-span-7 text-slate-300 space-y-6 leading-relaxed text-lg">
               <div className="mb-8">
-                <span className="text-red-500 font-bold uppercase tracking-widest text-sm mb-4 block">
+                <span className="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4 block">
                   Tentang Kami
                 </span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display leading-tight">
-                  Sinergi <span className="text-red-500">Rekayasa Sipil</span> & Inovasi Digital
+                  Sinergi <span className="text-blue-500">Rekayasa Sipil</span> & Inovasi Digital
                 </h2>
               </div>
 
@@ -75,13 +75,13 @@ const About = () => {
             {/* Kolom Gambar (Kanan) - Layout 3 Foto Asimetris/Masonry */}
             <div className="lg:col-span-5 grid grid-cols-2 gap-4 lg:gap-6 relative group mt-8 lg:mt-0 h-full min-h-[500px]">
               {/* Efek Glow di belakang gambar */}
-              <div className="absolute inset-0 bg-red-900/20 blur-[60px] rounded-full transform -translate-x-4 translate-y-4 -z-10 opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="absolute inset-0 bg-blue-900/20 blur-[60px] rounded-full transform -translate-x-4 translate-y-4 -z-10 opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
 
               {/* Sub-kolom Kiri: 2 Foto (Square & Portrait) */}
               <div className="flex flex-col gap-4 lg:gap-6 pt-8 lg:pt-12">
                 <div className="aspect-square bg-slate-900 rounded-3xl overflow-hidden relative border border-slate-800 shadow-xl group-hover:-translate-y-2 transition-transform duration-500">
                   <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800" alt="Civil Engineering" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
-                  <div className="absolute inset-0 bg-red-950/40 mix-blend-multiply pointer-events-none" />
+                  <div className="absolute inset-0 bg-blue-950/40 mix-blend-multiply pointer-events-none" />
                 </div>
                 <div className="aspect-[4/5] bg-slate-900 rounded-3xl overflow-hidden relative border border-slate-800 shadow-xl group-hover:-translate-y-1 transition-transform duration-500 delay-100">
                   <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Software Engineering" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
@@ -94,7 +94,7 @@ const About = () => {
                 <div className="w-full h-full min-h-[300px] bg-slate-900 rounded-3xl overflow-hidden relative border border-slate-800 shadow-xl group-hover:translate-y-2 transition-transform duration-500">
                   {/* Gambar diset absolute agar membentang mengikuti tinggi container */}
                   <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800" alt="Engineering Team" className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
-                  <div className="absolute inset-0 bg-red-950/20 mix-blend-multiply pointer-events-none" />
+                  <div className="absolute inset-0 bg-blue-950/20 mix-blend-multiply pointer-events-none" />
                 </div>
               </div>
 
@@ -107,10 +107,10 @@ const About = () => {
         <SectionWrapper className="bg-slate-900/30 border-y border-slate-900">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Kartu Visi */}
-            <div className="bg-slate-900 border border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-red-900/50 hover:shadow-2xl hover:shadow-red-900/10 transition-all duration-300">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-red-600/10 blur-[50px] rounded-full group-hover:bg-red-500/20 transition-colors" />
+            <div className="bg-slate-900 border border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-300">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-blue-600/10 blur-[50px] rounded-full group-hover:bg-blue-500/20 transition-colors" />
               <h2 className="text-3xl font-bold text-white font-display mb-6 flex items-center">
-                <span className="w-8 h-1 bg-red-500 mr-4 rounded-full"></span> Visi
+                <span className="w-8 h-1 bg-blue-500 mr-4 rounded-full"></span> Visi
               </h2>
               <p className="text-slate-400 text-lg leading-relaxed relative z-10">
                 Menjadi pelopor integrasi teknologi informasi dan rekayasa sipil terkemuka di Asia Tenggara, mewujudkan infrastruktur yang cerdas, efisien, dan berkelanjutan.
@@ -118,22 +118,22 @@ const About = () => {
             </div>
 
             {/* Kartu Misi */}
-            <div className="bg-slate-900 border border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-red-900/50 hover:shadow-2xl hover:shadow-red-900/10 transition-all duration-300">
-              <div className="absolute bottom-0 left-0 w-40 h-40 bg-red-900/20 blur-[50px] rounded-full group-hover:bg-red-600/20 transition-colors" />
+            <div className="bg-slate-900 border border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-300">
+              <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-900/20 blur-[50px] rounded-full group-hover:bg-blue-600/20 transition-colors" />
               <h2 className="text-3xl font-bold text-white font-display mb-6 flex items-center">
-                <span className="w-8 h-1 bg-red-500 mr-4 rounded-full"></span> Misi
+                <span className="w-8 h-1 bg-blue-500 mr-4 rounded-full"></span> Misi
               </h2>
               <ul className="text-slate-400 space-y-4 text-lg leading-relaxed relative z-10">
                 <li className="flex items-start">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-500 mr-3 flex-shrink-0" />
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0" />
                   Mengotomatisasi proses desain dan kalkulasi rekayasa.
                 </li>
                 <li className="flex items-start">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-500 mr-3 flex-shrink-0" />
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0" />
                   Membangun ekosistem digital untuk manajemen aset infrastruktur.
                 </li>
                 <li className="flex items-start">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-500 mr-3 flex-shrink-0" />
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0" />
                   Menghasilkan produk rekayasa berstandar SNI yang diakui secara global.
                 </li>
               </ul>
@@ -144,7 +144,7 @@ const About = () => {
         {/* Galeri Kegiatan (Pinterest Style / Masonry Layout) */}
         <SectionWrapper className="pb-24 pt-24">
           <div className="text-center mb-16 max-w-2xl mx-auto">
-            <span className="text-red-500 font-bold uppercase tracking-widest text-sm mb-4 block">
+            <span className="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4 block">
               Galeri Kegiatan
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display mb-6">
@@ -156,7 +156,7 @@ const About = () => {
             <div className="flex flex-col gap-6">
               {galleryPhotos.slice(0, 3).map((photo) => (
                 <div key={photo.id} className="relative group rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-xl transition-all duration-500">
-                  <div className="absolute inset-0 bg-red-900/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0" />
+                  <div className="absolute inset-0 bg-blue-900/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0" />
                   <img
                     src={photo.src}
                     alt={`Kegiatan ${photo.id}`}
@@ -169,7 +169,7 @@ const About = () => {
             <div className="flex flex-col gap-6">
               {galleryPhotos.slice(3, 6).map((photo) => (
                 <div key={photo.id} className="relative group rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-xl transition-all duration-500">
-                  <div className="absolute inset-0 bg-red-900/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0" />
+                  <div className="absolute inset-0 bg-blue-900/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0" />
                   <img
                     src={photo.src}
                     alt={`Kegiatan ${photo.id}`}

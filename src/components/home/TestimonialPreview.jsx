@@ -118,7 +118,7 @@ const TestimonialPreview = () => {
 
             {/* Header Rata Tengah */}
             <div className="flex flex-col items-center text-center mb-16 px-4">
-                <span className="text-red-500 text-sm font-bold uppercase tracking-widest mb-3">
+                <span className="text-blue-500 text-sm font-bold uppercase tracking-widest mb-3">
                     Klien Kami
                 </span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display max-w-3xl leading-tight">
@@ -148,7 +148,7 @@ const TestimonialPreview = () => {
                                     className="relative bg-slate-900 border border-slate-800 rounded-[2rem] p-8 md:p-10 flex flex-col items-center text-center h-full"
                                 >
                                     {/* Ikon Heart (Pojok Kiri Atas) */}
-                                    <div className="absolute top-6 left-6 w-12 h-12 rounded-full bg-red-950/40 border border-red-900/30 flex items-center justify-center text-red-500 shadow-sm">
+                                    <div className="absolute top-6 left-6 w-12 h-12 rounded-full bg-blue-950/40 border border-blue-900/30 flex items-center justify-center text-blue-500 shadow-sm">
                                         <Heart className="w-5 h-5 fill-current" />
                                     </div>
 
@@ -194,7 +194,7 @@ const TestimonialPreview = () => {
                             onClick={() => setCurrentPage(index)}
                             aria-label={`Lihat Halaman ${index + 1}`}
                             className={`h-2.5 rounded-full transition-all duration-500 ${currentPage === index
-                                ? 'w-10 bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.5)]'
+                                ? 'w-10 bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]'
                                 : 'w-2.5 bg-slate-700 hover:bg-slate-500'
                                 }`}
                         />
