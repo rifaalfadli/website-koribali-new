@@ -86,7 +86,7 @@ const HeroSection = () => {
 
               <div className="flex flex-wrap items-center gap-4">
                 <Link to={slides[currentSlide].primaryAction.path}>
-                  <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-7 py-3.5 rounded-full font-semibold flex items-center transition-all duration-300 group shadow-md shadow-blue-600/30 hover:shadow-lg hover:shadow-blue-600/40 hover:-translate-y-0.5">
+                  <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-7 py-3.5 rounded-full font-semibold flex items-center transition-all duration-300 group hover:-translate-y-0.5">
                     {slides[currentSlide].primaryAction.label}
                     <div className="bg-white/10 p-1.5 rounded-full ml-3 group-hover:bg-white/20 transition-colors">
                       <ArrowRight className="w-4 h-4 text-white" />

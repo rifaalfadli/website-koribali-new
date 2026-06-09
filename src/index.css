@@ -7,8 +7,8 @@
   --color-slate-50: #f8fafc;
   --color-slate-100: #f1f5f9;
   --color-slate-200: #e2e8f0;
-  --color-slate-300: #cbd5e1;
-  --color-slate-400: #94a3b8;
+  --color-slate-300: #e0e7ef;
+  --color-slate-400: #d2dbe8;
   --color-slate-500: #64748b;
   --color-slate-600: #475569;
   --color-slate-700: #334155;
@@ -18,8 +18,8 @@
 
   --color-cyan-400: #22d3ee;
   --color-cyan-500: #06b6d4;
-  --color-blue-400: #60a5fa;
-  --color-blue-500: #3b82f6;
+  --color-blue-400: #4d94ff;
+  --color-blue-500: #1a6dff;
 }
 
 @layer base {
@@ -27,7 +27,7 @@
     overflow-x: hidden;
   }
   body {
-    @apply bg-slate-950 text-slate-300 font-sans antialiased;
+    @apply bg-slate-950 text-slate-200 font-sans antialiased;
     /* Subtle grid pattern for futuristic look */
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);

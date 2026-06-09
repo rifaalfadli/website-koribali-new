@@ -20,7 +20,7 @@ const FloatingContact = () => {
           href={waUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative flex items-center justify-center w-14 h-14 bg-blue-800 hover:bg-blue-900 text-white rounded-full shadow-lg shadow-blue-600/30 transition-all duration-200 hover:scale-110 active:scale-95"
+          className="relative flex items-center justify-center w-14 h-14 bg-blue-800 hover:bg-blue-900 text-white rounded-full transition-all duration-200 hover:scale-110 active:scale-95"
           aria-label="WhatsApp Kami"
         >
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
@@ -39,7 +39,7 @@ const FloatingContact = () => {
           href={locUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative flex items-center justify-center w-14 h-14 bg-blue-800 hover:bg-blue-900 text-white rounded-full shadow-lg shadow-blue-600/30 transition-all duration-200 hover:scale-110 active:scale-95"
+          className="relative flex items-center justify-center w-14 h-14 bg-blue-800 hover:bg-blue-900 text-white rounded-full transition-all duration-200 hover:scale-110 active:scale-95"
           aria-label="Lokasi Kami"
         >
           <MapPin className="w-7 h-7" />

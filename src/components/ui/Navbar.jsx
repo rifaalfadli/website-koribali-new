@@ -232,7 +232,7 @@ const Navbar = () => {
 
             {/* Tombol Hubungi Kami versi Gradien Deep Blue */}
             <Link to="/kontak">
-              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-md shadow-blue-600/30 hover:shadow-lg hover:shadow-blue-600/40 hover:-translate-y-0.5">
+              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5">
                 {t('common.contactUs')}
               </button>
             </Link>
@@ -335,7 +335,7 @@ const Navbar = () => {
           <div className="pt-4 pb-10">
             {/* Tombol Hubungi Kami versi Mobile */}
             <Link to="/kontak" className="block w-full" onClick={() => setIsMobileMenuOpen(false)}>
-              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white w-full py-3.5 rounded-full text-base font-semibold transition-all duration-300 shadow-md shadow-blue-600/30 hover:shadow-lg hover:shadow-blue-600/40">
+              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white w-full py-3.5 rounded-full text-base font-semibold transition-all duration-300">
                 {t('common.contactUs')}
               </button>
             </Link>

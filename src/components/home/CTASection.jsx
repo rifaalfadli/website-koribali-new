@@ -28,7 +28,7 @@ const CTASection = () => {
           <Link to="/kontak" className="w-full sm:w-auto">
             <Button
               variant="primary"
-              className="w-full text-sm md:text-base px-8 py-3.5 group shadow-blue-900/20"
+              className="w-full text-sm md:text-base px-8 py-3.5 group"
             >
               Konsultasi Sekarang
               <Send className="w-4 h-4 ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

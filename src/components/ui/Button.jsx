@@ -5,7 +5,7 @@ const Button = ({ children, variant = 'primary', className = '', ...props }) => 
 
   const variants = {
     // Diubah ke gradasi biru navy gelap (Deep Blue) dengan bayangan biru
-    primary: "bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 shadow-lg shadow-blue-600/30 active:scale-95",
+    primary: "bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 active:scale-95",
 
     // Border hover dan teks diubah menjadi biru terang
     secondary: "border border-slate-600 text-slate-300 hover:border-blue-500 hover:text-blue-400 active:scale-95",

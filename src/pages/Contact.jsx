@@ -203,7 +203,7 @@ const Contact = () => {
                   href={`https://wa.me/${company.whatsapp}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-2.5 px-6 rounded-full transition-all shadow-lg shadow-blue-600/30"
+                  className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-2.5 px-6 rounded-full transition-all"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   Chat via WhatsApp

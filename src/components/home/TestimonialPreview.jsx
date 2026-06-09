@@ -148,7 +148,7 @@ const TestimonialPreview = () => {
                                     className="relative bg-slate-900 border border-slate-800 rounded-[2rem] p-8 md:p-10 flex flex-col items-center text-center h-full"
                                 >
                                     {/* Ikon Heart (Pojok Kiri Atas) */}
-                                    <div className="absolute top-6 left-6 w-12 h-12 rounded-full bg-blue-950/40 border border-blue-900/30 flex items-center justify-center text-blue-500 shadow-sm">
+                                    <div className="absolute top-6 left-6 w-12 h-12 rounded-full bg-blue-950/40 border border-blue-900/30 flex items-center justify-center text-red-500 shadow-sm">
                                         <Heart className="w-5 h-5 fill-current" />
                                     </div>
 
