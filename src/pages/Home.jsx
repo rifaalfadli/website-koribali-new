@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import HeroSection from '../components/home/HeroSection';
 import TrustBar from '../components/home/TrustBar';
 import ClientSlider from '../components/home/ClientSlider';
+import AboutPreview from '../components/home/AboutPreview';
 import ServicesSection from '../components/home/ServicesSection';
 import WhyChooseUs from '../components/home/WhyChooseUs';
 import TechStack from '../components/home/TechStack';
@@ -22,6 +23,7 @@ const Home = () => {
         <HeroSection />
         <TrustBar />
         <ClientSlider />
+        <AboutPreview />
         <ServicesSection />
         <WhyChooseUs />
         <TechStack />
