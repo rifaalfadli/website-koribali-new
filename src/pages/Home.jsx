@@ -19,7 +19,7 @@ const Home = () => {
         <meta name="description" content="Koribali adalah perusahaan rekayasa sipil dan teknologi informasi yang menyediakan solusi web app, desain struktur, dan analisis data." />
       </Helmet>
 
-      <div className="flex flex-col w-full bg-slate-950 text-white">
+      <div className="flex flex-col w-full bg-white dark:bg-slate-950 text-slate-800 dark:text-white">
         <HeroSection />
         <TrustBar />
         <ClientSlider />

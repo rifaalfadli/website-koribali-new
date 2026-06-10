@@ -10,9 +10,9 @@ const ClientSlider = () => {
   };
 
   return (
-    <div className="py-16 w-full max-w-[100vw] lg:max-w-6xl mx-auto bg-slate-950 overflow-hidden mt-8">
+    <div className="py-16 w-full max-w-[100vw] lg:max-w-6xl mx-auto bg-white dark:bg-slate-950 overflow-hidden mt-8">
       <div className="w-full mx-auto px-4 md:px-8 mb-12 text-center">
-        <h3 className="text-xl md:text-2xl font-bold text-white font-display">
+        <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white font-display">
           Dipercaya oleh <span className="text-blue-500">100+</span> Client Kami
         </h3>
       </div>
@@ -23,7 +23,7 @@ const ClientSlider = () => {
           {[...partners, ...partners].map((partner, index) => (
             <div
               key={`row1-${index}`}
-              className="w-28 md:w-36 h-16 flex-shrink-0 flex items-center justify-center grayscale invert opacity-30 hover:opacity-80 transition-all duration-300"
+              className="w-28 md:w-36 h-16 flex-shrink-0 flex items-center justify-center grayscale opacity-40 dark:invert dark:opacity-30 hover:opacity-80 transition-all duration-300"
             >
               <img
                 src={partner.logo}
@@ -41,7 +41,7 @@ const ClientSlider = () => {
           {[...partners, ...partners].map((partner, index) => (
             <div
               key={`row2-${index}`}
-              className="w-28 md:w-36 h-16 flex-shrink-0 flex items-center justify-center grayscale invert opacity-30 hover:opacity-80 transition-all duration-300"
+              className="w-28 md:w-36 h-16 flex-shrink-0 flex items-center justify-center grayscale opacity-40 dark:invert dark:opacity-30 hover:opacity-80 transition-all duration-300"
             >
               <img
                 src={partner.logo}

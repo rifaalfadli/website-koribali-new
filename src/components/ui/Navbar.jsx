@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Globe, ChevronDown, Globe2, Smartphone, PenTool } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown, Globe2, Smartphone, PenTool, Sun, Moon } from 'lucide-react';
 import { services } from '../../data/services';
+import { useTheme } from '../../context/ThemeContext';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
+  const { isDarkMode, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
@@ -92,7 +94,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
-        ? 'bg-slate-900/90 backdrop-blur-md border-b border-slate-800 shadow-lg shadow-black/50'
+        ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-lg shadow-slate-200/50 dark:shadow-black/50'
         : 'bg-transparent'
         }`}
     >
@@ -106,7 +108,7 @@ const Navbar = () => {
               alt="Koribali Logo"
               className="h-12 w-12 object-contain"
             />
-            <span className="text-2xl font-bold font-display text-white tracking-tight">
+            <span className="text-2xl font-bold font-display text-slate-900 dark:text-white tracking-tight">
               KORIBALI
             </span>
           </Link>
@@ -123,7 +125,7 @@ const Navbar = () => {
                   >
                     <button
                       onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
-                      className={`flex items-center text-sm font-medium transition-colors hover:text-blue-500 py-6 focus:outline-none ${location.pathname.startsWith('/layanan') || isServicesDropdownOpen ? 'text-blue-500' : 'text-slate-300'
+                      className={`flex items-center text-sm font-medium transition-colors hover:text-blue-500 py-6 focus:outline-none ${location.pathname.startsWith('/layanan') || isServicesDropdownOpen ? 'text-blue-500' : 'text-slate-600 dark:text-slate-300'
                         }`}
                     >
                       {link.name}
@@ -133,14 +135,14 @@ const Navbar = () => {
                       />
                     </button>
 
-                    {/* Mega Menu Dropdown - Menggunakan 'fixed' agar posisinya mutlak di tengah layar */}
+                    {/* Mega Menu Dropdown */}
                     <div
-                      className={`fixed left-1/2 -translate-x-1/2 top-[85px] w-[1100px] max-w-[95vw] bg-slate-900 border border-slate-800 rounded-[1.5rem] shadow-2xl shadow-black/80 overflow-hidden transition-all duration-300 origin-top ${isServicesDropdownOpen ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'
+                      className={`fixed left-1/2 -translate-x-1/2 top-[85px] w-[1100px] max-w-[95vw] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[1.5rem] shadow-2xl shadow-slate-300/50 dark:shadow-black/80 overflow-hidden transition-all duration-300 origin-top ${isServicesDropdownOpen ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'
                         }`}
                     >
                       <div className="p-6">
-                        <div className="flex justify-between items-center mb-3 pb-3 border-b border-slate-800/80">
-                          <h3 className="text-sm font-medium text-white">Layanan Kami</h3>
+                        <div className="flex justify-between items-center mb-3 pb-3 border-b border-slate-100 dark:border-slate-800/80">
+                          <h3 className="text-sm font-medium text-slate-900 dark:text-white">Layanan Kami</h3>
                           <Link
                             to="/layanan"
                             className="text-blue-500 hover:text-blue-400 text-sm font-medium flex items-center transition-colors"
@@ -159,19 +161,19 @@ const Navbar = () => {
                               className="group/item block"
                               onClick={() => setIsServicesDropdownOpen(false)}
                             >
-                              <div className="flex flex-row items-start gap-2 p-2 rounded-2xl hover:bg-slate-800/50 transition-all duration-300 border border-transparent">
+                              <div className="flex flex-row items-start gap-2 p-2 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all duration-300 border border-transparent">
 
-                                {/* Ikon Layanan - Berubah menjadi solid biru saat hover */}
-                                <div className="flex-shrink-0 w-14 h-14 bg-slate-950 border border-slate-800 rounded-full flex items-center justify-center text-blue-500 group-hover/item:bg-blue-600 group-hover/item:text-white group-hover/item:border-blue-500 group-hover/item:shadow-lg group-hover/item:shadow-blue-900/50 transition-all duration-300">
+                                {/* Ikon Layanan */}
+                                <div className="flex-shrink-0 w-14 h-14 bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-full flex items-center justify-center text-blue-500 group-hover/item:bg-blue-600 group-hover/item:text-white group-hover/item:border-blue-500 group-hover/item:shadow-lg group-hover/item:shadow-blue-900/50 transition-all duration-300">
                                   {renderServiceIcon(idx)}
                                 </div>
 
-                                {/* Teks Layout - Ukuran disesuaikan */}
+                                {/* Teks Layout */}
                                 <div className="flex flex-col pt-1">
-                                  <h4 className="text-sm font-medium text-white mb-1.5 group-hover/item:text-blue-400 transition-colors leading-tight">
+                                  <h4 className="text-sm font-medium text-slate-900 dark:text-white mb-1.5 group-hover/item:text-blue-400 transition-colors leading-tight">
                                     {service.title}
                                   </h4>
-                                  <p className="text-sm text-slate-400 leading-relaxed line-clamp-2">
+                                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">
                                     {service.shortDescription}
                                   </p>
                                 </div>
@@ -190,7 +192,7 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-sm font-medium transition-colors hover:text-blue-500 flex items-center h-full ${location.pathname === link.path ? 'text-blue-500' : 'text-slate-300'
+                  className={`text-sm font-medium transition-colors hover:text-blue-500 flex items-center h-full ${location.pathname === link.path ? 'text-blue-500' : 'text-slate-600 dark:text-slate-300'
                     }`}
                 >
                   {link.name}
@@ -202,25 +204,34 @@ const Navbar = () => {
           {/* Actions */}
           <div className="hidden lg:flex items-center space-x-4">
 
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="flex items-center justify-center w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 hover:scale-105"
+              aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </button>
+
             {/* Language Switcher */}
             <div className="relative">
               <button
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-                className="flex items-center text-slate-300 hover:text-white transition-colors"
+                className="flex items-center text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
               >
                 <Globe className="w-5 h-5 mr-1" strokeWidth={1.5} />
                 <span className="text-sm font-medium uppercase">{i18n.language}</span>
               </button>
 
               {isLangDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-24 bg-slate-900 border border-slate-800 rounded-xl shadow-xl overflow-hidden py-1">
+                <div className="absolute right-0 mt-2 w-24 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xl overflow-hidden py-1">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
                       onClick={() => changeLanguage(lang.code)}
                       className={`block w-full text-left px-4 py-2 text-sm transition-colors ${i18n.language === lang.code
-                        ? 'bg-slate-800 text-blue-500 font-medium'
-                        : 'text-slate-400 hover:bg-slate-800 hover:text-white'
+                        ? 'bg-slate-100 dark:bg-slate-800 text-blue-500 font-medium'
+                        : 'text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white'
                         }`}
                     >
                       {lang.label}
@@ -239,10 +250,19 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center">
+          <div className="lg:hidden flex items-center space-x-3">
+            {/* Mobile Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="flex items-center justify-center w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-blue-500 transition-colors"
+              aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </button>
+
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-slate-300 hover:text-blue-500 transition-colors"
+              className="text-slate-600 dark:text-slate-300 hover:text-blue-500 transition-colors"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -252,7 +272,7 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`lg:hidden fixed inset-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-900 transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`lg:hidden fixed inset-0 z-40 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-900 transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         style={{ top: '80px' }}
       >
@@ -264,7 +284,7 @@ const Navbar = () => {
                   <div key={link.path} className="flex flex-col">
                     <button
                       onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                      className={`flex items-center justify-between text-lg font-medium w-full text-left pb-2 transition-colors ${location.pathname.startsWith('/layanan') ? 'text-blue-500' : 'text-slate-300 hover:text-white'
+                      className={`flex items-center justify-between text-lg font-medium w-full text-left pb-2 transition-colors ${location.pathname.startsWith('/layanan') ? 'text-blue-500' : 'text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
                         }`}
                     >
                       {link.name}
@@ -279,12 +299,12 @@ const Navbar = () => {
                       className={`overflow-hidden transition-all duration-300 ${isMobileServicesOpen ? 'max-h-[500px] opacity-100 mb-2' : 'max-h-0 opacity-0'
                         }`}
                     >
-                      <div className="flex flex-col space-y-4 pl-4 border-l-2 border-slate-800 py-2 mt-2">
+                      <div className="flex flex-col space-y-4 pl-4 border-l-2 border-slate-200 dark:border-slate-800 py-2 mt-2">
                         {services.map((service) => (
                           <Link
                             key={service.id}
                             to={`/layanan/${service.id}`}
-                            className="text-slate-400 hover:text-blue-400 text-sm block transition-colors"
+                            className="text-slate-500 dark:text-slate-400 hover:text-blue-400 text-sm block transition-colors"
                             onClick={() => setIsMobileMenuOpen(false)}
                           >
                             {service.title}
@@ -307,7 +327,7 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-lg font-medium pb-2 transition-colors ${location.pathname === link.path ? 'text-blue-500' : 'text-slate-300 hover:text-white'
+                  className={`text-lg font-medium pb-2 transition-colors ${location.pathname === link.path ? 'text-blue-500' : 'text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
                     }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -317,14 +337,14 @@ const Navbar = () => {
             })}
           </nav>
 
-          <div className="flex space-x-4 pt-6 border-t border-slate-800/80">
+          <div className="flex space-x-4 pt-6 border-t border-slate-200 dark:border-slate-800/80">
             {languages.map((lang) => (
               <button
                 key={lang.code}
                 onClick={() => changeLanguage(lang.code)}
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${i18n.language === lang.code
                   ? 'bg-blue-500/10 text-blue-500 border border-blue-500/30'
-                  : 'bg-slate-900 border border-slate-800 text-slate-400 hover:bg-slate-800'
+                  : 'bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800'
                   }`}
               >
                 {lang.label}

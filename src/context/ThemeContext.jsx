@@ -10,12 +10,12 @@ export const useTheme = () => {
 
 export const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Default to light mode or use system preference if available
     const stored = localStorage.getItem('theme');
     if (stored) {
       return stored === 'dark';
     }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // Default to dark mode
+    return true;
   });
 
   useEffect(() => {
