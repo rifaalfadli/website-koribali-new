@@ -60,7 +60,7 @@ const ProjectDetail = () => {
                 <h3 className="text-lg font-bold text-white mb-6 border-b border-slate-800 pb-4">Info Proyek</h3>
 
                 <div className="mb-8">
-                  <h4 className="text-sm text-slate-500 mb-3 uppercase tracking-widest font-semibold">Tech Stack</h4>
+                  <h4 className="text-sm text-slate-500 mb-3 uppercase font-semibold">Tech Stack</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.techStack?.map((tech, idx) => (
                       <span key={idx} className="bg-slate-950 text-slate-300 border border-slate-700 text-xs font-semibold px-3 py-1.5 rounded-full hover:border-blue-500/50 hover:text-blue-400 transition-colors">
@@ -71,7 +71,7 @@ const ProjectDetail = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-sm text-slate-500 mb-3 uppercase tracking-widest font-semibold">Fitur Utama</h4>
+                  <h4 className="text-sm text-slate-500 mb-3 uppercase font-semibold">Fitur Utama</h4>
                   <ul className="space-y-3">
                     {project.features?.map((feature, idx) => (
                       <li key={idx} className="flex items-start text-sm text-slate-300 bg-slate-950/50 p-3.5 rounded-xl border border-slate-800/80 hover:border-blue-900/50 hover:bg-slate-900/80 transition-all">

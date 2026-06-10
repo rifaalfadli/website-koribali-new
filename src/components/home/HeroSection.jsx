@@ -106,7 +106,7 @@ const HeroSection = () => {
               onClick={() => setCurrentSlide(index)}
               aria-label={`Go to slide ${index + 1}`}
               className={`transition-all duration-300 ease-in-out rounded-full border ${currentSlide === index
-                ? 'w-[42px] h-[12px] bg-blue-600 border-blue-600 shadow-[0_4px_12px_rgba(37,99,235,0.5)]'
+                ? 'w-[42px] h-[12px] bg-blue-600 border-blue-600'
                 : 'w-[12px] h-[12px] bg-white/40 border-white/30 hover:bg-white/70'
                 }`}
             />

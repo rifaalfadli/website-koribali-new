@@ -26,7 +26,7 @@ const Services = () => {
 
       <div className="pt-10">
         {/* Services Grid */}
-        <ServicesSection />
+        <ServicesSection showHeader={false} />
 
 
         <HowWeWork />

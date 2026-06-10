@@ -113,7 +113,7 @@ const ProjectPreview = () => {
               onClick={() => setCurrentPage(index)}
               aria-label={`Ke Halaman ${index + 1}`}
               className={`transition-all duration-500 rounded-full ${currentPage === index
-                ? 'w-10 h-2.5 bg-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.6)]'
+                ? 'w-10 h-2.5 bg-blue-500'
                 : 'w-2.5 h-2.5 bg-slate-700 hover:bg-slate-500'
                 }`}
             />

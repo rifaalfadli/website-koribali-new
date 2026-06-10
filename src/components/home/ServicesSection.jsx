@@ -4,9 +4,33 @@ import { motion } from 'framer-motion';
 import { Check, ArrowRight } from 'lucide-react';
 
 import { services } from '../../data/services';
-const ServicesSection = () => {
+const ServicesSection = ({ showHeader = true }) => {
   return (
     <div id="services" className="text-white">
+
+      {/* Section Header — hanya ditampilkan di Beranda */}
+      {showHeader && (
+        <div className="pt-20 md:pt-28 bg-slate-950">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-80px' }}
+            transition={{ duration: 0.6 }}
+            className="max-w-7xl mx-auto px-4 md:px-8 text-center"
+          >
+            <span className="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4 block">
+              Layanan Kami
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display leading-tight tracking-tight mb-4">
+              Solusi Terintegrasi untuk Setiap Kebutuhan
+            </h2>
+            <p className="text-slate-400 text-base md:text-lg max-w-3xl mx-auto">
+              Dari desain struktur hingga pengembangan sistem digital — kami menghadirkan layanan menyeluruh yang dirancang untuk mendorong pertumbuhan bisnis Anda.
+            </p>
+          </motion.div>
+        </div>
+      )}
+
       {services.map((service) => (
         <div
           key={service.id}
