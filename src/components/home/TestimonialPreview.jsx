@@ -114,14 +114,14 @@ const TestimonialPreview = () => {
     }, [totalPages]);
 
     return (
-        <SectionWrapper className="bg-slate-950 border-t border-slate-900/80 pt-20 pb-24 overflow-hidden">
+        <SectionWrapper className="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900/80 pt-20 pb-24 overflow-hidden">
 
             {/* Header Rata Tengah */}
             <div className="flex flex-col items-center text-center mb-16 px-4">
                 <span className="text-blue-500 text-sm font-bold uppercase tracking-widest mb-3">
                     Klien Kami
                 </span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display max-w-3xl leading-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white font-display max-w-3xl leading-tight">
                     Dipercaya Bisnis untuk Tumbuh dengan Solusi Integrasi
                 </h2>
             </div>
@@ -145,15 +145,15 @@ const TestimonialPreview = () => {
                             {page.map((item) => (
                                 <div
                                     key={item.id}
-                                    className="relative bg-slate-900 border border-slate-800 rounded-[2rem] p-8 md:p-10 flex flex-col items-center text-center h-full"
+                                    className="relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-8 md:p-10 flex flex-col items-center text-center h-full"
                                 >
                                     {/* Ikon Heart (Pojok Kiri Atas) */}
-                                    <div className="absolute top-6 left-6 w-12 h-12 rounded-full bg-blue-950/40 border border-blue-900/30 flex items-center justify-center text-red-500 shadow-sm">
+                                    <div className="absolute top-6 left-6 w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/30 flex items-center justify-center text-red-500 shadow-sm">
                                         <Heart className="w-5 h-5 fill-current" />
                                     </div>
 
                                     {/* Avatar Klien */}
-                                    <div className="w-24 h-24 rounded-full overflow-hidden mb-5 ring-4 ring-slate-950 shadow-xl flex-shrink-0">
+                                    <div className="w-24 h-24 rounded-full overflow-hidden mb-5 ring-4 ring-slate-100 dark:ring-slate-950 shadow-xl flex-shrink-0">
                                         <img
                                             src={item.image}
                                             alt={item.name}
@@ -169,15 +169,15 @@ const TestimonialPreview = () => {
                                     </div>
 
                                     {/* Nama & Posisi */}
-                                    <h4 className="text-xl font-bold text-white mb-1 font-display">
+                                    <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-1 font-display">
                                         {item.name}
                                     </h4>
-                                    <p className="text-slate-500 text-sm italic mb-6">
+                                    <p className="text-slate-500 dark:text-slate-500 text-sm italic mb-6">
                                         {item.role}
                                     </p>
 
                                     {/* Kutipan Testimonial */}
-                                    <p className="text-slate-300 text-sm leading-relaxed flex-grow">
+                                    <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed flex-grow">
                                         "{item.quote}"
                                     </p>
                                 </div>
@@ -195,7 +195,7 @@ const TestimonialPreview = () => {
                             aria-label={`Lihat Halaman ${index + 1}`}
                             className={`h-2.5 rounded-full transition-all duration-500 ${currentPage === index
                                 ? 'w-10 bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]'
-                                : 'w-2.5 bg-slate-700 hover:bg-slate-500'
+                                : 'w-2.5 bg-slate-300 dark:bg-slate-700 hover:bg-slate-400 dark:hover:bg-slate-500'
                                 }`}
                         />
                     ))}

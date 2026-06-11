@@ -8,18 +8,18 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    // Padding top (pt-40 md:pt-48) ditambahkan khusus agar tidak tertutup CTA Section
-    <footer className="bg-black border-t border-slate-700/50 pt-44 pb-8 relative overflow-hidden">
+    // Footer selalu bg-slate-950 di kedua mode — memberikan kontras tegas dari konten di atasnya
+    <footer className="bg-slate-950 border-t border-slate-800/60 pt-44 pb-8 relative overflow-hidden">
 
-      {/* Efek Garis Halus Latar Belakang (Opsional: untuk meniru tekstur gelombang pada gambar referensi) */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+      {/* Efek Dot Grid Latar Belakang */}
+      <div className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        {/* Layout 4 Kolom mirip referensi gambar */}
+        {/* Layout 4 Kolom */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
 
-          {/* Kolom 1: Brand & Deskripsi (Dibuat sedikit lebih lebar - col-span-4) */}
+          {/* Kolom 1: Brand & Deskripsi */}
           <div className="lg:col-span-4 pr-0 lg:pr-8">
             <div className="flex items-center space-x-3 mb-6">
               <img
@@ -36,8 +36,7 @@ const Footer = () => {
               Konsultan infrastruktur fisik dan IT profesional yang membantu bisnis mengembangkan solusi terintegrasi, aman, dan scalable untuk mendukung pertumbuhan dan transformasi teknologi Anda.
             </p>
 
-            {/* Ikon Sosial Media (Solid background membulat seperti di referensi) */}
-            {/* Ikon Sosial Media diperbaiki agar lebih aman dari undefined error */}
+            {/* Ikon Sosial Media */}
             <div className="flex space-x-4">
               <a href={company.socials?.instagram ?? '#'} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-950 hover:text-blue-400 hover:border-blue-900/50 transition-all">
                 <Mail className="w-4 h-4" />
@@ -51,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Kolom 2: Perusahaan (col-span-2) */}
+          {/* Kolom 2: Perusahaan */}
           <div className="lg:col-span-3">
             <h4 className="text-lg font-semibold text-white mb-6">Perusahaan</h4>
             <ul className="space-y-4">
@@ -65,7 +64,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Kolom 3: Layanan Kami (col-span-3) */}
+          {/* Kolom 3: Layanan Kami */}
           <div className="lg:col-span-3">
             <h4 className="text-lg font-semibold text-white mb-6">Layanan Kami</h4>
             <ul className="space-y-4">
@@ -75,13 +74,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Kolom 4: Informasi (col-span-2) */}
+          {/* Kolom 4: Informasi */}
           <div className="lg:col-span-2">
             <h4 className="text-lg font-semibold text-white mb-6">Informasi</h4>
             <ul className="space-y-4">
               <li><Link to="/insight" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Blog & Insight</Link></li>
-              {/* <li><Link to="/karir" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Karir</Link></li>
-              <li><Link to="/magang" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Program Magang</Link></li> */}
               <li><Link to="/kontak" className="text-slate-400 text-sm hover:text-blue-400 transition-colors">Hubungi Kami</Link></li>
             </ul>
           </div>

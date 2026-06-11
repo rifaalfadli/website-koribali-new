@@ -17,9 +17,9 @@ const NotFound = () => {
           <AlertCircle className="w-12 h-12 text-blue-500 relative z-10" />
         </div>
         
-        <h1 className="text-6xl md:text-8xl font-bold text-white font-display mb-4">404</h1>
-        <h2 className="text-2xl md:text-3xl font-bold text-slate-300 mb-4">Halaman Tidak Ditemukan</h2>
-        <p className="text-slate-400 max-w-md mx-auto mb-10 text-lg">
+        <h1 className="text-6xl md:text-8xl font-bold text-slate-900 dark:text-white font-display mb-4">404</h1>
+        <h2 className="text-2xl md:text-3xl font-bold text-slate-700 dark:text-slate-300 mb-4">Halaman Tidak Ditemukan</h2>
+        <p className="text-slate-500 dark:text-slate-400 max-w-md mx-auto mb-10 text-lg">
           Sepertinya Anda tersesat. Halaman yang Anda cari mungkin telah dihapus, diubah namanya, atau tidak pernah ada.
         </p>
         

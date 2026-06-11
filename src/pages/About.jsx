@@ -44,19 +44,19 @@ const About = () => {
         breadcrumbs={[{ label: 'Tentang Kami' }]}
       />
 
-      <div className="pt-10 bg-slate-950">
+      <div className="pt-10 bg-white dark:bg-slate-950">
 
         {/* About Us Narrative */}
         <SectionWrapper className="pt-0 pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
             {/* Kolom Teks (Kiri) */}
-            <div className="lg:col-span-7 text-slate-300 space-y-6 leading-relaxed text-lg">
+            <div className="lg:col-span-7 text-slate-600 dark:text-slate-300 space-y-6 leading-relaxed text-lg">
               <div className="mb-8">
                 <span className="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4 block">
                   Tentang Kami
                 </span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display leading-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white font-display leading-tight">
                   Sinergi <span className="text-blue-500">Rekayasa Sipil</span> & Inovasi Digital
                 </h2>
               </div>
@@ -68,7 +68,7 @@ const About = () => {
                 Kami percaya bahwa infrastruktur fisik dan infrastruktur digital tidak seharusnya dibangun secara terpisah. Ketika software engineering dan civil engineering berjalan beriringan, terciptalah efisiensi yang luar biasa, mulai dari tahap kalkulasi desain hingga pemeliharaan aset.
               </p>
               <p>
-                Tim kami terdiri dari insinyur sipil tersertifikasi dan pengembang perangkat lunak berpengalaman yang berbicara dalam satu "bahasa": <strong>Solusi</strong>.
+                Tim kami terdiri dari insinyur sipil tersertifikasi dan pengembang perangkat lunak berpengalaman yang berbicara dalam satu "bahasa": <strong className="text-slate-900 dark:text-white">Solusi</strong>.
               </p>
             </div>
 
@@ -104,26 +104,26 @@ const About = () => {
         </SectionWrapper>
 
         {/* Visi Misi */}
-        <SectionWrapper className="bg-slate-900/30 border-y border-slate-900">
+        <SectionWrapper className="bg-slate-50 dark:bg-slate-900/30 border-y border-slate-200 dark:border-slate-900">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Kartu Visi */}
-            <div className="bg-slate-900 border border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-300">
+            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-blue-300 dark:hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10 transition-all duration-300">
               <div className="absolute top-0 right-0 w-40 h-40 bg-blue-600/10 blur-[50px] rounded-full group-hover:bg-blue-500/20 transition-colors" />
-              <h2 className="text-3xl font-bold text-white font-display mb-6 flex items-center">
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white font-display mb-6 flex items-center">
                 <span className="w-8 h-1 bg-blue-500 mr-4 rounded-full"></span> Visi
               </h2>
-              <p className="text-slate-400 text-lg leading-relaxed relative z-10">
+              <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed relative z-10">
                 Menjadi pelopor integrasi teknologi informasi dan rekayasa sipil terkemuka di Asia Tenggara, mewujudkan infrastruktur yang cerdas, efisien, dan berkelanjutan.
               </p>
             </div>
 
             {/* Kartu Misi */}
-            <div className="bg-slate-900 border border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-300">
+            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-blue-300 dark:hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10 transition-all duration-300">
               <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-900/20 blur-[50px] rounded-full group-hover:bg-blue-600/20 transition-colors" />
-              <h2 className="text-3xl font-bold text-white font-display mb-6 flex items-center">
+              <h2 className="text-3xl font-bold text-slate-900 dark:text-white font-display mb-6 flex items-center">
                 <span className="w-8 h-1 bg-blue-500 mr-4 rounded-full"></span> Misi
               </h2>
-              <ul className="text-slate-400 space-y-4 text-lg leading-relaxed relative z-10">
+              <ul className="text-slate-500 dark:text-slate-400 space-y-4 text-lg leading-relaxed relative z-10">
                 <li className="flex items-start">
                   <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0" />
                   Mengotomatisasi proses desain dan kalkulasi rekayasa.
@@ -147,7 +147,7 @@ const About = () => {
             <span className="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4 block">
               Galeri Kegiatan
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white font-display mb-6">
               Momen & Aktivitas
             </h2>
           </div>
@@ -155,7 +155,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col gap-6">
               {galleryPhotos.slice(0, 3).map((photo) => (
-                <div key={photo.id} className="relative group rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-xl transition-all duration-500">
+                <div key={photo.id} className="relative group rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 shadow-xl transition-all duration-500">
                   <div className="absolute inset-0 bg-blue-900/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0" />
                   <img
                     src={photo.src}
@@ -168,7 +168,7 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-6">
               {galleryPhotos.slice(3, 6).map((photo) => (
-                <div key={photo.id} className="relative group rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-xl transition-all duration-500">
+                <div key={photo.id} className="relative group rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 shadow-xl transition-all duration-500">
                   <div className="absolute inset-0 bg-blue-900/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0" />
                   <img
                     src={photo.src}

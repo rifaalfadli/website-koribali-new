@@ -43,7 +43,7 @@ const ServiceDetail = () => {
         breadcrumbs={[{ label: 'Layanan', href: '/layanan' }, { label: service.tag }]}
       />
 
-      <div className="pt-8 md:pt-16 pb-10 bg-slate-950">
+      <div className="pt-8 md:pt-16 pb-10 bg-white dark:bg-slate-950">
         <SectionWrapper className="pt-0">
 
           {/* LAYOUT UTAMA: Konten Kiri, Gambar Kanan */}
@@ -51,7 +51,7 @@ const ServiceDetail = () => {
 
             {/* Kiri: Deskripsi & Keuntungan */}
             <div className="lg:col-span-7 flex flex-col">
-              <h2 className="text-3xl md:text-4xl font-bold text-white font-display mb-4 leading-tight">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white font-display mb-4 leading-tight">
                 {service.title}
               </h2>
 
@@ -59,7 +59,7 @@ const ServiceDetail = () => {
                 {service.subtitle}
               </h3>
 
-              <div className="space-y-5 text-slate-400 text-base leading-relaxed mb-6">
+              <div className="space-y-5 text-slate-600 dark:text-slate-400 text-base leading-relaxed mb-6">
                 {service.longDescription?.map((paragraph, idx) => (
                   <p key={idx}>{paragraph}</p>
                 ))}
@@ -70,12 +70,12 @@ const ServiceDetail = () => {
                 {service.benefits?.map((benefit, idx) => (
                   <li key={idx} className="flex items-start">
                     <div className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0 shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
-                    <span className="text-slate-300 font-medium">{benefit}</span>
+                    <span className="text-slate-700 dark:text-slate-300 font-medium">{benefit}</span>
                   </li>
                 ))}
               </ul>
 
-              <p className="text-slate-400 text-base leading-relaxed mb-10">
+              <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed mb-10">
                 {service.closingText}
               </p>
 
@@ -95,7 +95,7 @@ const ServiceDetail = () => {
               {/* Dekorasi Latar Belakang Gambar */}
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-slate-800 rounded-3xl transform translate-x-4 translate-y-4 -z-10" />
 
-              <div className="rounded-3xl overflow-hidden border border-slate-800 shadow-2xl relative z-10">
+              <div className="rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-2xl relative z-10">
                 <img
                   src={service.image}
                   alt={service.title}

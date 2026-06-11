@@ -19,7 +19,7 @@ const Partners = () => {
         breadcrumbs={[{ label: 'Mitra' }]}
       />
 
-      <div className="pt-10 bg-slate-950">
+      <div className="pt-10 bg-white dark:bg-slate-950">
 
         {/* Partners Grid */}
         <SectionWrapper className="pt-0 pb-20">
@@ -27,7 +27,7 @@ const Partners = () => {
             {partners.map((partner) => (
               <div
                 key={partner.id}
-                className="bg-slate-900 border border-slate-800 rounded-3xl p-6 flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group"
+                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group"
               >
                 <img
                   src={partner.logo}
