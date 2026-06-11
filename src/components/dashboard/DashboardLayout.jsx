@@ -52,7 +52,7 @@ const DashboardLayout = ({ children }) => {
       `}>
         <div className="h-16 flex items-center justify-between px-6 border-b border-slate-800">
           <Link to="/" className="text-xl font-bold text-white font-display tracking-tight flex items-center gap-2">
-            <div className="w-8 h-8 bg-cyan-500 rounded-lg flex items-center justify-center text-slate-900 font-bold">K</div>
+            <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-slate-900 font-bold">K</div>
             Portal
           </Link>
           <button className="lg:hidden text-slate-400 hover:text-white" onClick={() => setSidebarOpen(false)}>
@@ -74,7 +74,7 @@ const DashboardLayout = ({ children }) => {
                     onClick={() => setSidebarOpen(false)}
                     className={`flex items-center px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                       isActive 
-                        ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/20' 
+                        ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20' 
                         : 'text-slate-400 hover:text-white hover:bg-slate-800'
                     }`}
                   >
@@ -125,7 +125,7 @@ const DashboardLayout = ({ children }) => {
             <div className="flex items-center space-x-3">
               <div className="text-right hidden sm:block">
                 <p className="text-sm font-medium text-white leading-tight">{name}</p>
-                <p className="text-xs text-cyan-400">{role}</p>
+                <p className="text-xs text-blue-400">{role}</p>
               </div>
               <div className="w-9 h-9 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400">
                 <UserCircle className="w-6 h-6" />

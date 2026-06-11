@@ -16,7 +16,7 @@ const TrustBar = () => {
     <div className="relative z-20 -mt-14 max-w-[960px] mx-auto px-4 md:px-8">
 
       {/* 2. HEIGHT & ROUNDED: rounded-[24px] di mobile agar tidak terlalu bulat, py-6 agar proporsional */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-[24px] lg:rounded-[40px] shadow-2xl shadow-blue-600/35 py-4 sm:py-4 px-1 sm:px-4 md:px-6 lg:px-4">
+      <div className="bg-blue-600 rounded-[24px] lg:rounded-[40px] py-4 sm:py-4 px-1 sm:px-4 md:px-6 lg:px-4">
 
         {/* 3. FLEX WRAP: Menggunakan flex agar item ganjil (ke-5) bisa otomatis ke tengah di baris terakhir */}
         <div className="flex flex-wrap justify-center gap-y-6 gap-x-4 sm:gap-8 lg:gap-4">

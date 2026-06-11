@@ -21,14 +21,14 @@ const PegawaiDashboard = () => {
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
             <h3 className="text-lg font-bold text-white mb-6">Aksi Cepat</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <button className="flex flex-col items-center justify-center p-6 bg-slate-950 border border-slate-800 rounded-xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all group">
-                <div className="w-12 h-12 rounded-full bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <button className="flex flex-col items-center justify-center p-6 bg-slate-950 border border-slate-800 rounded-xl hover:border-blue-500/50 hover:bg-slate-800 transition-all group">
+                <div className="w-12 h-12 rounded-full bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <PenTool className="w-5 h-5" />
                 </div>
                 <span className="text-white font-medium">Tulis Artikel Baru</span>
               </button>
-              <button className="flex flex-col items-center justify-center p-6 bg-slate-950 border border-slate-800 rounded-xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all group">
-                <div className="w-12 h-12 rounded-full bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <button className="flex flex-col items-center justify-center p-6 bg-slate-950 border border-slate-800 rounded-xl hover:border-blue-500/50 hover:bg-slate-800 transition-all group">
+                <div className="w-12 h-12 rounded-full bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <FileText className="w-5 h-5" />
                 </div>
                 <span className="text-white font-medium">Lihat Draft Saya</span>
@@ -63,7 +63,7 @@ const PegawaiDashboard = () => {
               <div className="w-16 h-16 rounded-full bg-slate-800 border border-slate-700 mr-4"></div>
               <div>
                 <h4 className="text-white font-bold">John Engineer</h4>
-                <p className="text-sm text-cyan-400">Civil & IT Integrator</p>
+                <p className="text-sm text-blue-400">Civil & IT Integrator</p>
               </div>
             </div>
             <div className="space-y-3">

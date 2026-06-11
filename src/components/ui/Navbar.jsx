@@ -94,7 +94,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
-        ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-lg shadow-slate-200/50 dark:shadow-black/50'
+        ? 'bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800'
         : 'bg-transparent'
         }`}
     >
@@ -272,7 +272,7 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`lg:hidden fixed inset-0 z-40 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-900 transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`lg:hidden fixed inset-0 z-40 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         style={{ top: '80px' }}
       >

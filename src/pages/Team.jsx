@@ -56,7 +56,7 @@ const Team = () => {
           <div>
             <div className="flex items-baseline space-x-3 mb-4">
               <h2 className="text-2xl md:text-3xl font-bold text-white">Divisi Civil</h2>
-              <span className="text-xs md:text-sm font-medium text-teal-400 bg-teal-400/10 px-3 py-1 rounded-full border border-teal-400/20">
+              <span className="text-xs md:text-sm font-medium text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full border border-blue-400/20">
                 10 Anggota
               </span>
             </div>
@@ -79,7 +79,7 @@ const Team = () => {
                   key={idx}
                   className="group bg-slate-900/50 hover:bg-slate-900 border border-slate-800/80 hover:border-slate-700 rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/20"
                 >
-                  <div className="w-24 h-24 mb-5 shrink-0 rounded-full overflow-hidden border-2 border-slate-800 group-hover:border-teal-500/50 transition-colors duration-300 relative">
+                  <div className="w-24 h-24 mb-5 shrink-0 rounded-full overflow-hidden border-2 border-slate-800 group-hover:border-blue-500/50 transition-colors duration-300 relative">
                     <img
                       src={member.image}
                       alt={`Foto ${member.name}`}

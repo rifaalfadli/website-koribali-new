@@ -27,10 +27,10 @@ const Login = () => {
 
       <div className="min-h-screen bg-slate-950 flex items-center justify-center p-4 relative overflow-hidden">
         {/* Background Effects */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
 
-        <div className="w-full max-w-md bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 relative z-10 shadow-2xl shadow-cyan-500/5">
+        <div className="w-full max-w-md bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 relative z-10 shadow-2xl shadow-blue-500/5">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-white font-display mb-2">Koribali Portal</h1>
             <p className="text-slate-400">Masuk ke sistem manajemen internal</p>
@@ -48,7 +48,7 @@ const Login = () => {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-slate-950/50 border border-slate-700 rounded-xl pl-11 pr-4 py-3 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
+                  className="w-full bg-slate-950/50 border border-slate-700 rounded-xl pl-11 pr-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                   placeholder="admin@koribali.com"
                 />
               </div>
@@ -65,7 +65,7 @@ const Login = () => {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-slate-950/50 border border-slate-700 rounded-xl pl-11 pr-4 py-3 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
+                  className="w-full bg-slate-950/50 border border-slate-700 rounded-xl pl-11 pr-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                   placeholder="••••••••"
                 />
               </div>
@@ -73,10 +73,10 @@ const Login = () => {
 
             <div className="flex items-center justify-between text-sm">
               <label className="flex items-center text-slate-400 cursor-pointer">
-                <input type="checkbox" className="mr-2 rounded border-slate-700 bg-slate-900 text-cyan-500 focus:ring-cyan-500" />
+                <input type="checkbox" className="mr-2 rounded border-slate-700 bg-slate-900 text-blue-500 focus:ring-blue-500" />
                 Ingat saya
               </label>
-              <a href="#" className="text-cyan-400 hover:text-cyan-300">Lupa password?</a>
+              <a href="#" className="text-blue-400 hover:text-blue-300">Lupa password?</a>
             </div>
 
             <Button type="submit" variant="primary" className="w-full group">

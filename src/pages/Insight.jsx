@@ -101,7 +101,7 @@ const Insight = () => {
                 {/* Side Trending (Kanan) */}
                 <div className="lg:col-span-5 xl:col-span-4 flex flex-col gap-4">
                   {sideTrending.map((article, idx) => (
-                    <Link to={`/insight/${article.id}`} key={article.id} className="block group bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:-translate-x-1 hover:border-blue-900/50 hover:shadow-xl transition-all duration-300 flex-1 flex flex-col justify-center">
+                    <Link to={`/insight/${article.id}`} key={article.id} className="block group bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:-translate-x-1 hover:border-blue-900/50 transition-all duration-300 flex-1 flex flex-col justify-center">
                       <div className="flex items-center space-x-3 mb-3 text-xs font-semibold">
                         <span className="bg-slate-950 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">#{idx + 2}</span>
                         <span className="text-blue-400">{article.category}</span>

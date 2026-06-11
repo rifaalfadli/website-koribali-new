@@ -5,7 +5,7 @@ import { ChevronRight, Home } from 'lucide-react';
 const Breadcrumb = ({ items }) => {
   return (
     <nav className="flex items-center text-sm text-slate-400 mb-8 overflow-x-auto whitespace-nowrap pb-2">
-      <Link to="/" className="hover:text-cyan-400 transition-colors flex items-center">
+      <Link to="/" className="hover:text-blue-400 transition-colors flex items-center">
         <Home className="w-4 h-4 mr-1" />
       </Link>
       
@@ -13,7 +13,7 @@ const Breadcrumb = ({ items }) => {
         <React.Fragment key={index}>
           <ChevronRight className="w-4 h-4 mx-2 text-slate-600 flex-shrink-0" />
           {item.href ? (
-            <Link to={item.href} className="hover:text-cyan-400 transition-colors">
+            <Link to={item.href} className="hover:text-blue-400 transition-colors">
               {item.label}
             </Link>
           ) : (

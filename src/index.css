@@ -19,10 +19,18 @@
   --color-slate-900: #1e293b;
   --color-slate-950: #0f172a;
 
-  --color-cyan-400: #22d3ee;
-  --color-cyan-500: #06b6d4;
-  --color-blue-400: #4d94ff;
-  --color-blue-500: #1a6dff;
+  /* VS Code Blue Theme */
+  --color-blue-50: #f0f7ff;
+  --color-blue-100: #e0f0fe;
+  --color-blue-200: #bae0fd;
+  --color-blue-300: #7ccbf9;
+  --color-blue-400: #36b0f5;
+  --color-blue-500: #007acc;
+  --color-blue-600: #0063a6;
+  --color-blue-700: #004f85;
+  --color-blue-800: #02426d;
+  --color-blue-900: #083759;
+  --color-blue-950: #05233b;
 }
 
 @layer base {

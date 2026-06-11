@@ -91,8 +91,7 @@ const ProjectPreview = () => {
           onClick={handlePrev}
           disabled={currentPage === 0}
           aria-label="Proyek Sebelumnya"
-          className={`w-12 h-12 flex items-center justify-center rounded-full border transition-all duration-300 ${currentPage === 0
-            ? 'border-slate-200 dark:border-slate-800 text-slate-300 dark:text-slate-700 cursor-not-allowed'
+          className={`w-12 h-12 flex items-center justify-center rounded-full border transition-all duration-300 ${currentPage === 0 ?'border-slate-200 dark:border-slate-800 text-slate-300 dark:text-slate-700 cursor-not-allowed'
             : 'border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-blue-500 hover:text-blue-500 hover:bg-slate-50 dark:hover:bg-slate-800'
             }`}
         >
@@ -117,8 +116,7 @@ const ProjectPreview = () => {
           onClick={handleNext}
           disabled={currentPage === totalPages - 1}
           aria-label="Proyek Selanjutnya"
-          className={`w-12 h-12 flex items-center justify-center rounded-full border transition-all duration-300 ${currentPage === totalPages - 1
-            ? 'border-slate-200 dark:border-slate-800 text-slate-300 dark:text-slate-700 cursor-not-allowed'
+          className={`w-12 h-12 flex items-center justify-center rounded-full border transition-all duration-300 ${currentPage === totalPages - 1 ?'border-slate-200 dark:border-slate-800 text-slate-300 dark:text-slate-700 cursor-not-allowed'
             : 'border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-blue-500 hover:text-blue-500 hover:bg-slate-50 dark:hover:bg-slate-800'
             }`}
         >

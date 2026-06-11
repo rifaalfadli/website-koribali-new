@@ -7,7 +7,7 @@ const AdminDashboard = () => {
     { label: 'Total Artikel', value: '24', icon: FileText, color: 'text-blue-400', bg: 'bg-blue-500/10' },
     { label: 'Total Pegawai', value: '12', icon: Users, color: 'text-emerald-400', bg: 'bg-emerald-500/10' },
     { label: 'Pengunjung Bulan Ini', value: '1.2k', icon: Activity, color: 'text-purple-400', bg: 'bg-purple-500/10' },
-    { label: 'Pesan Masuk', value: '8', icon: TrendingUp, color: 'text-cyan-400', bg: 'bg-cyan-500/10' },
+    { label: 'Pesan Masuk', value: '8', icon: TrendingUp, color: 'text-blue-400', bg: 'bg-blue-500/10' },
   ];
 
   return (
@@ -43,7 +43,7 @@ const AdminDashboard = () => {
       <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
         <div className="px-6 py-5 border-b border-slate-800 flex justify-between items-center">
           <h3 className="text-lg font-bold text-white">Aktivitas Terbaru</h3>
-          <button className="text-sm text-cyan-400 hover:text-cyan-300 font-medium">Lihat Semua</button>
+          <button className="text-sm text-blue-400 hover:text-blue-300 font-medium">Lihat Semua</button>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-left text-sm text-slate-400">
