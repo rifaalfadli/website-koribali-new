@@ -200,12 +200,12 @@ const Navbar = () => {
                               className="group/item block"
                               onClick={() => setIsServicesDropdownOpen(false)}
                             >
-                              <div className="flex flex-row items-start gap-2 p-2 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all duration-300 border border-transparent">
-                                <div className="flex-shrink-0 w-14 h-14 bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-full flex items-center justify-center text-blue-500 group-hover/item:bg-blue-600 group-hover/item:text-white group-hover/item:border-blue-500 group-hover/item:shadow-lg group-hover/item:shadow-blue-900/50 transition-all duration-300">
+                              <div className="flex flex-row items-start gap-2 p-2 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-all duration-300 border border-transparent">
+                                <div className="flex-shrink-0 w-14 h-14 bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-full flex items-center justify-center text-blue-500 group-hover/item:bg-blue-600 group-hover/item:text-white group-hover/item:border-blue-500 transition-all duration-300">
                                   {renderServiceIcon(idx)}
                                 </div>
                                 <div className="flex flex-col pt-1">
-                                  <h4 className="text-sm font-medium text-slate-900 dark:text-white mb-1.5 group-hover/item:text-blue-400 transition-colors leading-tight">
+                                  <h4 className="text-sm font-medium text-slate-900 dark:text-white mb-1.5 group-hover/item:text-blue-500 transition-colors leading-tight">
                                     {service.title}
                                   </h4>
                                   <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-2">
@@ -298,7 +298,7 @@ const Navbar = () => {
 
             {/* Tombol Hubungi Kami */}
             <Link to="/kontak">
-              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-blue-500/20">
+              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5">
                 {t("common.contactUs")}
               </button>
             </Link>

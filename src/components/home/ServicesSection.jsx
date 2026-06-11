@@ -1,20 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Check, ArrowRight } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Check, ArrowRight } from "lucide-react";
 
-import { services } from '../../data/services';
+import { services } from "../../data/services";
 const ServicesSection = ({ showHeader = true }) => {
   return (
     <div id="services" className="text-slate-800 dark:text-white">
-
       {/* Section Header — hanya ditampilkan di Beranda */}
       {showHeader && (
         <div className="pt-20 md:pt-28 bg-white dark:bg-slate-950">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-80px' }}
+            viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6 }}
             className="max-w-7xl mx-auto px-4 md:px-8 text-center"
           >
@@ -25,7 +24,9 @@ const ServicesSection = ({ showHeader = true }) => {
               Solusi Terintegrasi untuk Setiap Kebutuhan
             </h2>
             <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg max-w-3xl mx-auto">
-              Dari desain struktur hingga pengembangan sistem digital — kami menghadirkan layanan menyeluruh yang dirancang untuk mendorong pertumbuhan bisnis Anda.
+              Dari desain struktur hingga pengembangan sistem digital — kami
+              menghadirkan layanan menyeluruh yang dirancang untuk mendorong
+              pertumbuhan bisnis Anda.
             </p>
           </motion.div>
         </div>
@@ -34,17 +35,22 @@ const ServicesSection = ({ showHeader = true }) => {
       {services.map((service) => (
         <div
           key={service.id}
-          className={`py-16 md:py-24 ${service.bgPattern ? 'bg-slate-50 dark:bg-slate-900' : 'bg-white dark:bg-slate-950'}`}
-          style={service.bgPattern ? {
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cg fill='none' stroke='%23334155' stroke-width='1' opacity='0.4'%3E%3Cellipse cx='400' cy='400' rx='50' ry='30'/%3E%3Cellipse cx='400' cy='400' rx='100' ry='65'/%3E%3Cellipse cx='400' cy='400' rx='155' ry='105'/%3E%3Cellipse cx='400' cy='400' rx='215' ry='148'/%3E%3Cellipse cx='400' cy='400' rx='278' ry='194'/%3E%3Cellipse cx='400' cy='400' rx='345' ry='243'/%3E%3Cellipse cx='400' cy='400' rx='415' ry='295'/%3E%3Cellipse cx='400' cy='400' rx='490' ry='350'/%3E%3Cellipse cx='400' cy='400' rx='568' ry='408'/%3E%3Cellipse cx='400' cy='400' rx='650' ry='470'/%3E%3C/g%3E%3C/svg%3E")`,
-            backgroundSize: '600px 600px',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'repeat',
-          } : undefined}
+          className={`py-16 md:py-24 ${service.bgPattern ? "bg-slate-50 dark:bg-slate-900" : "bg-white dark:bg-slate-950"}`}
+          style={
+            service.bgPattern
+              ? {
+                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cg fill='none' stroke='%23334155' stroke-width='1' opacity='0.4'%3E%3Cellipse cx='400' cy='400' rx='50' ry='30'/%3E%3Cellipse cx='400' cy='400' rx='100' ry='65'/%3E%3Cellipse cx='400' cy='400' rx='155' ry='105'/%3E%3Cellipse cx='400' cy='400' rx='215' ry='148'/%3E%3Cellipse cx='400' cy='400' rx='278' ry='194'/%3E%3Cellipse cx='400' cy='400' rx='345' ry='243'/%3E%3Cellipse cx='400' cy='400' rx='415' ry='295'/%3E%3Cellipse cx='400' cy='400' rx='490' ry='350'/%3E%3Cellipse cx='400' cy='400' rx='568' ry='408'/%3E%3Cellipse cx='400' cy='400' rx='650' ry='470'/%3E%3C/g%3E%3C/svg%3E")`,
+                  backgroundSize: "600px 600px",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "repeat",
+                }
+              : undefined
+          }
         >
           <div className="max-w-7xl mx-auto px-4 md:px-8">
-            <div className={`flex flex-col ${service.reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-20`}>
-
+            <div
+              className={`flex flex-col ${service.reversed ? "lg:flex-row-reverse" : "lg:flex-row"} items-center gap-12 lg:gap-20`}
+            >
               {/* Text Content */}
               <div className="w-full lg:w-1/2">
                 <motion.div
@@ -71,9 +77,14 @@ const ServicesSection = ({ showHeader = true }) => {
                       <div key={i} className="flex items-start">
                         {/* Lingkaran Centang Diubah ke Tema Biru */}
                         <div className="mt-1 bg-blue-100 dark:bg-blue-900/40 p-1 rounded-full mr-3 shrink-0">
-                          <Check className="w-3.5 h-3.5 text-blue-500" strokeWidth={3} />
+                          <Check
+                            className="w-3.5 h-3.5 text-blue-500"
+                            strokeWidth={3}
+                          />
                         </div>
-                        <span className="text-sm md:text-base text-slate-700 dark:text-slate-300 font-medium">{feature}</span>
+                        <span className="text-sm md:text-base text-slate-700 dark:text-slate-300 font-medium">
+                          {feature}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -105,10 +116,11 @@ const ServicesSection = ({ showHeader = true }) => {
                     className="w-full h-full object-cover"
                   />
                   {/* Efek Glow di belakang gambar diubah ke Biru Gelap */}
-                  <div className={`absolute bottom-0 ${service.reversed ? 'left-0' : 'right-0'} w-40 h-40 bg-blue-900/30 blur-[50px] rounded-full pointer-events-none`} />
+                  <div
+                    className={`absolute bottom-0 ${service.reversed ? "left-0" : "right-0"} w-40 h-40 bg-blue-900/30 blur-[50px] rounded-full pointer-events-none`}
+                  />
                 </motion.div>
               </div>
-
             </div>
           </div>
         </div>

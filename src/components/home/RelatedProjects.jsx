@@ -32,7 +32,7 @@ const RelatedProjects = ({ category }) => {
                         <span className="text-blue-500 font-bold uppercase tracking-widest text-sm">
                             Project Terkait
                         </span>
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white font-display mt-3 pr-4 leading-tight">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 dark:text-white font-display mt-3 pr-4 leading-tight">
                             Karya Unggulan {category === 'Civil Engineering' ? 'Infrastruktur' : category === 'IT & Digital Solutions' ? 'Sistem Digital' : 'Data & Analitik'}
                         </h2>
                     </div>
@@ -45,13 +45,13 @@ const RelatedProjects = ({ category }) => {
                         <div className="flex gap-2">
                             <button
                                 onClick={handlePrev}
-                                className="w-11 h-11 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:border-blue-600 hover:text-blue-500 hover:bg-blue-950/30 transition-all"
+                                className="w-11 h-11 rounded-full border border-slate-300 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:border-blue-500 dark:hover:border-blue-600 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 transition-all"
                             >
                                 <ArrowLeft className="w-4 h-4" />
                             </button>
                             <button
                                 onClick={handleNext}
-                                className="w-11 h-11 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:border-blue-600 hover:text-blue-500 hover:bg-blue-950/30 transition-all"
+                                className="w-11 h-11 rounded-full border border-slate-300 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:border-blue-500 dark:hover:border-blue-600 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 transition-all"
                             >
                                 <ArrowRight className="w-4 h-4" />
                             </button>
@@ -65,7 +65,7 @@ const RelatedProjects = ({ category }) => {
                     {/* Kiri: Gambar */}
                     <div className="lg:col-span-5 relative group">
                         <div className="absolute inset-0 bg-blue-900/20 blur-2xl rounded-full transform -translate-x-4 translate-y-4 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                        <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] lg:aspect-[3/4] border border-slate-800 shadow-2xl">
+                        <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] lg:aspect-[3/4] border border-slate-200 dark:border-slate-800 shadow-2xl">
                             <img
                                 key={activeProject.id}
                                 src={activeProject.image}
@@ -78,26 +78,26 @@ const RelatedProjects = ({ category }) => {
 
                     {/* Kanan: Detail */}
                     <div className="lg:col-span-7">
-                        <h3 className="text-3xl md:text-4xl font-bold text-white font-display mb-5 leading-tight">
+                        <h3 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white font-display mb-5 leading-tight">
                             {activeProject.title}
                         </h3>
-                        <p className="text-slate-400 text-base md:text-lg leading-relaxed mb-10">
+                        <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg leading-relaxed mb-10">
                             {activeProject.shortDescription}
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-12">
-                            <div className="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:border-blue-900/50 transition-colors">
+                            <div className="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl hover:border-blue-300 dark:hover:border-blue-900/50 transition-colors">
                                 <div className="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center mb-4">
                                     <Check className="w-5 h-5 text-blue-500" strokeWidth={3} />
                                 </div>
-                                <h4 className="text-white font-semibold mb-2">Solusi Spesifik</h4>
+                                <h4 className="text-slate-900 dark:text-white font-semibold mb-2">Solusi Spesifik</h4>
                                 <p className="text-slate-500 text-sm leading-relaxed">Dirancang khusus untuk menyelesaikan tantangan unik di industri terkait.</p>
                             </div>
-                            <div className="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:border-blue-900/50 transition-colors">
+                            <div className="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl hover:border-blue-300 dark:hover:border-blue-900/50 transition-colors">
                                 <div className="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center mb-4">
                                     <Check className="w-5 h-5 text-blue-500" strokeWidth={3} />
                                 </div>
-                                <h4 className="text-white font-semibold mb-2">Standar Profesional</h4>
+                                <h4 className="text-slate-900 dark:text-white font-semibold mb-2">Standar Profesional</h4>
                                 <p className="text-slate-500 text-sm leading-relaxed">Mengedepankan akurasi, keamanan, dan performa stabil jangka panjang.</p>
                             </div>
                         </div>

@@ -1,35 +1,117 @@
 import React from "react";
 
 const techRow1 = [
-  { name: "Autodesk Inventor", role: "3D Mechanical Design", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/autocad/autocad-original.svg" },
-  { name: "AutoCAD", role: "2D/3D Drafting", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/autocad/autocad-original.svg" },
-  { name: "SolidWorks", role: "3D CAD Design", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidworks/solidworks-original.svg" },
-  { name: "React JS", role: "Frontend Development", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
-  { name: "Next JS", role: "React Framework", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
-  { name: "HTML5", role: "Markup Language", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
-  { name: "CSS3", role: "Styling & UI", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
-  { name: "JavaScript", role: "Web Programming", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
-  { name: "REST API", role: "System Integration", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/networkx/networkx-original.svg" },
-  { name: "Docker", role: "Containerization", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
+  {
+    name: "Autodesk Inventor",
+    role: "3D Mechanical Design",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/autocad/autocad-original.svg",
+  },
+  {
+    name: "AutoCAD",
+    role: "2D/3D Drafting",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/autocad/autocad-original.svg",
+  },
+  {
+    name: "SolidWorks",
+    role: "3D CAD Design",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidworks/solidworks-original.svg",
+  },
+  {
+    name: "React JS",
+    role: "Frontend Development",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
+  {
+    name: "Next JS",
+    role: "React Framework",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    name: "HTML5",
+    role: "Markup Language",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+  },
+  {
+    name: "CSS3",
+    role: "Styling & UI",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+  },
+  {
+    name: "JavaScript",
+    role: "Web Programming",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "REST API",
+    role: "System Integration",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/networkx/networkx-original.svg",
+  },
+  {
+    name: "Docker",
+    role: "Containerization",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+  },
 ];
 
 const techRow2 = [
-  { name: "Python", role: "Backend & Data", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-  { name: "Flask", role: "Python Framework", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" },
-  { name: "Pandas", role: "Data Analysis", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
-  { name: "NumPy", role: "Scientific Computing", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" },
-  { name: "Matplotlib", role: "Data Visualization", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" },
-  { name: "MySQL", role: "Relational Database", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
-  { name: "MariaDB", role: "Relational Database", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" },
-  { name: "DBeaver", role: "Database Tool", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dbeaver/dbeaver-original.svg" },
-  { name: "Git", role: "Version Control", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
-  { name: "GitHub", role: "Code Repository", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
+  {
+    name: "Python",
+    role: "Backend & Data",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+  },
+  {
+    name: "Flask",
+    role: "Python Framework",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
+  },
+  {
+    name: "Pandas",
+    role: "Data Analysis",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
+  },
+  {
+    name: "NumPy",
+    role: "Scientific Computing",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
+  },
+  {
+    name: "Matplotlib",
+    role: "Data Visualization",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg",
+  },
+  {
+    name: "MySQL",
+    role: "Relational Database",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+  },
+  {
+    name: "MariaDB",
+    role: "Relational Database",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg",
+  },
+  {
+    name: "DBeaver",
+    role: "Database Tool",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dbeaver/dbeaver-original.svg",
+  },
+  {
+    name: "Git",
+    role: "Version Control",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  },
+  {
+    name: "GitHub",
+    role: "Code Repository",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+  },
 ];
 
 const TechStack = () => {
   const fadeStyle = {
-    maskImage: "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
-    WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
+    maskImage:
+      "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
+    WebkitMaskImage:
+      "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
   };
 
   return (
@@ -54,10 +136,14 @@ const TechStack = () => {
           {[...techRow1, ...techRow1].map((tech, index) => (
             <div
               key={`row1-${index}`}
-              className="flex items-center gap-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 min-w-[260px] md:min-w-[280px] hover:shadow-lg transition-all duration-300 group cursor-default"
+              className="flex items-center gap-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 min-w-[260px] md:min-w-[280px] group cursor-default"
             >
               <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-white dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800/50 p-2">
-                <img src={tech.img} alt={tech.name} className="w-full h-full object-contain" />
+                <img
+                  src={tech.img}
+                  alt={tech.name}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col text-left">
                 <span className="text-slate-900 dark:text-white font-bold text-sm md:text-base font-display tracking-tight">
@@ -78,10 +164,14 @@ const TechStack = () => {
           {[...techRow2, ...techRow2].map((tech, index) => (
             <div
               key={`row2-${index}`}
-              className="flex items-center gap-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 min-w-[260px] md:min-w-[280px] hover:shadow-lg transition-all duration-300 group cursor-default"
+              className="flex items-center gap-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 min-w-[260px] md:min-w-[280px] group cursor-default"
             >
               <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-white dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800/50 p-2">
-                <img src={tech.img} alt={tech.name} className="w-full h-full object-contain" />
+                <img
+                  src={tech.img}
+                  alt={tech.name}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col text-left">
                 <span className="text-slate-900 dark:text-white font-bold text-sm md:text-base font-display tracking-tight">

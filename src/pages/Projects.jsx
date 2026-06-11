@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
-import { projects } from '../data/projects';
-import SectionWrapper from '../components/ui/SectionWrapper';
-import CTASection from '../components/home/CTASection';
-import PageHero from '../components/ui/PageHero';
+import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { projects } from "../data/projects";
+import SectionWrapper from "../components/ui/SectionWrapper";
+import CTASection from "../components/home/CTASection";
+import PageHero from "../components/ui/PageHero";
 
-const categories = ['Semua', 'Civil Engineering', 'IT & Digital Solutions', 'Data & Analytics'];
+const categories = [
+  "Semua",
+  "Civil Engineering",
+  "IT & Digital Solutions",
+  "Data & Analytics",
+];
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState('Semua');
+  const [activeTab, setActiveTab] = useState("Semua");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
 
@@ -19,37 +24,40 @@ const Projects = () => {
     setCurrentPage(1); // Reset page to 1 when changing tabs
   };
 
-  const filteredProjects = activeTab === 'Semua'
-    ? projects
-    : projects.filter(p => p.category === activeTab);
+  const filteredProjects =
+    activeTab === "Semua"
+      ? projects
+      : projects.filter((p) => p.category === activeTab);
 
   const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
   const visibleProjects = filteredProjects.slice(
     (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
+    currentPage * itemsPerPage,
   );
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
     // Secara opsional scroll kembali ke atas daftar
-    window.scrollTo({ top: 300, behavior: 'smooth' });
+    window.scrollTo({ top: 300, behavior: "smooth" });
   };
 
   return (
     <>
       <Helmet>
         <title>Project & Portofolio | Koribali</title>
-        <meta name="description" content="Portofolio project Koribali meliputi pengembangan sistem terintegrasi, teknik sipil, dan IT digital." />
+        <meta
+          name="description"
+          content="Portofolio project Koribali meliputi pengembangan sistem terintegrasi, teknik sipil, dan IT digital."
+        />
       </Helmet>
 
       <PageHero
         title="Portofolio Project Website, Aplikasi & Digital Marketing"
         description="Kumpulan project website, aplikasi web & mobile, serta digital marketing yang telah kami kerjakan untuk berbagai kebutuhan bisnis."
-        breadcrumbs={[{ label: 'Project' }]}
+        breadcrumbs={[{ label: "Project" }]}
       />
 
       <div className="pt-10 bg-white dark:bg-slate-950">
-
         {/* Filter Tabs */}
         <SectionWrapper className="pt-0 pb-12">
           <div className="flex flex-wrap gap-3 border-b border-slate-200 dark:border-slate-800 pb-4 justify-center md:justify-start">
@@ -57,10 +65,11 @@ const Projects = () => {
               <button
                 key={cat}
                 onClick={() => handleTabChange(cat)}
-                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 border ${activeTab === cat
-                  ? 'bg-blue-600 border-blue-500 text-white shadow-[0_0_15px_rgba(59,130,246,0.4)]'
-                  : 'bg-white dark:bg-slate-900 border-slate-300 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:border-slate-400 dark:hover:border-slate-700'
-                  }`}
+                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 border ${
+                  activeTab === cat
+                    ? "bg-blue-600 border-blue-500 text-white"
+                    : "bg-white dark:bg-slate-900 border-slate-300 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:border-slate-400 dark:hover:border-slate-700"
+                }`}
               >
                 {cat}
               </button>
@@ -72,9 +81,12 @@ const Projects = () => {
         <SectionWrapper className="pt-0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-6">
             {visibleProjects.map((project) => (
-              <Link to={`/project/${project.id}`} key={project.id} className="group cursor-pointer">
-                <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl h-full flex flex-col">
-
+              <Link
+                to={`/project/${project.id}`}
+                key={project.id}
+                className="group cursor-pointer"
+              >
+                <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] overflow-hidden transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
                   {/* Image Container */}
                   <div className="aspect-[4/3] bg-slate-100 dark:bg-slate-950 relative overflow-hidden flex-shrink-0">
                     <img
@@ -107,7 +119,6 @@ const Projects = () => {
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
                     </div>
                   </div>
-
                 </div>
               </Link>
             ))}
@@ -119,7 +130,6 @@ const Projects = () => {
               Belum ada project di kategori ini.
             </div>
           )}
-
         </SectionWrapper>
 
         {/* Pagination Dynamic - Diubah ke Tema Biru */}
@@ -140,10 +150,11 @@ const Projects = () => {
                   <button
                     key={pageNum}
                     onClick={() => handlePageChange(pageNum)}
-                    className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all duration-300 border ${currentPage === pageNum
-                      ? 'bg-blue-600 text-white shadow-[0_0_12px_rgba(59,130,246,0.5)] border-blue-500'
-                      : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white border-slate-300 dark:border-slate-800'
-                      }`}
+                    className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all duration-300 border ${
+                      currentPage === pageNum
+                        ? "bg-blue-600 text-white border-blue-500"
+                        : "bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white border-slate-300 dark:border-slate-800"
+                    }`}
                   >
                     {pageNum}
                   </button>
@@ -151,7 +162,9 @@ const Projects = () => {
               })}
 
               <button
-                onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
+                onClick={() =>
+                  handlePageChange(Math.min(totalPages, currentPage + 1))
+                }
                 disabled={currentPage === totalPages}
                 className="w-10 h-10 rounded-full flex items-center justify-center bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors border border-slate-300 dark:border-slate-800 disabled:opacity-50 disabled:cursor-not-allowed"
               >
