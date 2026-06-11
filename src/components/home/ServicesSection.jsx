@@ -6,11 +6,11 @@ import { Check, ArrowRight } from 'lucide-react';
 import { services } from '../../data/services';
 const ServicesSection = ({ showHeader = true }) => {
   return (
-    <div id="services" className="text-white">
+    <div id="services" className="text-slate-800 dark:text-white">
 
       {/* Section Header — hanya ditampilkan di Beranda */}
       {showHeader && (
-        <div className="pt-20 md:pt-28 bg-slate-950">
+        <div className="pt-20 md:pt-28 bg-white dark:bg-slate-950">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -21,10 +21,10 @@ const ServicesSection = ({ showHeader = true }) => {
             <span className="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4 block">
               Layanan Kami
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display leading-tight tracking-tight mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white font-display leading-tight tracking-tight mb-4">
               Solusi Terintegrasi untuk Setiap Kebutuhan
             </h2>
-            <p className="text-slate-400 text-base md:text-lg max-w-3xl mx-auto">
+            <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg max-w-3xl mx-auto">
               Dari desain struktur hingga pengembangan sistem digital — kami menghadirkan layanan menyeluruh yang dirancang untuk mendorong pertumbuhan bisnis Anda.
             </p>
           </motion.div>
@@ -34,7 +34,7 @@ const ServicesSection = ({ showHeader = true }) => {
       {services.map((service) => (
         <div
           key={service.id}
-          className={`py-16 md:py-24 ${service.bgPattern ? 'bg-slate-900' : 'bg-slate-950'}`}
+          className={`py-16 md:py-24 ${service.bgPattern ? 'bg-slate-50 dark:bg-slate-900' : 'bg-white dark:bg-slate-950'}`}
           style={service.bgPattern ? {
             backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cg fill='none' stroke='%23334155' stroke-width='1' opacity='0.4'%3E%3Cellipse cx='400' cy='400' rx='50' ry='30'/%3E%3Cellipse cx='400' cy='400' rx='100' ry='65'/%3E%3Cellipse cx='400' cy='400' rx='155' ry='105'/%3E%3Cellipse cx='400' cy='400' rx='215' ry='148'/%3E%3Cellipse cx='400' cy='400' rx='278' ry='194'/%3E%3Cellipse cx='400' cy='400' rx='345' ry='243'/%3E%3Cellipse cx='400' cy='400' rx='415' ry='295'/%3E%3Cellipse cx='400' cy='400' rx='490' ry='350'/%3E%3Cellipse cx='400' cy='400' rx='568' ry='408'/%3E%3Cellipse cx='400' cy='400' rx='650' ry='470'/%3E%3C/g%3E%3C/svg%3E")`,
             backgroundSize: '600px 600px',
@@ -58,11 +58,11 @@ const ServicesSection = ({ showHeader = true }) => {
                     {service.tag}
                   </div>
 
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-display leading-[1.2] tracking-tight mb-6">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white font-display leading-[1.2] tracking-tight mb-6">
                     {service.title}
                   </h2>
 
-                  <p className="text-lg text-slate-400 mb-8 leading-relaxed">
+                  <p className="text-lg text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
                     {service.description}
                   </p>
 
@@ -70,10 +70,10 @@ const ServicesSection = ({ showHeader = true }) => {
                     {service.features.map((feature, i) => (
                       <div key={i} className="flex items-start">
                         {/* Lingkaran Centang Diubah ke Tema Biru */}
-                        <div className="mt-1 bg-blue-900/40 p-1 rounded-full mr-3 shrink-0">
+                        <div className="mt-1 bg-blue-100 dark:bg-blue-900/40 p-1 rounded-full mr-3 shrink-0">
                           <Check className="w-3.5 h-3.5 text-blue-500" strokeWidth={3} />
                         </div>
-                        <span className="text-sm md:text-base text-slate-300 font-medium">{feature}</span>
+                        <span className="text-sm md:text-base text-slate-700 dark:text-slate-300 font-medium">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -97,7 +97,7 @@ const ServicesSection = ({ showHeader = true }) => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-black/40 aspect-square md:aspect-[4/3] bg-slate-800"
+                  className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-300/40 dark:shadow-black/40 aspect-square md:aspect-[4/3] bg-slate-200 dark:bg-slate-800"
                 >
                   <img
                     src={service.image}

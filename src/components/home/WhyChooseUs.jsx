@@ -6,7 +6,6 @@ import Card from '../ui/Card';
 import { Layers, ShieldCheck, Cpu, FileSignature, Headset, Award } from 'lucide-react';
 
 const reasons = [
-  // POIN KEKUATAN KORIBALI (Niche & Expertise)
   {
     title: 'Sinergi Sipil & IT',
     description: 'Satu-satunya konsultan yang menggabungkan keahlian infrastruktur fisik dan ekosistem digital secara terintegrasi dalam satu atap.',
@@ -22,7 +21,6 @@ const reasons = [
     description: 'Kami membangun sistem terintegrasi yang mampu memangkas waktu kerja manual Anda dari hitungan hari menjadi hitungan menit.',
     icon: Cpu,
   },
-  // POIN JAMINAN OPERASIONAL & REPUTASI
   {
     title: 'Legalitas & Keamanan Data',
     description: 'Berbadan hukum resmi dengan infrastruktur server bersertifikasi. Kami menjamin kerahasiaan data dan hak kekayaan intelektual (HAKI) klien.',
@@ -42,7 +40,7 @@ const reasons = [
 
 const WhyChooseUs = () => {
   return (
-    <SectionWrapper className="bg-slate-950">
+    <SectionWrapper className="bg-white dark:bg-slate-950">
       <SectionHeading
         title="Mengapa Memilih Koribali?"
         description="Keunggulan teknis dan jaminan profesionalitas yang membuat kami menjadi mitra strategis terbaik untuk perusahaan Anda."
@@ -60,21 +58,18 @@ const WhyChooseUs = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="h-full"
             >
-              {/* Card BG dibuat solid (bg-slate-900) agar lebih kontras dari bg-slate-950 */}
-              <Card className="h-full flex flex-col p-6 bg-slate-900 border border-slate-800 hover:border-blue-800/60 transition-colors group shadow-lg">
+              <Card className="h-full flex flex-col p-6 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-800/60 transition-colors group shadow-lg">
 
-                {/* Ikon Dibuat Solid Background seperti referensi gambar */}
-                <div className="w-14 h-14 rounded-[1rem] bg-blue-800 flex items-center justify-center mb-6">
-                  {/* Warna ikon diubah jadi putih murni dan sedikit ditebalkan */}
+                {/* Ikon Dibuat Solid Background */}
+                <div className="w-14 h-14 rounded-[1rem] bg-blue-600 dark:bg-blue-800 flex items-center justify-center mb-6">
                   <Icon className="w-7 h-7 text-white" strokeWidth={2} />
                 </div>
 
-                <h4 className="text-xl font-bold text-white mb-3 font-display tracking-tight group-hover:text-blue-400 transition-colors">
+                <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-3 font-display tracking-tight group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">
                   {reason.title}
                 </h4>
 
-                {/* Text paragraf diubah menjadi slate-300 agar jauh lebih terang dan mudah dibaca */}
-                <p className="text-slate-300 text-sm md:text-[15px] leading-relaxed flex-grow">
+                <p className="text-slate-600 dark:text-slate-300 text-sm md:text-[15px] leading-relaxed flex-grow">
                   {reason.description}
                 </p>
 
