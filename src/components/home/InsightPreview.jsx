@@ -7,23 +7,20 @@ import SectionHeading from "../ui/SectionHeading";
 import { articles } from "../../data/articles";
 
 const InsightPreview = () => {
-  const targetCategories = [
-    "Civil Engineering",
-    "IT & Digital Solutions",
-    "Data & Analytics",
-  ];
-  const previewArticles = targetCategories
-    .map((category) =>
-      articles.find((article) => article.category === category),
-    )
-    .filter(Boolean);
+  // Ambil 1 artikel dari tiap kategori baru, total 3 artikel
+  const getOneFromCategory = (cat) => articles.find((a) => a.category === cat);
+  const aiArticle = getOneFromCategory('AI Solutions & Digitalization');
+  const engArticle = getOneFromCategory('Engineering Technology Consulting');
+  // Artikel ke-3: artikel ke-2 dari kategori AI (paling banyak kontennya)
+  const secondAiArticle = articles.filter((a) => a.category === 'AI Solutions & Digitalization')[1];
+  const previewArticles = [aiArticle, engArticle, secondAiArticle].filter(Boolean);
 
   return (
     <SectionWrapper className="bg-white dark:bg-slate-950">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
         <SectionHeading
           title="Insight & Artikel"
-          description="Berita, tren, dan wawasan terbaru seputar teknik sipil dan inovasi teknologi informasi."
+          description="Wawasan, studi kasus, dan tips praktis seputar AI, digitalisasi bisnis, dan teknologi engineering dari tim ahli kami."
           className="mb-6 md:mb-0"
         />
         <Link to="/insight" className="hidden md:block">

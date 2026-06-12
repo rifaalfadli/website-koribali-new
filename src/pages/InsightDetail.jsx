@@ -105,7 +105,7 @@ const InsightDetail = () => {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 text-center font-display">Artikel Terkait</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {relatedArticles.map((relArticle) => (
-              <Link to={`/insight/${relArticle.id}`} key={relArticle.id} className="group flex flex-col h-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] overflow-hidden hover:-translate-y-1 hover:border-blue-300 dark:hover:border-blue-900/50 hover:shadow-xl transition-all duration-300">
+              <Link to={`/insight/${relArticle.id}`} key={relArticle.id} className="group flex flex-col h-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] overflow-hidden hover:-translate-y-1 hover:border-blue-300 dark:hover:border-blue-900/50 transition-all duration-300">
                 <div className="aspect-[4/3] bg-slate-100 dark:bg-slate-950 relative overflow-hidden">
                   <img src={relArticle.image} alt={relArticle.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out opacity-80 group-hover:opacity-100" />
                 </div>

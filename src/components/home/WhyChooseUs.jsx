@@ -7,13 +7,13 @@ import { Layers, ShieldCheck, Cpu, FileSignature, Headset, Award } from 'lucide-
 
 const reasons = [
   {
-    title: 'Sinergi Sipil & IT',
-    description: 'Satu-satunya konsultan yang menggabungkan keahlian infrastruktur fisik dan ekosistem digital secara terintegrasi dalam satu atap.',
+    title: 'AI-First Approach',
+    description: 'Kami mengintegrasikan kecerdasan buatan (LLM & ML) langsung ke dalam sistem digital klien untuk otomatisasi cerdas dan analisis data yang mendalam.',
     icon: Layers,
   },
   {
-    title: 'Akurasi & Standar Aman',
-    description: 'Setiap perancangan dan kalkulasi divalidasi dengan standar keamanan industri (SNI) untuk menjamin kelayakan operasional.',
+    title: 'Akurasi & Keamanan Terverifikasi',
+    description: 'Setiap solusi yang kami bangun — baik sistem digital maupun desain engineering — divalidasi dengan standar keamanan dan kelayakan yang ketat.',
     icon: ShieldCheck,
   },
   {
@@ -32,8 +32,8 @@ const reasons = [
     icon: Headset,
   },
   {
-    title: 'Profesional & Terpercaya',
-    description: 'Dipercaya oleh berbagai perusahaan infrastruktur dan telekomunikasi untuk menangani proyek-proyek kritikal mereka.',
+    title: 'Konsultan Teknologi Terpercaya',
+    description: 'Dipercaya oleh berbagai perusahaan di bidang infrastruktur, telekomunikasi, dan korporasi untuk menangani proyek-proyek transformasi digital kritikal mereka.',
     icon: Award,
   }
 ];

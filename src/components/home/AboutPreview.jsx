@@ -1,27 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Building2, Code2, BarChart3 } from "lucide-react";
+import { ArrowRight, BrainCircuit, Code2, HardHat } from "lucide-react";
 import SectionWrapper from "../ui/SectionWrapper";
 
 const pillars = [
   {
-    icon: Building2,
-    title: "Rekayasa Sipil",
+    icon: BrainCircuit,
+    title: "AI & Solusi Cerdas",
     description:
-      "Desain struktur, kalkulasi teknik, dan gambar kerja berstandar SNI untuk infrastruktur yang aman dan kokoh.",
+      "Integrasi kecerdasan buatan (LLM) ke dalam sistem web Anda — dari chatbot cerdas hingga otomatisasi analisis data berbasis AI.",
   },
   {
     icon: Code2,
-    title: "Solusi IT & Digital",
+    title: "Transformasi Digital",
     description:
-      "Pengembangan web app, sistem informasi, dan otomatisasi proses bisnis untuk transformasi digital perusahaan Anda.",
+      "Pengembangan web app custom, digitalisasi sistem operasional manual, dan integrasi REST API untuk ekosistem bisnis yang terhubung.",
   },
   {
-    icon: BarChart3,
-    title: "Analisis Data",
+    icon: HardHat,
+    title: "Konsultasi Engineering",
     description:
-      "Dashboard interaktif, visualisasi data, dan business intelligence untuk pengambilan keputusan yang terukur.",
+      "Perancangan infrastruktur berbasis teknologi — desain 2D/3D, kalkulasi keamanan struktur, dan engineering report yang terverifikasi.",
   },
 ];
 
@@ -44,31 +44,30 @@ const AboutPreview = () => {
           </span>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white font-display leading-tight tracking-tight mb-6">
-            Sinergi{" "}
+            Technology Consulting{" "}
             <span className="text-transparent bg-clip-text bg-blue-600">
-              Rekayasa Sipil
-            </span>{" "}
-            & Inovasi Digital
+              & AI Solutions
+            </span>
           </h2>
 
           <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
             <strong className="text-slate-900 dark:text-white">Koribali</strong>{" "}
-            adalah perusahaan konsultan yang mengintegrasikan keahlian di bidang{" "}
+            adalah perusahaan konsultan teknologi yang menghadirkan solusi{" "}
             <strong className="text-slate-900 dark:text-white">
-              teknik sipil
+              digitalisasi, kecerdasan buatan (AI)
             </strong>{" "}
             dan{" "}
             <strong className="text-slate-900 dark:text-white">
-              teknologi informasi
+              konsultasi teknologi engineering
             </strong>{" "}
-            dalam satu ekosistem yang utuh.
+            dalam satu layanan terintegrasi.
           </p>
 
           <p className="text-base text-slate-500 dark:text-slate-400 leading-relaxed mb-8">
-            Kami percaya bahwa infrastruktur fisik dan infrastruktur digital
-            tidak seharusnya dibangun secara terpisah. Ketika keduanya berjalan
-            beriringan, terciptalah efisiensi luar biasa — dari tahap kalkulasi
-            desain hingga pemeliharaan aset dan otomatisasi bisnis.
+            Kami membantu bisnis Anda bertransformasi — dari sistem manual
+            menjadi ekosistem digital cerdas yang didukung analitik data dan
+            kekuatan AI, sekaligus memastikan infrastruktur fisik Anda dirancang
+            dengan presisi teknologi tertinggi.
           </p>
 
           <Link to="/tentang-kami">

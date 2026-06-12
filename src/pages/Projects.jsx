@@ -9,9 +9,8 @@ import PageHero from "../components/ui/PageHero";
 
 const categories = [
   "Semua",
-  "Civil Engineering",
-  "IT & Digital Solutions",
-  "Data & Analytics",
+  "AI Solutions & Digitalization",
+  "Engineering Technology Consulting",
 ];
 
 const Projects = () => {
@@ -43,19 +42,19 @@ const Projects = () => {
 
   return (
     <>
+      <PageHero
+        title="Project & Portofolio Koribali"
+        description="Kumpulan karya nyata kami dalam transformasi digital, solusi AI, dan konsultasi teknologi engineering untuk berbagai klien."
+        breadcrumbs={[{ label: "Project" }]}
+      />
+
       <Helmet>
         <title>Project & Portofolio | Koribali</title>
         <meta
           name="description"
-          content="Portofolio project Koribali meliputi pengembangan sistem terintegrasi, teknik sipil, dan IT digital."
+          content="Portofolio project Koribali meliputi transformasi digital, solusi AI, dan konsultasi teknologi engineering."
         />
       </Helmet>
-
-      <PageHero
-        title="Portofolio Project Website, Aplikasi & Digital Marketing"
-        description="Kumpulan project website, aplikasi web & mobile, serta digital marketing yang telah kami kerjakan untuk berbagai kebutuhan bisnis."
-        breadcrumbs={[{ label: "Project" }]}
-      />
 
       <div className="pt-10 bg-white dark:bg-slate-950">
         {/* Filter Tabs */}

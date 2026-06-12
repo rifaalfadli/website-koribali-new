@@ -21,12 +21,12 @@ const ServicesSection = ({ showHeader = true }) => {
               Layanan Kami
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white font-display leading-tight tracking-tight mb-4">
-              Solusi Terintegrasi untuk Setiap Kebutuhan
+              Solusi Teknologi & AI untuk Bisnis Anda
             </h2>
             <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg max-w-3xl mx-auto">
-              Dari desain struktur hingga pengembangan sistem digital — kami
-              menghadirkan layanan menyeluruh yang dirancang untuk mendorong
-              pertumbuhan bisnis Anda.
+              Dari transformasi digital dan integrasi AI hingga konsultasi
+              teknologi rekayasa — kami menghadirkan layanan menyeluruh yang
+              mendorong efisiensi dan pertumbuhan bisnis Anda.
             </p>
           </motion.div>
         </div>

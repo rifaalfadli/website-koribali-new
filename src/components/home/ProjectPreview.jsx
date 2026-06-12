@@ -8,11 +8,10 @@ import SectionHeading from '../ui/SectionHeading';
 import { projects as previewProjects } from '../../data/projects';
 
 const ProjectPreview = () => {
-  const civilProjects = previewProjects.filter(p => p.category === 'Civil Engineering').slice(0, 3);
-  const itProjects = previewProjects.filter(p => p.category === 'IT & Digital Solutions').slice(0, 3);
-  const dataProjects = previewProjects.filter(p => p.category === 'Data & Analytics').slice(0, 3);
+  const aiProjects = previewProjects.filter(p => p.category === 'AI Solutions & Digitalization').slice(0, 3);
+  const engineeringProjects = previewProjects.filter(p => p.category === 'Engineering Technology Consulting').slice(0, 3);
 
-  const displayProjects = [...civilProjects, ...itProjects, ...dataProjects];
+  const displayProjects = [...aiProjects, ...engineeringProjects];
 
   const [currentPage, setCurrentPage] = useState(0);
   const itemsPerPage = 3;
@@ -36,7 +35,7 @@ const ProjectPreview = () => {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
         <SectionHeading
           title="Project Unggulan"
-          description="Karya nyata kami dalam menjembatani rekayasa infrastruktur fisik dan solusi sistem digital."
+          description="Karya nyata kami dalam transformasi digital, integrasi AI, dan konsultasi teknologi engineering."
           className="mb-6 md:mb-0"
         />
         <Link to="/project" className="hidden md:block">

@@ -52,12 +52,12 @@ const Insight = () => {
     <>
       <Helmet>
         <title>Insight & Berita | Koribali</title>
-        <meta name="description" content="Baca artikel terbaru seputar teknik sipil, teknologi informasi, dan tren industri dari Koribali." />
+        <meta name="description" content="Baca artikel terbaru seputar transformasi digital, kecerdasan buatan (AI), dan konsultasi teknologi engineering dari para ahli Koribali." />
       </Helmet>
 
       <PageHero
         title="Insight Terbaru"
-        description="Wawasan, studi kasus, dan pembaruan seputar industri infrastruktur dan teknologi digital dari para ahli kami."
+        description="Wawasan, studi kasus, dan tips praktis seputar AI, digitalisasi bisnis, dan teknologi engineering dari tim ahli kami."
         breadcrumbs={[{ label: 'Insight' }]}
       />
 
@@ -151,7 +151,7 @@ const Insight = () => {
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {visibleArticles.map((article) => (
-                  <Link to={`/insight/${article.id}`} key={article.id} className="group flex flex-col h-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                  <Link to={`/insight/${article.id}`} key={article.id} className="group flex flex-col h-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] overflow-hidden hover:-translate-y-1 transition-all duration-300">
                     <div className="aspect-[4/3] bg-slate-100 dark:bg-slate-950 relative overflow-hidden">
                       <img
                         src={article.image}
@@ -208,7 +208,7 @@ const Insight = () => {
                       key={pageNum}
                       onClick={() => handlePageChange(pageNum)}
                       className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all duration-300 border ${currentPage === pageNum
-                        ? 'bg-blue-600 text-white shadow-[0_0_15px_rgba(59,130,246,0.5)] border-blue-500 scale-110'
+                        ? 'bg-blue-600 text-white border-blue-500 scale-110'
                         : 'bg-white dark:bg-slate-900/80 text-slate-700 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white border-slate-300 dark:border-slate-800'
                         }`}
                     >

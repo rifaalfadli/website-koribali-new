@@ -4,35 +4,25 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const slides = [
-  // SLIDE 1: Civil Engineering — konstruksi/struktur bangunan nyata
+  // SLIDE 1: AI & Digital Solutions — primary service
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
-    title: "Desain Teknik & Rekayasa Struktur Presisi",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    title: "Transformasi Digital, Analitik Data & Solusi AI",
     subtitle:
-      "Solusi perancangan infrastruktur dari gambar kerja 2D, pemodelan 3D, hingga laporan kalkulasi struktur yang terverifikasi dan memenuhi standar keamanan.",
-    primaryAction: { label: "Lihat Layanan Civil", path: "/layanan#civil" },
+      "Kami membangun ekosistem digital end-to-end — dari aplikasi web custom, otomatisasi sistem operasional, hingga integrasi kecerdasan buatan (LLM) untuk bisnis Anda.",
+    primaryAction: { label: "Eksplorasi Solusi AI & Digital", path: "/layanan" },
   },
-  // SLIDE 2: IT & Digital Solutions — coding / developer workspace
+  // SLIDE 2: Engineering Technology Consulting — secondary service
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
-    title: "Digitalisasi Sistem & Aplikasi Custom",
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    title: "Konsultasi Teknologi Desain & Rekayasa Struktur",
     subtitle:
-      "Tinggalkan proses manual yang usang. Kami membangun ekosistem digital dari website profesional hingga sistem informasi terpusat untuk otomatisasi bisnis Anda.",
-    primaryAction: { label: "Eksplorasi Solusi IT", path: "/layanan#it" },
-  },
-  // SLIDE 3: Data & Analytics — grafik / analitik bisnis
-  {
-    id: 3,
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
-    title: "Analisis Data & Business Intelligence",
-    subtitle:
-      "Ubah tumpukan data operasional menjadi strategi bisnis yang terukur melalui layanan analitik, visualisasi, dan pembuatan dashboard interaktif.",
-    primaryAction: { label: "Pelajari Layanan Data", path: "/layanan#data" },
+      "Layanan perancangan infrastruktur berbasis teknologi — gambar kerja 2D, visualisasi 3D, dan kalkulasi keamanan struktur yang terverifikasi (Aman/NG).",
+    primaryAction: { label: "Lihat Layanan Engineering", path: "/layanan" },
   },
 ];
 

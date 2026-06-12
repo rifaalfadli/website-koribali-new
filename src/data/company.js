@@ -1,6 +1,6 @@
 export const company = {
   name: 'Koribali',
-  tagline: 'Membangun Infrastruktur Lebih Cerdas',
+  tagline: 'Technology Consulting & AI Solutions',
   address: 'Jl. Gatot Subroto Timur No. 123, Denpasar, Bali 80237',
   email: 'hello@koribali.com',
   phone: '+62 812 3456 7890',

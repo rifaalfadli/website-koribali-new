@@ -194,12 +194,12 @@ const About = () => {
     <>
       <Helmet>
         <title>Tentang Kami | Koribali</title>
-        <meta name="description" content="Koribali adalah pelopor integrasi teknik sipil dan teknologi informasi di Indonesia." />
+        <meta name="description" content="Koribali adalah perusahaan Technology Consulting & AI Solutions yang menghadirkan transformasi digital, solusi AI, dan konsultasi teknologi engineering." />
       </Helmet>
 
       <PageHero
-        title="Membangun Infrastruktur yang Lebih Cerdas dengan Teknologi Terkini"
-        description="Berawal dari keresahan melihat gap antara proses rekayasa teknik sipil tradisional dengan pesatnya laju digitalisasi, Koribali hadir sebagai jembatan yang menyatukan kedua dunia tersebut."
+        title="Technology Consulting & AI Solutions untuk Bisnis yang Lebih Cerdas"
+        description="Koribali hadir untuk memimpin transformasi digital bisnis Anda — dari integrasi kecerdasan buatan dan digitalisasi sistem, hingga konsultasi teknologi rekayasa yang presisi."
         breadcrumbs={[{ label: 'Tentang Kami' }]}
       />
 
@@ -216,18 +216,18 @@ const About = () => {
                   Tentang Kami
                 </span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white font-display leading-tight">
-                  Sinergi <span className="text-blue-500">Rekayasa Sipil</span> & Inovasi Digital
+                  <span className="text-blue-500">Technology Consulting</span> & AI Solutions
                 </h2>
               </div>
 
               <p>
-                Berawal dari keresahan melihat gap antara proses rekayasa teknik sipil tradisional dengan pesatnya laju digitalisasi, Koribali hadir sebagai jembatan yang menyatukan kedua dunia tersebut.
+                Koribali adalah perusahaan konsultan teknologi yang berfokus pada transformasi digital, kecerdasan buatan (AI), dan konsultasi teknologi engineering — menghadirkan solusi menyeluruh agar bisnis Anda beroperasi lebih cerdas dan efisien.
               </p>
               <p>
-                Kami percaya bahwa infrastruktur fisik dan infrastruktur digital tidak seharusnya dibangun secara terpisah. Ketika software engineering dan civil engineering berjalan beriringan, terciptalah efisiensi yang luar biasa, mulai dari tahap kalkulasi desain hingga pemeliharaan aset.
+                Kami membangun segala kebutuhan digital Anda: dari aplikasi web custom dan digitalisasi sistem operasional manual, hingga integrasi LLM (Large Language Model) yang mengotomatisasi analisis dan pengambilan keputusan bisnis secara real-time.
               </p>
               <p>
-                Tim kami terdiri dari insinyur sipil tersertifikasi dan pengembang perangkat lunak berpengalaman yang berbicara dalam satu "bahasa": <strong className="text-slate-900 dark:text-white">Solusi</strong>.
+                Di sisi engineering, tim kami menyediakan konsultasi teknologi desain dan rekayasa struktur — memastikan setiap infrastruktur yang Anda bangun telah melalui kalkulasi keamanan yang terverifikasi. Satu mitra, dua keahlian, satu tujuan: <strong className="text-slate-900 dark:text-white">Solusi</strong>.
               </p>
             </div>
 

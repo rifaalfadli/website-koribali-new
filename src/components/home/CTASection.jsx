@@ -20,9 +20,9 @@ const CTASection = () => {
             <span className="text-blue-500">Solusi Terintegrasi</span>
           </h2>
           <p className="text-slate-300 mb-8 max-w-lg text-sm md:text-base leading-relaxed">
-            Mulai dari perancangan infrastruktur fisik, otomatisasi sistem web,
-            hingga wawasan analitik data cerdas. Kami siap mengoptimalkan
-            efisiensi dan pertumbuhan bisnis Anda.
+            Dari transformasi digital dan integrasi AI hingga konsultasi
+            teknologi engineering. Kami siap membantu bisnis Anda tumbuh
+            lebih cerdas, efisien, dan berdaya saing tinggi.
           </p>
 
           <Link to="/kontak" className="w-full sm:w-auto">

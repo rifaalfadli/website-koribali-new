@@ -1,131 +1,88 @@
 export const services = [
   {
-    id: 'civil-endineering',
-    tag: 'Civil Engineering',
-    title: 'Desain Teknik & Rekayasa Struktur Profesional',
-    subtitle: 'Tingkatkan Keamanan & Efisiensi Proyek Infrastruktur Anda dengan Akurasi Tinggi',
-    icon: 'HardHat',
-    shortDescription: 'Layanan desain, kalkulasi beban, dan rekayasa struktur infrastruktur.',
-    description: 'Kami mengerjakan perancangan teknik sipil mulai dari gambar kerja 2D, visualisasi 3D, hingga laporan kalkulasi struktur yang terverifikasi.',
+    id: 'ai-digital-solutions',
+    tag: 'AI Solutions & Digitalization',
+    title: 'Transformasi Digital, Analitik Data & Solusi AI',
+    subtitle: 'Otomatisasi Sistem Operasional dan Wawasan Bisnis Cerdas Berbasis LLM',
+    icon: 'BrainCircuit',
+    shortDescription: 'Pembuatan aplikasi web custom, integrasi data, hingga kecerdasan buatan (LLM).',
+    description: 'Layanan digital end-to-end yang mencakup pembuatan website, digitalisasi sistem manual, hingga integrasi tools analisis data dan AI ke dalam satu ekosistem web terpadu.',
     longDescription: [
-      'Di era modern saat ini, perancangan infrastruktur yang presisi dan aman menjadi fondasi utama bagi kesuksesan setiap proyek pembangunan fisik. Kesalahan sekecil apa pun dalam kalkulasi dapat berakibat fatal pada keamanan, waktu operasional, dan anggaran proyek Anda.',
-      'Kami menyediakan jasa desain teknik dan rekayasa struktur profesional yang dirancang khusus untuk memenuhi standar keamanan nasional (SNI) maupun internasional. Mulai dari pemodelan 3D interaktif hingga analisis beban ekstrem, tim engineer kami memastikan desain Anda siap untuk direalisasikan tanpa kendala di lapangan.',
-      'Dengan menggunakan layanan rekayasa struktur dari Koribali, proyek Anda akan mendapatkan:'
+      'Di era modern, operasional bisnis yang serba manual akan memperlambat laju pertumbuhan perusahaan Anda. Kami hadir untuk membantu Anda melakukan transformasi digital menyeluruh.',
+      'Kami merancang dan membangun segala kebutuhan perangkat lunak Anda, mulai dari website company profile, aplikasi berbasis web untuk sistem operasional, hingga mengintegrasikannya dengan platform pihak ketiga melalui REST API.',
+      'Lebih dari sekadar web development, kami juga menghadirkan fitur pengolahan data saintifik dan integrasi kecerdasan buatan (LLM). Kami dapat membangun tools web khusus yang mampu menganalisis tumpukan data Anda menjadi insight visual yang interaktif, serta mengotomatisasi proses bisnis Anda dengan bantuan asisten AI cerdas.'
     ],
     benefits: [
-      'Kalkulasi struktur yang terverifikasi, aman, dan memenuhi standar (SNI)',
-      'Efisiensi penggunaan material konstruksi tanpa mengorbankan kualitas',
-      'Visualisasi 3D dan gambar kerja (shop drawing) yang sangat detail'
+      'Digitalisasi sistem operasional dari manual menjadi sistem web yang rapi dan terhubung',
+      'Tools analitik dan dashboard data interaktif yang dapat diakses langsung dari web',
+      'Pemanfaatan kecerdasan buatan (LLM) untuk mempercepat analisa dan otomatisasi kerja'
     ],
-    closingText: 'Percayakan kebutuhan rekayasa sipil Anda kepada tim engineer kami, dan miliki blueprint yang siap dieksekusi dengan presisi tinggi untuk meminimalisir risiko kegagalan konstruksi secara berkelanjutan.',
+    closingText: 'Satu layanan untuk semua kebutuhan digitalisasi Anda. Ubah cara kerja manual menjadi sistem web cerdas yang didukung kekuatan data dan AI untuk skalabilitas bisnis yang tanpa batas.',
     features: [
-      'Desain 2D dengan AutoCAD',
-      'Desain 3D Modeling Profesional',
-      'Kalkulasi Beban & Analisis Struktur',
-      'Laporan Teknik & Report Keamanan',
-      'Desain Pole & Infrastruktur Jalan',
-      'Desain Rambu Lalu Lintas',
-      'Gambar Kerja Detail (Shop Drawing)',
-      'Konsultasi Teknik Sipil',
+      'Website Company Profile & Web App Custom',
+      'Digitalisasi & Otomatisasi Sistem Manual',
+      'Integrasi Sistem & REST API',
+      'Pengembangan Tools Analisis Data Web-based',
+      'Visualisasi Data (Dashboard & Laporan)',
+      'Integrasi Kecerdasan Buatan (LLM API)',
+      'Manajemen Database Terstruktur',
     ],
-    // --- TAMBAHAN OUTPUT ---
+    standardOutput: [
+      'Aplikasi Web & Sistem Ter-deploy (Live)',
+      'Dashboard Analitik & Visualisasi Data',
+      'Sistem Terintegrasi AI (LLM)',
+      'Dokumentasi API & Panduan Penggunaan',
+      'Akses Source Code (GitHub) & Container (Docker)'
+    ],
+    tools: [
+      'React & Next JS',
+      'Python (Flask)',
+      'Pandas, NumPy, Matplotlib',
+      'MySQL / MariaDB',
+      'Docker & Git'
+    ],
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    reversed: false,
+    bgPattern: false,
+  },
+  {
+    id: 'engineering-technology',
+    tag: 'Engineering Technology Consulting',
+    title: 'Konsultasi Teknologi Desain & Rekayasa Struktur',
+    subtitle: 'Visualisasi 3D dan Perhitungan Keamanan Infrastruktur Berbasis Teknologi',
+    icon: 'HardHat',
+    shortDescription: 'Layanan desain 2D/3D dan kalkulasi keamanan (Aman/NG) untuk infrastruktur jalan.',
+    description: 'Kami mengerjakan perancangan teknik sipil mulai dari gambar kerja 2D dengan AutoCAD, visualisasi 3D, hingga laporan kalkulasi struktur untuk memastikan desain layak dan aman diterapkan.',
+    longDescription: [
+      'Dalam perancangan infrastruktur jalan seperti pole (tiang) dan rambu lalu lintas, presisi desain dan perhitungan kekuatan adalah hal yang mutlak. Tanpa kalkulasi yang tepat, keamanan proyek bisa menjadi taruhannya.',
+      'Kami menyediakan layanan perancangan komprehensif berbasis teknologi rekayasa. Tidak hanya sebatas gambar teknik 2D dan pemodelan 3D interaktif untuk visualisasi, kami juga melakukan perhitungan kalkulasi beban secara detail. Kami memastikan setiap desain memiliki status kelayakan yang jelas (Aman atau NG/Not Good).',
+      'Setiap proyek yang kami tangani akan dilengkapi dengan laporan (report) teknis menyeluruh, sehingga tim lapangan Anda siap untuk mengeksekusinya tanpa ragu.'
+    ],
+    benefits: [
+      'Kalkulasi struktur yang terverifikasi dan jelas kelayakannya (Aman / OK / NG)',
+      'Visualisasi desain 3D yang memudahkan pemahaman bentuk akhir proyek',
+      'Gambar kerja (shop drawing) AutoCAD yang sangat detail dan presisi'
+    ],
+    closingText: 'Pastikan infrastruktur jalan dan tiang rambu Anda dirancang dengan standar keamanan tertinggi. Dapatkan blueprint lengkap dan report kalkulasi yang siap dieksekusi di lapangan.',
+    features: [
+      'Gambar Teknik 2D (AutoCAD)',
+      'Visualisasi & Pemodelan 3D',
+      'Desain Pole (Tiang) & Infrastruktur Jalan',
+      'Desain Rambu Lalu Lintas',
+      'Kalkulasi Beban & Keamanan Struktur (OK/NG)',
+      'Penyusunan Laporan Teknik (Engineering Report)',
+      'Gambar Kerja Detail (Shop Drawing)',
+    ],
     standardOutput: [
       'Laporan Kalkulasi Struktur (PDF)',
-      'File Desain Asli (DWG, IPT, SKP)',
+      'File Desain Asli (DWG, IPT, SLDPRT)',
       'Gambar Kerja Detail / Shop Drawing',
-      'Bill of Quantity / RAB (Excel)',
       'Gambar Visualisasi Render HD',
-      'Sertifikasi & Rekomendasi Teknis'
+      'Status Keamanan Struktur (Approval/NG)'
     ],
-    tools: ['AutoCAD', 'Autodesk Inventor', 'SAP2000', 'Revit'],
+    tools: ['AutoCAD', 'Autodesk Inventor', 'SolidWorks'],
     image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    reversed: false,
-    bgPattern: false,
-  },
-  {
-    id: 'it-solutions',
-    tag: 'IT & Digital Solutions',
-    title: 'Pengembangan Sistem Web & Aplikasi Custom',
-    subtitle: 'Digitalisasi Operasional & Tingkatkan Skalabilitas Bisnis di Era Modern',
-    icon: 'MonitorSmartphone',
-    shortDescription: 'Dari website profile hingga sistem informasi kompleks terintegrasi.',
-    description: 'Kami membangun solusi digital komprehensif, mulai dari website company profile hingga sistem informasi custom berskala enterprise untuk mendukung transformasi bisnis Anda.',
-    longDescription: [
-      'Di era digital, kehadiran online yang profesional dan perangkat lunak yang andal bukan lagi sebuah kemewahan, melainkan fondasi bagi bisnis yang ingin berskala besar. Sistem manual yang usang hanya akan memperlambat pertumbuhan dan meningkatkan risiko operasional.',
-      'Koribali menghadirkan jasa pengembangan solusi digital end-to-end. Mulai dari pembuatan website responsif untuk meningkatkan kredibilitas brand, sistem informasi manajemen (ERP/CRM) untuk menyederhanakan alur kerja, hingga integrasi API kompleks yang menghubungkan berbagai platform digital Anda.',
-      'Dengan beralih ke solusi IT custom dari Koribali, perusahaan Anda akan menikmati:'
-    ],
-    benefits: [
-      'Website responsif dan profesional yang meningkatkan kepercayaan klien',
-      'Sistem aplikasi custom yang dirancang 100% sesuai alur bisnis Anda',
-      'Keamanan data terjamin dan performa aplikasi yang cepat'
-    ],
-    closingText: 'Percayakan transformasi digital perusahaan Anda kepada kami. Miliki ekosistem teknologi yang tangguh untuk menekan biaya operasional, memperluas jangkauan pasar, dan mendorong pertumbuhan bisnis secara berkelanjutan.',
-    features: [
-      'Website Company Profile & Landing Page',
-      'Sistem Informasi & Aplikasi Web Custom',
-      'Integrasi Sistem Pihak Ketiga (API Integration)',
-      'Pengembangan E-Commerce & Portal Bisnis',
-      'Progressive Web App (PWA)',
-      'Sistem CRM, ERP, & HRIS',
-      'UI/UX Design Profesional',
-      'Maintenance & Support Sistem Digital',
-    ],
-    // --- TAMBAHAN OUTPUT ---
-    standardOutput: [
-      'Aplikasi Web / Website (Live Deployment)',
-      'Akses Repositori Source Code',
-      'Dokumentasi API (Jika ada integrasi)',
-      'Manual Book / Panduan Penggunaan',
-      'Aset Desain UI/UX (Figma)',
-      'Garansi Bug & Maintenance Awal'
-    ],
-    tools: ['React', 'Node.js', 'Next.js', 'TailwindCSS', 'PostgreSQL'],
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
     reversed: true,
     bgPattern: true,
-  },
-  {
-    id: 'data-analytics',
-    tag: 'Data & Analytics',
-    title: 'Analisis Data & Dashboard Business Intelligence',
-    subtitle: 'Ubah Data Perusahaan Menjadi Strategi Bisnis yang Terukur dan Akurat',
-    icon: 'BrainCircuit',
-    shortDescription: 'Ubah data mentah menjadi wawasan bisnis yang actionable.',
-    description: 'Kami menyediakan layanan analitik data dan pembuatan dashboard interaktif untuk membantu manajemen mengambil keputusan berbasis fakta.',
-    longDescription: [
-      'Data adalah aset paling berharga yang sering kali terabaikan. Banyak perusahaan memiliki ribuan data pelanggan, transaksi, dan operasional, namun tidak tahu bagaimana memanfaatkannya untuk merumuskan strategi bisnis yang efektif.',
-      'Layanan Data & Analytics kami dirancang untuk memecahkan masalah tersebut. Kami membantu Anda memproses data mentah yang berserakan, menganalisis pola tersembunyi, dan menyajikannya dalam bentuk dashboard visual interaktif. Dengan ini, Anda dapat memantau performa bisnis, memprediksi tren pasar, dan mengidentifikasi peluang efisiensi.',
-      'Dengan mengimplementasikan solusi data cerdas dari Koribali, bisnis Anda akan mendapatkan:'
-    ],
-    benefits: [
-      'Dashboard visual interaktif yang memudahkan pemantauan performa (KPI)',
-      'Analisis tren yang membantu memprediksi perilaku konsumen atau pasar',
-      'Laporan Business Intelligence (BI) untuk keputusan yang lebih cepat dan tepat sasaran'
-    ],
-    closingText: 'Jangan biarkan data Anda menjadi tumpukan file mati. Bekerjasamalah dengan tim analis kami untuk membangun sistem cerdas yang akan memandu perusahaan Anda memenangkan kompetisi pasar melalui keputusan berbasis data (data-driven).',
-    features: [
-      'Pembersihan & Penyiapan Data (Data Preparation)',
-      'Analisis Statistik & Tren Bisnis',
-      'Pembuatan Dashboard Interaktif (Real-time)',
-      'Business Intelligence (BI) & Reporting',
-      'Visualisasi Metrik Performa (KPI)',
-      'Analisis Prediktif (Predictive Analytics)',
-      'Data Pipeline & ETL',
-      'Konsultasi Pemanfaatan Data Bisnis',
-    ],
-    // --- TAMBAHAN OUTPUT ---
-    standardOutput: [
-      'Dashboard Interaktif (Web-based/PowerBI)',
-      'Laporan Analisis Eksekutif (PDF)',
-      'Sistem Data Pipeline Otomatis',
-      'Model Prediktif / Machine Learning (Jupyter)',
-      'Dataset Bersih (Cleaned Data Export)',
-      'Panduan Interpretasi Data'
-    ],
-    tools: ['Python', 'SQL', 'PowerBI', 'Tableau', 'Excel/Google Sheets'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-    reversed: false,
-    bgPattern: false,
   }
 ];

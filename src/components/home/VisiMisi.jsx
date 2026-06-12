@@ -19,7 +19,7 @@ const VisiMisi = ({ noBg = false }) => {
               <span className="w-8 h-1 bg-blue-500 mr-4 rounded-full"></span> Visi
             </h2>
             <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed relative z-10">
-              Menjadi pelopor integrasi teknologi informasi dan rekayasa sipil terkemuka di Asia Tenggara, mewujudkan infrastruktur yang cerdas, efisien, dan berkelanjutan.
+              Menjadi perusahaan Technology Consulting & AI Solutions terkemuka di Asia Tenggara, yang memimpin transformasi digital bisnis dan industri melalui kecerdasan buatan, rekayasa perangkat lunak, dan konsultasi teknologi engineering.
             </p>
           </div>
 
@@ -32,15 +32,15 @@ const VisiMisi = ({ noBg = false }) => {
             <ul className="text-slate-500 dark:text-slate-400 space-y-4 text-lg leading-relaxed relative z-10">
               <li className="flex items-start">
                 <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0" />
-                Mengotomatisasi proses desain dan kalkulasi rekayasa.
+                Menghadirkan solusi AI dan digitalisasi yang mampu mengotomatisasi dan mengoptimalkan operasional bisnis klien.
               </li>
               <li className="flex items-start">
                 <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0" />
-                Membangun ekosistem digital untuk manajemen aset infrastruktur.
+                Membangun ekosistem digital berbasis data yang memberikan wawasan (insight) bisnis yang akurat dan actionable.
               </li>
               <li className="flex items-start">
                 <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0" />
-                Menghasilkan produk rekayasa berstandar SNI yang diakui secara global.
+                Menyediakan konsultasi teknologi engineering yang memastikan setiap desain infrastruktur layak, presisi, dan aman.
               </li>
             </ul>
           </div>

@@ -8,7 +8,7 @@ const Team = () => {
     <div>
       <PageHero
         title="Tim Kami"
-        description="Kenali orang-orang berdedikasi di balik Koribali — tim multidisiplin yang menyatukan keahlian rekayasa sipil dan teknologi digital."
+        description="Kenali para profesional di balik Koribali — tim ahli teknologi, AI engineer, dan konsultan engineering yang berkomitmen menghadirkan solusi terbaik untuk bisnis Anda."
         breadcrumbs={[{ label: 'Tim Kami' }]}
       />
 
