@@ -39,9 +39,9 @@ const ServicesSection = ({ showHeader = true }) => {
           style={
             service.bgPattern
               ? {
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cg fill='none' stroke='%23334155' stroke-width='1' opacity='0.4'%3E%3Cellipse cx='400' cy='400' rx='50' ry='30'/%3E%3Cellipse cx='400' cy='400' rx='100' ry='65'/%3E%3Cellipse cx='400' cy='400' rx='155' ry='105'/%3E%3Cellipse cx='400' cy='400' rx='215' ry='148'/%3E%3Cellipse cx='400' cy='400' rx='278' ry='194'/%3E%3Cellipse cx='400' cy='400' rx='345' ry='243'/%3E%3Cellipse cx='400' cy='400' rx='415' ry='295'/%3E%3Cellipse cx='400' cy='400' rx='490' ry='350'/%3E%3Cellipse cx='400' cy='400' rx='568' ry='408'/%3E%3Cellipse cx='400' cy='400' rx='650' ry='470'/%3E%3C/g%3E%3C/svg%3E")`,
-                  backgroundSize: "600px 600px",
-                  backgroundPosition: "center",
+                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ccircle cx='2' cy='2' r='1.5' fill='%2394a3b8' fill-opacity='0.35'/%3E%3C/svg%3E")`,
+                  backgroundSize: "32px 32px",
+                  backgroundPosition: "0 0",
                   backgroundRepeat: "repeat",
                 }
               : undefined

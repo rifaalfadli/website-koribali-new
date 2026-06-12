@@ -14,8 +14,8 @@ export const ThemeProvider = ({ children }) => {
     if (stored) {
       return stored === 'dark';
     }
-    // Default to dark mode
-    return true;
+    // Default to light mode
+    return false;
   });
 
   useEffect(() => {
