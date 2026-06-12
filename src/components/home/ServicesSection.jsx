@@ -35,7 +35,7 @@ const ServicesSection = ({ showHeader = true }) => {
       {services.map((service) => (
         <div
           key={service.id}
-          className={`py-16 ${service.bgPattern ? "bg-slate-50 dark:bg-slate-900" : "bg-white dark:bg-slate-950"}`}
+          className={`py-16 md:py-20 ${service.bgPattern ? "bg-slate-50 dark:bg-slate-900" : "bg-white dark:bg-slate-950"}`}
           style={
             service.bgPattern
               ? {
