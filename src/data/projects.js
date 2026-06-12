@@ -572,5 +572,180 @@ export const projects = [
     ],
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     "featured": false
+  },
+  {
+    "id": "civil-survey-topografi",
+    "category": "Civil Engineering",
+    "title": "Survey & Pemetaan Topografi Digital",
+    "shortDescription": "Pelaksanaan survey topografi menggunakan drone dan GPS geodetik untuk menghasilkan peta digital akurasi tinggi sebagai dasar perencanaan konstruksi.",
+    "description": "Proyek survey topografi menggunakan teknologi drone LiDAR dan GPS geodetik untuk menghasilkan data kontur dan peta digital presisi tinggi. Hasilnya digunakan sebagai acuan utama dalam perencanaan desain konstruksi jalan dan jembatan.",
+    "techStack": [
+      "AutoCAD Civil 3D",
+      "ArcGIS",
+      "Drone LiDAR"
+    ],
+    "features": [
+      "Pemetaan kontur resolusi tinggi",
+      "Model elevasi digital (DEM)",
+      "Laporan volume galian & timbunan"
+    ],
+    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "featured": false
+  },
+  {
+    "id": "civil-jembatan-rangka-baja",
+    "category": "Civil Engineering",
+    "title": "Desain Struktur Jembatan Rangka Baja",
+    "shortDescription": "Perencanaan dan analisis struktur jembatan rangka baja bentang 60 meter menggunakan software analisis elemen hingga untuk kebutuhan jalan provinsi.",
+    "description": "Perancangan struktur jembatan rangka baja dengan bentang 60 meter untuk mendukung beban lalu lintas jalan provinsi. Analisis dilakukan secara menyeluruh menggunakan metode elemen hingga, mencakup beban hidup, beban angin, dan kondisi gempa zona 3.",
+    "techStack": [
+      "SAP2000",
+      "AutoCAD",
+      "MIDAS Civil"
+    ],
+    "features": [
+      "Analisis struktur elemen hingga",
+      "Perhitungan beban seismik zona 3",
+      "Gambar konstruksi detail (shop drawing)"
+    ],
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "featured": false
+  },
+  {
+    "id": "civil-drainase-perkotaan",
+    "category": "Civil Engineering",
+    "title": "Perencanaan Sistem Drainase Perkotaan",
+    "shortDescription": "Perancangan sistem drainase terintegrasi untuk kawasan perkotaan guna menanggulangi banjir dan genangan air akibat curah hujan ekstrem.",
+    "description": "Perancangan sistem drainase perkotaan secara komprehensif menggunakan analisis hidrologi dan hidrolika. Meliputi perhitungan debit banjir rencana, penentuan dimensi saluran, dan penempatan kolam retensi untuk mengurangi risiko genangan di kawasan permukiman padat.",
+    "techStack": [
+      "AutoCAD Civil 3D",
+      "HEC-RAS",
+      "HEC-HMS"
+    ],
+    "features": [
+      "Analisis hidrologi catchment area",
+      "Simulasi aliran banjir (flood routing)",
+      "Desain kolam retensi & sumur resapan"
+    ],
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "featured": false
+  },
+  {
+    "id": "civil-retaining-wall",
+    "category": "Civil Engineering",
+    "title": "Desain Dinding Penahan Tanah (Retaining Wall)",
+    "shortDescription": "Perencanaan struktur dinding penahan tanah untuk lereng jalan dan area galian dalam, mencakup analisis stabilitas dan gambar konstruksi lengkap.",
+    "description": "Perencanaan dinding penahan tanah tipe kantilever dan gravitasi untuk proyek jalan di kawasan perbukitan. Analisis mencakup tekanan tanah aktif-pasif, stabilitas guling dan geser, serta pemeriksaan daya dukung pondasi sesuai SNI 8460:2017.",
+    "techStack": [
+      "GeoStudio",
+      "AutoCAD",
+      "Excel"
+    ],
+    "features": [
+      "Analisis tekanan tanah lateral",
+      "Pemeriksaan stabilitas guling & geser",
+      "Gambar konstruksi detail lengkap"
+    ],
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "featured": false
+  },
+  {
+    "id": "civil-rab-infrastruktur",
+    "category": "Civil Engineering",
+    "title": "Penyusunan RAB & Dokumen Tender Infrastruktur",
+    "shortDescription": "Penyusunan Rencana Anggaran Biaya (RAB) dan dokumen tender lengkap untuk proyek pembangunan jalan dan jembatan sesuai standar pengadaan pemerintah.",
+    "description": "Penyusunan dokumen perencanaan biaya dan administrasi tender untuk proyek infrastruktur pemerintah, mencakup bill of quantity (BoQ), analisis harga satuan pekerjaan (AHSP), spesifikasi teknis, dan dokumen kontrak sesuai regulasi LKPP.",
+    "techStack": [
+      "Microsoft Excel",
+      "AutoCAD",
+      "MS Project"
+    ],
+    "features": [
+      "Bill of Quantity (BoQ) terperinci",
+      "Analisis Harga Satuan Pekerjaan (AHSP)",
+      "Jadwal pelaksanaan (kurva S)"
+    ],
+    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "featured": false
+  },
+  {
+    "id": "it-erp-manufacturing",
+    "category": "IT & Digital Solutions",
+    "title": "Sistem ERP untuk Manufaktur Industri",
+    "shortDescription": "Pengembangan modul ERP terintegrasi untuk mengelola rantai produksi, inventori bahan baku, dan distribusi produk akhir secara terpusat.",
+    "description": "Pembangunan sistem Enterprise Resource Planning (ERP) berbasis web yang dirancang khusus untuk kebutuhan manufaktur industri menengah. Sistem ini mengintegrasikan modul produksi, gudang, pengadaan, dan distribusi dalam satu platform yang terpusat dan mudah dioperasikan.",
+    "techStack": [
+      "Vue.js",
+      "Laravel",
+      "MySQL",
+      "Redis"
+    ],
+    "features": [
+      "Manajemen produksi & Bill of Materials",
+      "Kontrol stok & inventori real-time",
+      "Laporan keuangan & operasional terintegrasi"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "featured": false
+  },
+  {
+    "id": "it-mobile-laporan-proyek",
+    "category": "IT & Digital Solutions",
+    "title": "Aplikasi Mobile Pelaporan Progres Proyek",
+    "shortDescription": "Aplikasi Android & iOS untuk manajemen laporan harian proyek konstruksi, dilengkapi fitur foto lapangan, tandatangan digital, dan sinkronisasi cloud.",
+    "description": "Pengembangan aplikasi mobile cross-platform untuk mempermudah petugas lapangan dalam membuat dan mengirimkan laporan harian proyek konstruksi. Aplikasi mendukung mode offline, unggah foto langsung dari kamera, tanda tangan digital, dan sinkronisasi otomatis ke server pusat.",
+    "techStack": [
+      "React Native",
+      "Node.js",
+      "Firebase",
+      "AWS S3"
+    ],
+    "features": [
+      "Laporan harian dengan bukti foto",
+      "Mode offline dengan sinkronisasi otomatis",
+      "Tanda tangan digital & validasi supervisor"
+    ],
+    "image": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "featured": false
+  },
+  {
+    "id": "data-geospatial-analytics",
+    "category": "Data & Analytics",
+    "title": "Analisis Geospasial & Pemetaan Data",
+    "shortDescription": "Pengolahan dan visualisasi data geospasial skala besar untuk analisis distribusi aset infrastruktur dan perencanaan pengembangan wilayah.",
+    "description": "Proyek analisis data geospasial yang mengolah kumpulan data besar dari berbagai sumber (GIS, satelit, sensor lapangan) untuk divisualisasikan dalam peta interaktif. Hasilnya mendukung pengambilan keputusan strategis terkait distribusi aset dan rencana pengembangan infrastruktur wilayah.",
+    "techStack": [
+      "Python",
+      "GeoPandas",
+      "PostGIS",
+      "Leaflet.js"
+    ],
+    "features": [
+      "Visualisasi peta interaktif berbasis web",
+      "Analisis spasial multi-layer",
+      "Integrasi data satelit & sensor lapangan"
+    ],
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "featured": false
+  },
+  {
+    "id": "data-quality-monitoring",
+    "category": "Data & Analytics",
+    "title": "Sistem Monitoring Kualitas Data Otomatis",
+    "shortDescription": "Pembangunan pipeline otomatis untuk memantau kualitas data masuk dari berbagai sumber, mendeteksi anomali, dan memicu notifikasi ke tim terkait.",
+    "description": "Pembangunan sistem data quality monitoring yang berjalan otomatis untuk memvalidasi, membersihkan, dan memantau data yang masuk dari berbagai sumber operasional. Sistem ini mampu mendeteksi outlier dan anomali secara real-time, serta mengirimkan notifikasi ke tim terkait jika ditemukan data yang tidak valid.",
+    "techStack": [
+      "Apache Airflow",
+      "Python",
+      "Great Expectations",
+      "Slack API"
+    ],
+    "features": [
+      "Validasi data otomatis (schema & value checks)",
+      "Deteksi anomali berbasis statistik",
+      "Notifikasi real-time via Slack & email"
+    ],
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "featured": false
   }
 ];

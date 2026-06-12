@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Target, Lightbulb, Users, Shield, Zap, Code2, Check, Eye } from 'lucide-react';
+import { Target, Lightbulb, Users, Shield, Zap, Code2, ChevronLeft, ChevronRight } from 'lucide-react';
 import SectionWrapper from '../components/ui/SectionWrapper';
 import SectionHeading from '../components/ui/SectionHeading';
 import CTASection from '../components/home/CTASection';
@@ -9,6 +9,165 @@ import WhyChooseUs from '../components/home/WhyChooseUs';
 import PageHero from '../components/ui/PageHero';
 import TechStack from '../components/home/TechStack';
 import ProjectPreview from '../components/home/ProjectPreview';
+import VisiMisi from '../components/home/VisiMisi';
+
+const teamMembers = [
+  {
+    id: 1,
+    name: 'I Kadek Rifa Adinata',
+    role: 'Founder & CEO',
+    photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 2,
+    name: 'Ni Made Ayu Saraswati',
+    role: 'Chief Technology Officer',
+    photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 3,
+    name: 'I Putu Gede Wiranata',
+    role: 'Lead Civil Engineer',
+    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 4,
+    name: 'Ni Luh Putu Kartini',
+    role: 'Senior Software Engineer',
+    photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 5,
+    name: 'I Wayan Dharma Putra',
+    role: 'Structural Engineer',
+    photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 6,
+    name: 'Ni Nyoman Sari Dewi',
+    role: 'UI/UX Designer',
+    photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 7,
+    name: 'I Made Bayu Krisna',
+    role: 'Backend Developer',
+    photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+  },
+  {
+    id: 8,
+    name: 'Putu Ayu Pradnyani',
+    role: 'Project Manager',
+    photo: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+  },
+];
+
+const TeamCarousel = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const trackRef = useRef(null);
+  const autoPlayRef = useRef(null);
+  const totalSlides = teamMembers.length;
+
+  const scrollToIndex = (index) => {
+    const bounded = Math.max(0, Math.min(index, totalSlides - 1));
+    setActiveIndex(bounded);
+    if (trackRef.current) {
+      const card = trackRef.current.children[bounded];
+      if (card) {
+        const track = trackRef.current;
+        const cardLeft = card.offsetLeft;
+        const cardWidth = card.offsetWidth;
+        const trackWidth = track.offsetWidth;
+        track.scrollTo({
+          left: cardLeft - (trackWidth / 2) + (cardWidth / 2),
+          behavior: 'smooth',
+        });
+      }
+    }
+  };
+
+  const prev = () => scrollToIndex(activeIndex === 0 ? totalSlides - 1 : activeIndex - 1);
+  const next = () => scrollToIndex(activeIndex === totalSlides - 1 ? 0 : activeIndex + 1);
+
+  useEffect(() => {
+    autoPlayRef.current = setInterval(next, 3500);
+    return () => clearInterval(autoPlayRef.current);
+  }, [activeIndex]);
+
+  return (
+    <div className="relative">
+      {/* Navigation Arrows */}
+      <button
+        onClick={prev}
+        className="absolute left-0 top-1/2 -translate-y-1/2 z-20 -translate-x-3 md:-translate-x-5 w-11 h-11 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-all duration-200"
+        aria-label="Previous"
+      >
+        <ChevronLeft size={20} />
+      </button>
+      <button
+        onClick={next}
+        className="absolute right-0 top-1/2 -translate-y-1/2 z-20 translate-x-3 md:translate-x-5 w-11 h-11 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-all duration-200"
+        aria-label="Next"
+      >
+        <ChevronRight size={20} />
+      </button>
+
+      {/* Cards Track */}
+      <div className="overflow-hidden mx-6 md:mx-8">
+        <div
+          ref={trackRef}
+          className="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          {teamMembers.map((member, idx) => (
+            <div
+              key={member.id}
+              onClick={() => scrollToIndex(idx)}
+              className={`snap-center flex-shrink-0 w-52 md:w-60 group cursor-pointer transition-all duration-300 ${activeIndex === idx ? 'scale-100' : 'scale-95 opacity-80'}`}
+            >
+              {/* Photo */}
+              <div className="relative mb-4 rounded-2xl overflow-hidden aspect-[3/4] border-2 border-transparent group-hover:border-blue-400 dark:group-hover:border-blue-500 transition-all duration-300 shadow-lg">
+                <img
+                  src={member.photo}
+                  alt={member.name}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                />
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                {activeIndex === idx && (
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-500" />
+                )}
+              </div>
+              {/* Info */}
+              <div className="text-center px-1">
+                <h3 className="font-bold text-slate-900 dark:text-white text-sm md:text-base leading-tight mb-1 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">
+                  {member.name}
+                </h3>
+                <p className="text-blue-500 dark:text-blue-400 text-xs md:text-sm font-medium">{member.role}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Dot Indicators */}
+      <div className="flex justify-center gap-2 mt-6">
+        {teamMembers.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => scrollToIndex(idx)}
+            className={`transition-all duration-300 rounded-full ${
+              activeIndex === idx
+                ? 'w-6 h-2 bg-blue-500'
+                : 'w-2 h-2 bg-slate-300 dark:bg-slate-600 hover:bg-blue-300 dark:hover:bg-blue-700'
+            }`}
+            aria-label={`Go to slide ${idx + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const About = () => {
   const values = [
@@ -103,43 +262,29 @@ const About = () => {
           </div>
         </SectionWrapper>
 
-        {/* Visi Misi */}
-        <SectionWrapper className="bg-slate-50 dark:bg-slate-900/30 border-y border-slate-200 dark:border-slate-900">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Kartu Visi */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-blue-300 dark:hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10 transition-all duration-300">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-blue-600/10 blur-[50px] rounded-full group-hover:bg-blue-500/20 transition-colors" />
-              <h2 className="text-3xl font-bold text-slate-900 dark:text-white font-display mb-6 flex items-center">
-                <span className="w-8 h-1 bg-blue-500 mr-4 rounded-full"></span> Visi
+        <VisiMisi noBg />
+
+        {/* Tim Koribali — full-width background, content stays within layout */}
+        <div className="w-full bg-slate-50 dark:bg-slate-900/20 border-y border-slate-200 dark:border-slate-900 py-24">
+          {/* Heading — dibatasi max-w-7xl */}
+          <div className="max-w-7xl mx-auto px-4 md:px-8">
+            <div className="text-center mb-14 max-w-2xl mx-auto">
+              <span className="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4 block">
+                Tim Kami
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white font-display mb-4">
+                Orang-orang di Balik Koribali
               </h2>
-              <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed relative z-10">
-                Menjadi pelopor integrasi teknologi informasi dan rekayasa sipil terkemuka di Asia Tenggara, mewujudkan infrastruktur yang cerdas, efisien, dan berkelanjutan.
+              <p className="text-slate-500 dark:text-slate-400 text-lg">
+                Tim multidisiplin yang berdedikasi, menyatukan keahlian rekayasa sipil dan teknologi digital.
               </p>
             </div>
-
-            {/* Kartu Misi */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-10 rounded-[2.5rem] relative overflow-hidden group hover:border-blue-300 dark:hover:border-blue-900/50 hover:shadow-2xl hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10 transition-all duration-300">
-              <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-900/20 blur-[50px] rounded-full group-hover:bg-blue-600/20 transition-colors" />
-              <h2 className="text-3xl font-bold text-slate-900 dark:text-white font-display mb-6 flex items-center">
-                <span className="w-8 h-1 bg-blue-500 mr-4 rounded-full"></span> Misi
-              </h2>
-              <ul className="text-slate-500 dark:text-slate-400 space-y-4 text-lg leading-relaxed relative z-10">
-                <li className="flex items-start">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0" />
-                  Mengotomatisasi proses desain dan kalkulasi rekayasa.
-                </li>
-                <li className="flex items-start">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0" />
-                  Membangun ekosistem digital untuk manajemen aset infrastruktur.
-                </li>
-                <li className="flex items-start">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0" />
-                  Menghasilkan produk rekayasa berstandar SNI yang diakui secara global.
-                </li>
-              </ul>
-            </div>
           </div>
-        </SectionWrapper>
+          {/* Carousel — konten (kartu) dibatasi max-w-7xl, tapi area scroll tetap di dalam full-width bg */}
+          <div className="max-w-7xl mx-auto px-4 md:px-8">
+            <TeamCarousel />
+          </div>
+        </div>
 
         {/* Galeri Kegiatan (Pinterest Style / Masonry Layout) */}
         <SectionWrapper className="pb-24 pt-24">
