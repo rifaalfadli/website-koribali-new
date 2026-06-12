@@ -39,7 +39,7 @@ export const projects = [
     "id": "civil-pole-structural-calc",
     "category": "Engineering Technology Consulting", // Diperbarui
     "title": "Kalkulasi Beban & Laporan Struktur Pole",
-    "shortDescription": "Analisis dan perhitungan beban mekanis menyeluruh pada struktur pole — angin, beban mati, dan beban dinamis — dilengkapi laporan teknik terverifikasi.",
+    "shortDescription": "Analisis dan perhitungan beban mekanis menyeluruh pada struktur pole, mencakup beban angin, beban mati, dan beban dinamis, dilengkapi laporan teknik terverifikasi.",
     "description": "Analisis dan perhitungan beban mekanis menyeluruh pada struktur pole, mencakup beban angin, beban mati, dan beban dinamis. Hasil akhir berupa laporan teknik terverifikasi yang memastikan struktur kuat, aman, dan memenuhi standar keselamatan.",
     "techStack": [
       "SAP2000",

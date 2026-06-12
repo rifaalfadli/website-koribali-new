@@ -5,12 +5,12 @@ import TrustBar from "../components/home/TrustBar";
 import ClientSlider from "../components/home/ClientSlider";
 import AboutPreview from "../components/home/AboutPreview";
 import ServicesSection from "../components/home/ServicesSection";
+import HowWeWork from "../components/home/HowWeWork";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import TechStack from "../components/home/TechStack";
 import ProjectPreview from "../components/home/ProjectPreview";
 import InsightPreview from "../components/home/InsightPreview";
 import CTASection from "../components/home/CTASection";
-import VisiMisi from "../components/home/VisiMisi";
 
 const Home = () => {
   return (
@@ -26,11 +26,11 @@ const Home = () => {
       <div className="flex flex-col w-full bg-white dark:bg-slate-950 text-slate-800 dark:text-white">
         <HeroSection />
         <TrustBar />
-        <ClientSlider />
         <AboutPreview />
-        <VisiMisi />
         <ServicesSection />
+        <HowWeWork />
         <WhyChooseUs />
+        <ClientSlider />
         <TechStack />
         <ProjectPreview />
         <InsightPreview />

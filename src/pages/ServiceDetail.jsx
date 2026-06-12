@@ -1,28 +1,29 @@
-import React from 'react';
-import { useParams, Navigate, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
-import { MessageCircle } from 'lucide-react';
-import { services } from '../data/services';
-import SectionWrapper from '../components/ui/SectionWrapper';
-import ProjectPreview from '../components/home/ProjectPreview';
-import CTASection from '../components/home/CTASection';
-import PageHero from '../components/ui/PageHero';
-import ClientSlider from '../components/home/ClientSlider';
-import WhyChooseUs from '../components/home/WhyChooseUs';
-import TechStack from '../components/home/TechStack';
-import TestimonialPreview from '../components/home/TestimonialPreview';
-import HowWeWork from '../components/home/HowWeWork';
-import RelatedProjects from '../components/home/RelatedProjects';
-import Button from '../components/ui/Button';
+import React from "react";
+import { useParams, Navigate, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import { MessageCircle } from "lucide-react";
+import { services } from "../data/services";
+import SectionWrapper from "../components/ui/SectionWrapper";
+import ProjectPreview from "../components/home/ProjectPreview";
+import CTASection from "../components/home/CTASection";
+import PageHero from "../components/ui/PageHero";
+import ClientSlider from "../components/home/ClientSlider";
+import WhyChooseUs from "../components/home/WhyChooseUs";
+import TechStack from "../components/home/TechStack";
+import TestimonialPreview from "../components/home/TestimonialPreview";
+import HowWeWork from "../components/home/HowWeWork";
+import RelatedProjects from "../components/home/RelatedProjects";
+import Button from "../components/ui/Button";
 
 const ServiceDetail = () => {
   const { slug } = useParams();
   const service = services.find((s) => {
     if (s.id === slug) return true;
-    if (slug === 'civil-engineering' && s.id === 'civil-endineering') return true;
-    if (slug === 'civil' && s.id === 'civil-endineering') return true;
-    if (slug === 'it' && s.id === 'it-solutions') return true;
-    if (slug === 'data' && s.id === 'data-analytics') return true;
+    if (slug === "civil-engineering" && s.id === "civil-endineering")
+      return true;
+    if (slug === "civil" && s.id === "civil-endineering") return true;
+    if (slug === "it" && s.id === "it-solutions") return true;
+    if (slug === "data" && s.id === "data-analytics") return true;
     return false;
   });
 
@@ -40,15 +41,16 @@ const ServiceDetail = () => {
       {/* Hero Section */}
       <PageHero
         title={service.title}
-        breadcrumbs={[{ label: 'Layanan', href: '/layanan' }, { label: service.tag }]}
+        breadcrumbs={[
+          { label: "Layanan", href: "/layanan" },
+          { label: service.tag },
+        ]}
       />
 
       <div className="pt-8 md:pt-16 pb-10 bg-white dark:bg-slate-950">
         <SectionWrapper className="pt-0">
-
           {/* LAYOUT UTAMA: Konten Kiri, Gambar Kanan */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-
             {/* Kiri: Deskripsi & Keuntungan */}
             <div className="lg:col-span-7 flex flex-col">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white font-display mb-4 leading-tight">
@@ -70,7 +72,9 @@ const ServiceDetail = () => {
                 {service.benefits?.map((benefit, idx) => (
                   <li key={idx} className="flex items-start">
                     <div className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 flex-shrink-0 shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
-                    <span className="text-slate-700 dark:text-slate-300 font-medium">{benefit}</span>
+                    <span className="text-slate-700 dark:text-slate-300 font-medium">
+                      {benefit}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -105,13 +109,12 @@ const ServiceDetail = () => {
               </div>
             </div>
           </div>
-
         </SectionWrapper>
 
         <RelatedProjects category={service.tag} />
         <HowWeWork />
-        <ClientSlider />
         <WhyChooseUs />
+        <ClientSlider />
         <TechStack />
         <ProjectPreview />
         <TestimonialPreview />

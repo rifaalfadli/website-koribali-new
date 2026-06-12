@@ -3,26 +3,30 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
-const slides = [
-  // SLIDE 1: AI & Digital Solutions — primary service
+export const slides = [
   {
     id: 1,
     image:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
     title: "Transformasi Digital, Analitik Data & Solusi AI",
     subtitle:
-      "Kami membangun ekosistem digital end-to-end — dari aplikasi web custom, otomatisasi sistem operasional, hingga integrasi kecerdasan buatan (LLM) untuk bisnis Anda.",
-    primaryAction: { label: "Eksplorasi Solusi AI & Digital", path: "/layanan" },
+      "Akselerasi bisnis Anda dengan ekosistem digital terintegrasi, mulai dari aplikasi custom dan analitik data hingga implementasi AI untuk otomatisasi operasional.",
+    primaryAction: {
+      label: "Eksplorasi Solusi Digital & AI",
+      path: "/layanan",
+    },
   },
-  // SLIDE 2: Engineering Technology Consulting — secondary service
   {
     id: 2,
     image:
       "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
     title: "Konsultasi Teknologi Desain & Rekayasa Struktur",
     subtitle:
-      "Layanan perancangan infrastruktur berbasis teknologi — gambar kerja 2D, visualisasi 3D, dan kalkulasi keamanan struktur yang terverifikasi (Aman/NG).",
-    primaryAction: { label: "Lihat Layanan Engineering", path: "/layanan" },
+      "Infrastruktur dirancang dengan standar presisi tertinggi, memadukan pemodelan 3D interaktif, gambar kerja teknis, dan kalkulasi kelayakan struktur yang terverifikasi.",
+    primaryAction: {
+      label: "Eksplorasi Layanan Engineering",
+      path: "/layanan",
+    },
   },
 ];
 
@@ -32,35 +36,39 @@ const HeroSection = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
+    }, 15000);
     return () => clearInterval(timer);
   }, []);
 
   return (
     <section className="relative isolate -mt-28 overflow-hidden pt-28 text-white bg-black">
-      {/* Background Images with Crossfade */}
+      {/* Background Images with Crossfade + Ken Burns */}
       <AnimatePresence initial={false}>
         <motion.div
           key={currentSlide}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.75 }}
-          className="absolute inset-0 -z-10"
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          className="absolute inset-0 -z-10 overflow-hidden"
         >
-          <img
+          <motion.img
             src={slides[currentSlide].image}
             alt={slides[currentSlide].title}
+            initial={{ scale: 1.08 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 15, ease: "linear" }}
             className="absolute inset-0 h-full w-full object-cover"
           />
         </motion.div>
       </AnimatePresence>
 
-      {/* Overlay Gelap */}
-      <div className="absolute inset-0 -z-10 bg-black/40 md:bg-gradient-to-r md:from-black/70 md:to-black/20" />
+      {/* Overlay: gradient kiri untuk teks + vignette bawah */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/85 via-black/50 to-black/20" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/70 via-transparent to-black/15" />
 
       {/* Container Utama */}
-      <div className="relative mx-auto flex min-h-[580px] h-auto py-20 md:py-0 md:min-h-0 md:h-[650px] lg:h-[715px] max-w-7xl flex-col justify-center px-6 sm:px-10 lg:px-16 w-full">
+      <div className="relative mx-auto flex min-h-[580px] h-auto py-20 md:py-0 md:min-h-0 md:h-[650px] lg:h-[715px] max-w-7xl flex-col justify-center pb-12 md:pb-16 px-6 sm:px-10 lg:px-16 w-full">
         <div className="relative min-h-[320px] sm:min-h-[280px] md:min-h-0 md:h-[300px] flex flex-col justify-start w-full">
           <AnimatePresence mode="wait">
             <motion.div

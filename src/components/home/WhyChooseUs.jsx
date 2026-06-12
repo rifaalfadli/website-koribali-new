@@ -13,7 +13,7 @@ const reasons = [
   },
   {
     title: 'Akurasi & Keamanan Terverifikasi',
-    description: 'Setiap solusi yang kami bangun — baik sistem digital maupun desain engineering — divalidasi dengan standar keamanan dan kelayakan yang ketat.',
+    description: 'Setiap solusi yang kami bangun, baik sistem digital maupun desain engineering, divalidasi dengan standar keamanan dan kelayakan yang ketat.',
     icon: ShieldCheck,
   },
   {

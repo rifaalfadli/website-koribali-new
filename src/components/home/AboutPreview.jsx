@@ -9,7 +9,7 @@ const pillars = [
     icon: BrainCircuit,
     title: "AI & Solusi Cerdas",
     description:
-      "Integrasi kecerdasan buatan (LLM) ke dalam sistem web Anda — dari chatbot cerdas hingga otomatisasi analisis data berbasis AI.",
+      "Integrasi kecerdasan buatan (LLM) ke dalam sistem web Anda, mulai dari chatbot cerdas hingga otomatisasi analisis data berbasis AI.",
   },
   {
     icon: Code2,
@@ -21,7 +21,7 @@ const pillars = [
     icon: HardHat,
     title: "Konsultasi Engineering",
     description:
-      "Perancangan infrastruktur berbasis teknologi — desain 2D/3D, kalkulasi keamanan struktur, dan engineering report yang terverifikasi.",
+      "Perancangan infrastruktur berbasis teknologi meliputi desain 2D/3D, kalkulasi keamanan struktur, dan engineering report yang terverifikasi.",
   },
 ];
 
@@ -31,7 +31,7 @@ const AboutPreview = () => {
       id="about-preview"
       className="bg-white dark:bg-slate-950 overflow-hidden"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 pt-5 items-center">
         {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -63,11 +63,11 @@ const AboutPreview = () => {
             dalam satu layanan terintegrasi.
           </p>
 
-          <p className="text-base text-slate-500 dark:text-slate-400 leading-relaxed mb-8">
-            Kami membantu bisnis Anda bertransformasi — dari sistem manual
-            menjadi ekosistem digital cerdas yang didukung analitik data dan
-            kekuatan AI, sekaligus memastikan infrastruktur fisik Anda dirancang
-            dengan presisi teknologi tertinggi.
+          <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed mb-8">
+            Kami membantu bisnis Anda bertransformasi dari sistem manual menjadi
+            ekosistem digital cerdas yang didukung analitik data dan kekuatan
+            AI, sekaligus memastikan infrastruktur fisik Anda dirancang dengan
+            presisi teknologi tertinggi.
           </p>
 
           <Link to="/tentang-kami">

@@ -23,11 +23,11 @@ const Partners = () => {
 
         {/* Partners Grid */}
         <SectionWrapper className="pt-0 pb-20">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-10">
             {partners.map((partner) => (
               <div
                 key={partner.id}
-                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group"
+                className="w-full sm:w-72 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-10 flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group"
               >
                 <img
                   src={partner.logo}

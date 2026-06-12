@@ -169,7 +169,7 @@ export const articles = [
     date: '2026-01-28',
     views: 1450,
     image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1000',
-    excerpt: 'Building Information Modeling (BIM) memungkinkan seluruh tim proyek — arsitek, engineer, dan kontraktor — berkolaborasi dalam satu model digital terintegrasi, meminimalisir konflik desain sebelum konstruksi dimulai.',
+    excerpt: 'Building Information Modeling (BIM) memungkinkan seluruh tim proyek, mulai dari arsitek, engineer, hingga kontraktor, berkolaborasi dalam satu model digital terintegrasi, meminimalisir konflik desain sebelum konstruksi dimulai.',
     author: 'Rifa Al Fadli'
   },
 ];

@@ -9,7 +9,7 @@ const ServicesSection = ({ showHeader = true }) => {
     <div id="services" className="text-slate-800 dark:text-white">
       {/* Section Header — hanya ditampilkan di Beranda */}
       {showHeader && (
-        <div className="pt-20 md:pt-28 bg-white dark:bg-slate-950">
+        <div className="pt-20 bg-white dark:bg-slate-950">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -23,9 +23,9 @@ const ServicesSection = ({ showHeader = true }) => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white font-display leading-tight tracking-tight mb-4">
               Solusi Teknologi & AI untuk Bisnis Anda
             </h2>
-            <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg max-w-3xl mx-auto">
+            <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg max-w-4xl mx-auto">
               Dari transformasi digital dan integrasi AI hingga konsultasi
-              teknologi rekayasa — kami menghadirkan layanan menyeluruh yang
+              teknologi rekayasa, kami menghadirkan layanan menyeluruh yang
               mendorong efisiensi dan pertumbuhan bisnis Anda.
             </p>
           </motion.div>
@@ -35,7 +35,7 @@ const ServicesSection = ({ showHeader = true }) => {
       {services.map((service) => (
         <div
           key={service.id}
-          className={`py-16 md:py-24 ${service.bgPattern ? "bg-slate-50 dark:bg-slate-900" : "bg-white dark:bg-slate-950"}`}
+          className={`py-16 ${service.bgPattern ? "bg-slate-50 dark:bg-slate-900" : "bg-white dark:bg-slate-950"}`}
           style={
             service.bgPattern
               ? {

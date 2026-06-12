@@ -2,55 +2,27 @@ import React from "react";
 import { partners } from "../../data/partners";
 
 const ClientSlider = () => {
-  const fadeStyle = {
-    maskImage:
-      "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
-    WebkitMaskImage:
-      "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
-  };
-
   return (
-    <div className="py-16 w-full max-w-[100vw] lg:max-w-6xl mx-auto bg-white dark:bg-slate-950 overflow-hidden mt-8">
-      <div className="w-full mx-auto px-4 md:px-8 mb-12 text-center">
-        <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white font-display">
-          Dipercaya oleh <span className="text-blue-500">100+</span> Client Kami
+    <div className="py-20 w-full max-w-6xl mx-auto px-4 md:px-8">
+      <div className="mb-12 text-center">
+        <h3 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white font-display">
+          Dipercaya oleh <span className="text-blue-500">Klien Kami</span>
         </h3>
       </div>
 
-      {/* Row 1 — gerak ke kanan */}
-      <div className="relative overflow-hidden mb-8" style={fadeStyle}>
-        <div className="flex gap-12 animate-scroll-left w-max">
-          {[...partners, ...partners].map((partner, index) => (
-            <div
-              key={`row1-${index}`}
-              className="w-28 md:w-36 h-16 flex-shrink-0 flex items-center justify-center grayscale opacity-40 dark:invert dark:opacity-30 hover:opacity-80 transition-all duration-300"
-            >
-              <img
-                src={partner.logo}
-                alt={partner.name}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Row 2 — gerak ke kiri */}
-      <div className="relative overflow-hidden" style={fadeStyle}>
-        <div className="flex gap-12 animate-scroll-right w-max">
-          {[...partners, ...partners].map((partner, index) => (
-            <div
-              key={`row2-${index}`}
-              className="w-28 md:w-36 h-16 flex-shrink-0 flex items-center justify-center grayscale opacity-40 dark:invert dark:opacity-30 hover:opacity-80 transition-all duration-300"
-            >
-              <img
-                src={partner.logo}
-                alt={partner.name}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-          ))}
-        </div>
+      <div className="flex items-center justify-center gap-12 md:gap-20 flex-wrap">
+        {partners.map((partner) => (
+          <div
+            key={partner.name}
+            className="w-28 md:w-36 h-16 flex items-center justify-center grayscale opacity-40 dark:invert dark:opacity-30 hover:opacity-80 transition-all duration-300"
+          >
+            <img
+              src={partner.logo}
+              alt={partner.name}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

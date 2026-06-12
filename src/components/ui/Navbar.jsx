@@ -64,10 +64,16 @@ const Navbar = () => {
       ) {
         setIsServicesDropdownOpen(false);
       }
+      if (
+        isLangDropdownOpen &&
+        !event.target.closest(".lang-dropdown-container")
+      ) {
+        setIsLangDropdownOpen(false);
+      }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [isServicesDropdownOpen]);
+  }, [isServicesDropdownOpen, isLangDropdownOpen]);
 
   const changeLanguage = (code) => {
     i18n.changeLanguage(code);
@@ -255,7 +261,7 @@ const Navbar = () => {
             </button>
 
             {/* Language Switcher */}
-            <div className="relative">
+            <div className="relative lang-dropdown-container">
               <button
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
                 className={`flex items-center transition-colors ${isNavTransparent
