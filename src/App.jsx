@@ -23,7 +23,16 @@ import Faq from './pages/Faq';
 import Login from './pages/dashboard/Login';
 import DashboardLayout from './components/dashboard/DashboardLayout';
 import AdminDashboard from './pages/dashboard/AdminDashboard';
+import AdminArtikel from './pages/dashboard/admin/AdminArtikel';
+import AdminPegawai from './pages/dashboard/admin/AdminPegawai';
+import AdminPesan from './pages/dashboard/admin/AdminPesan';
+import AdminProfil from './pages/dashboard/admin/AdminProfil';
+import AdminAkun from './pages/dashboard/admin/AdminAkun';
 import PegawaiDashboard from './pages/dashboard/PegawaiDashboard';
+import PegawaiArtikel from './pages/dashboard/pegawai/PegawaiArtikel';
+import PegawaiArtikelTambah from './pages/dashboard/pegawai/PegawaiArtikelTambah';
+import PegawaiArtikelEdit from './pages/dashboard/pegawai/PegawaiArtikelEdit';
+import PegawaiProfile from './pages/dashboard/pegawai/PegawaiProfile';
 
 function App() {
   const { i18n } = useTranslation();
@@ -58,8 +67,11 @@ function App() {
         <DashboardLayout>
           <Routes>
             <Route path="/" element={<AdminDashboard />} />
-            {/* Placeholder routes for nested paths */}
-            <Route path="*" element={<div className="p-8 text-center text-slate-400">Sedang dalam pengembangan (Admin)</div>} />
+            <Route path="artikel" element={<AdminArtikel />} />
+            <Route path="pegawai" element={<AdminPegawai />} />
+            <Route path="pesan" element={<AdminPesan />} />
+            <Route path="profil" element={<AdminProfil />} />
+            <Route path="akun" element={<AdminAkun />} />
           </Routes>
         </DashboardLayout>
       } />
@@ -67,8 +79,10 @@ function App() {
         <DashboardLayout>
           <Routes>
             <Route path="/" element={<PegawaiDashboard />} />
-            {/* Placeholder routes for nested paths */}
-            <Route path="*" element={<div className="p-8 text-center text-slate-400">Sedang dalam pengembangan (Pegawai)</div>} />
+            <Route path="artikel" element={<PegawaiArtikel />} />
+            <Route path="artikel/tambah" element={<PegawaiArtikelTambah />} />
+            <Route path="artikel/edit/:id" element={<PegawaiArtikelEdit />} />
+            <Route path="profil" element={<PegawaiProfile />} />
           </Routes>
         </DashboardLayout>
       } />
