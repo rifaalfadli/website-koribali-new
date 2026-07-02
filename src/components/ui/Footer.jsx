@@ -144,26 +144,18 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <Link
-                  to="/layanan/civil-endineering"
+                  to="/layanan/ai-digital-solutions"
                   className="text-slate-400 text-sm hover:text-blue-400 transition-colors"
                 >
-                  Desain Teknik & Rekayasa Struktur Profesional
+                  Transformasi Digital, Analitik Data & Solusi AI
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/layanan/it-solutions"
+                  to="/layanan/engineering-technology"
                   className="text-slate-400 text-sm hover:text-blue-400 transition-colors"
                 >
-                  Pengembangan Sistem Web & Aplikasi Custom
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/layanan/data-analytics"
-                  className="text-slate-400 text-sm hover:text-blue-400 transition-colors"
-                >
-                  Analisis Data & Dashboard Business Intelligence
+                  Konsultasi Teknologi Desain & Rekayasa Struktur Tiang
                 </Link>
               </li>
             </ul>

@@ -7,10 +7,9 @@ export const slides = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      "/images/digital-transformation-ai-solutions.png",
     title: "Transformasi Digital, Analitik Data & Solusi AI",
-    subtitle:
-      "Akselerasi bisnis Anda dengan ekosistem digital terintegrasi, mulai dari aplikasi custom dan analitik data hingga implementasi AI untuk otomatisasi operasional.",
+    subtitle: "Akselerasi bisnis Anda dengan ekosistem digital terintegrasi, mulai dari pengembangan sistem berbasis web, analitik data, hingga implementasi AI untuk otomatisasi operasional.",
     primaryAction: {
       label: "Eksplorasi Solusi Digital & AI",
       path: "/layanan",
@@ -18,11 +17,9 @@ export const slides = [
   },
   {
     id: 2,
-    image:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    image: "/images/structural-engineering-traffic-pole.png",
     title: "Konsultasi Teknologi Desain & Rekayasa Struktur",
-    subtitle:
-      "Infrastruktur dirancang dengan standar presisi tertinggi, memadukan pemodelan 3D interaktif, gambar kerja teknis, dan kalkulasi kelayakan struktur yang terverifikasi.",
+    subtitle: "Struktur pole dirancang dengan standar presisi tertinggi, memadukan pemodelan 3D interaktif, gambar kerja teknis, dan kalkulasi kelayakan struktur yang terverifikasi.",
     primaryAction: {
       label: "Eksplorasi Layanan Engineering",
       path: "/layanan",
@@ -108,11 +105,10 @@ const HeroSection = () => {
               key={index}
               onClick={() => setCurrentSlide(index)}
               aria-label={`Go to slide ${index + 1}`}
-              className={`transition-all duration-300 ease-in-out rounded-full border ${
-                currentSlide === index
-                  ? "w-[42px] h-[12px] bg-blue-600 border-blue-600"
-                  : "w-[12px] h-[12px] bg-white/40 border-white/30 hover:bg-white/70"
-              }`}
+              className={`transition-all duration-300 ease-in-out rounded-full border ${currentSlide === index
+                ? "w-[42px] h-[12px] bg-blue-600 border-blue-600"
+                : "w-[12px] h-[12px] bg-white/40 border-white/30 hover:bg-white/70"
+                }`}
             />
           ))}
         </div>

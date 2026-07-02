@@ -5,7 +5,6 @@ import { Calendar, User, ArrowLeft } from 'lucide-react';
 import { articles } from '../data/articles';
 import Breadcrumb from '../components/ui/Breadcrumb';
 import SectionWrapper from '../components/ui/SectionWrapper';
-import CTASection from '../components/home/CTASection';
 
 import PageHero from '../components/ui/PageHero';
 
@@ -127,8 +126,7 @@ const InsightDetail = () => {
           </div>
         </SectionWrapper>
 
-        <CTASection />
-      </div>
+              </div>
     </>
   );
 };

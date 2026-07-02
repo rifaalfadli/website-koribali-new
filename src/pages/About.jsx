@@ -12,72 +12,13 @@ import {
 } from "lucide-react";
 import SectionWrapper from "../components/ui/SectionWrapper";
 import SectionHeading from "../components/ui/SectionHeading";
-import CTASection from "../components/home/CTASection";
 import ClientSlider from "../components/home/ClientSlider";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import PageHero from "../components/ui/PageHero";
 import TechStack from "../components/home/TechStack";
 import ProjectPreview from "../components/home/ProjectPreview";
 import VisiMisi from "../components/home/VisiMisi";
-
-const teamMembers = [
-  {
-    id: 1,
-    name: "I Kadek Rifa Adinata",
-    role: "Founder & CEO",
-    photo:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    id: 2,
-    name: "Ni Made Ayu Saraswati",
-    role: "Chief Technology Officer",
-    photo:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    id: 3,
-    name: "I Putu Gede Wiranata",
-    role: "Lead Civil Engineer",
-    photo:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    id: 4,
-    name: "Ni Luh Putu Kartini",
-    role: "Senior Software Engineer",
-    photo:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    id: 5,
-    name: "I Wayan Dharma Putra",
-    role: "Structural Engineer",
-    photo:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    id: 6,
-    name: "Ni Nyoman Sari Dewi",
-    role: "UI/UX Designer",
-    photo:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    id: 7,
-    name: "I Made Bayu Krisna",
-    role: "Backend Developer",
-    photo:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    id: 8,
-    name: "Putu Ayu Pradnyani",
-    role: "Project Manager",
-    photo:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
-  },
-];
+import { teamMembers } from "../data/team";
 
 const TeamCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -147,7 +88,7 @@ const TeamCarousel = () => {
               {/* Photo */}
               <div className="relative mb-4 rounded-2xl overflow-hidden aspect-[3/4] border-2 border-transparent group-hover:border-blue-400 dark:group-hover:border-blue-500 transition-all duration-300 shadow-lg">
                 <img
-                  src={member.photo}
+                  src={member.image}
                   alt={member.name}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
                 />
@@ -304,10 +245,11 @@ const About = () => {
                 analisis dan pengambilan keputusan bisnis secara real-time.
               </p>
               <p>
-                Di sisi engineering, tim kami menyediakan konsultasi teknologi
-                desain dan rekayasa struktur untuk memastikan setiap
-                infrastruktur yang Anda bangun telah melalui kalkulasi keamanan
-                yang terverifikasi. Satu mitra, dua keahlian, satu tujuan:{" "}
+                Di sisi engineering, tim kami berspesialisasi dalam konsultasi
+                desain dan rekayasa struktur tiang (pole), mencakup pemodelan
+                2D/3D, analisis tekanan, kalkulasi beban, hingga verifikasi
+                kelayakan struktur (OK/NG). Satu mitra, dua keahlian, satu
+                tujuan:{" "}
                 <strong className="text-slate-900 dark:text-white">
                   Solusi
                 </strong>
@@ -370,8 +312,8 @@ const About = () => {
                 Orang-orang di Balik Koribali
               </h2>
               <p className="text-slate-500 dark:text-slate-400 text-lg">
-                Tim multidisiplin yang berdedikasi, menyatukan keahlian rekayasa
-                sipil dan teknologi digital.
+                Tim profesional kami yang berdedikasi dan siap menghadirkan
+                solusi terbaik untuk setiap proyek Anda.
               </p>
             </div>
           </div>
@@ -432,8 +374,7 @@ const About = () => {
         <ClientSlider />
         <TechStack />
         <ProjectPreview />
-        <CTASection />
-      </div>
+              </div>
     </>
   );
 };

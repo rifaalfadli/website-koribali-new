@@ -99,10 +99,9 @@ const Contact = () => {
                       className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors appearance-none pr-10"
                     >
                       <option value="" disabled>Pilih Layanan</option>
-                      <option value="civil">Civil Engineering</option>
-                      <option value="it">IT & Digital Solutions</option>
-                      <option value="data">Data & Analytics</option>
-                      <option value="other">Konsultasi Umum</option>
+                      <option value="civil">Konsultasi Teknologi Desain & Rekayasa Struktur Tiang</option>
+                      <option value="it_ai">Transformasi Digital, Analitik Data & Solusi AI</option>
+                      <option value="other">Konsultasi Umum / Lainnya</option>
                     </select>
                     <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                   </div>
@@ -180,13 +179,16 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
+              {/* Google Maps Embed */}
               <div className="w-full h-[300px] bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl overflow-hidden relative group">
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400 dark:text-slate-500">
-                  <MapPin className="w-10 h-10 mb-3 text-slate-400 dark:text-slate-600 group-hover:text-blue-500 transition-colors" />
-                  <span className="font-medium">Google Maps Placeholder</span>
-                  <span className="text-sm">Denpasar, Bali</span>
-                </div>
+                <iframe
+                  title="Lokasi Kori Bali"
+                  src="https://maps.google.com/maps?q=Jl.+Haur+Jaya+IV+No.11b+RT.02/RW.07,+Kb.+Pedes+Tanah+Sareal+Kota+Bogor,+Jawa+Barat+16162&t=m&z=17&output=embed&iwloc=near"
+                  className="absolute inset-0 w-full h-full border-0"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
 
               {/* WhatsApp CTA */}

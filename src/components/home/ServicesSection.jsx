@@ -102,18 +102,18 @@ const ServicesSection = ({ showHeader = true }) => {
               </div>
 
               {/* Image Content */}
-              <div className="w-full lg:w-1/2">
+              <div className="w-full lg:w-1/2 flex justify-center items-center">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-300/40 dark:shadow-black/40 aspect-square md:aspect-[4/3] bg-slate-200 dark:bg-slate-800"
+                  className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-300/40 dark:shadow-black/40 aspect-[3/4] w-full max-w-[400px] bg-slate-200 dark:bg-slate-800"
                 >
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full object-cover ${service.imagePosition || "object-[75%_center]"}`}
                   />
                   {/* Efek Glow di belakang gambar diubah ke Biru Gelap */}
                   <div

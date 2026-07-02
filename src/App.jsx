@@ -52,7 +52,7 @@ function App() {
       <Route path="/tentang-kami" element={<Layout><About /></Layout>} />
       <Route path="/insight" element={<Layout><Insight /></Layout>} />
       <Route path="/insight/:slug" element={<Layout><InsightDetail /></Layout>} />
-      <Route path="/kontak" element={<Layout><Contact /></Layout>} />
+      <Route path="/kontak" element={<Layout hideCTA={true}><Contact /></Layout>} />
       
       {/* New Footer Linked Pages */}
       <Route path="/tim-kami" element={<Layout><Team /></Layout>} />

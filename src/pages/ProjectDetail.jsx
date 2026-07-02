@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async';
 import { CheckCircle } from 'lucide-react';
 import { projects } from '../data/projects';
 import SectionWrapper from '../components/ui/SectionWrapper';
-import CTASection from '../components/home/CTASection';
 import PageHero from '../components/ui/PageHero';
 
 const ProjectDetail = () => {
@@ -86,8 +85,7 @@ const ProjectDetail = () => {
           </div>
         </SectionWrapper>
 
-        <CTASection />
-      </div>
+              </div>
     </>
   );
 };

@@ -2,7 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import ServicesSection from "../components/home/ServicesSection";
 import ProjectPreview from "../components/home/ProjectPreview";
-import CTASection from "../components/home/CTASection";
 import PageHero from "../components/ui/PageHero";
 import ClientSlider from "../components/home/ClientSlider";
 import WhyChooseUs from "../components/home/WhyChooseUs";
@@ -37,8 +36,7 @@ const Services = () => {
         <TechStack />
         <ProjectPreview />
         <TestimonialPreview />
-        <CTASection />
-      </div>
+              </div>
     </>
   );
 };

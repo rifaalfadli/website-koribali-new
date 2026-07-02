@@ -198,15 +198,15 @@ const Navbar = () => {
                           </Link>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-3">
+                        <div className="grid grid-cols-2 gap-3 items-stretch">
                           {services.map((service, idx) => (
                             <Link
                               key={service.id}
                               to={`/layanan/${service.id}`}
-                              className="group/item block"
+                              className="group/item block h-full"
                               onClick={() => setIsServicesDropdownOpen(false)}
                             >
-                              <div className="flex flex-row items-start gap-3 p-2 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-all duration-300 border border-transparent">
+                              <div className="flex flex-row items-start gap-3 p-2 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-all duration-300 border border-transparent h-full">
                                 <div className="flex-shrink-0 w-14 h-14 bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-full flex items-center justify-center text-blue-500 group-hover/item:bg-blue-600 group-hover/item:text-white group-hover/item:border-blue-500 transition-all duration-300">
                                   {renderServiceIcon(idx)}
                                 </div>

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { projects } from "../data/projects";
 import SectionWrapper from "../components/ui/SectionWrapper";
-import CTASection from "../components/home/CTASection";
 import PageHero from "../components/ui/PageHero";
 
 const categories = [
@@ -173,8 +172,7 @@ const Projects = () => {
           </SectionWrapper>
         )}
 
-        <CTASection />
-      </div>
+              </div>
     </>
   );
 };

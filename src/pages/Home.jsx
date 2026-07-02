@@ -10,7 +10,6 @@ import WhyChooseUs from "../components/home/WhyChooseUs";
 import TechStack from "../components/home/TechStack";
 import ProjectPreview from "../components/home/ProjectPreview";
 import InsightPreview from "../components/home/InsightPreview";
-import CTASection from "../components/home/CTASection";
 
 const Home = () => {
   return (
@@ -34,8 +33,7 @@ const Home = () => {
         <TechStack />
         <ProjectPreview />
         <InsightPreview />
-        <CTASection />
-      </div>
+              </div>
     </>
   );
 };

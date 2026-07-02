@@ -1,6 +1,5 @@
 import React from 'react';
 import PageHero from '../components/ui/PageHero';
-import CTASection from '../components/home/CTASection';
 
 const Faq = () => {
   return (
@@ -57,8 +56,7 @@ const Faq = () => {
           </div>
         </div>
       </section>
-      <CTASection />
-    </div>
+          </div>
   );
 };
 

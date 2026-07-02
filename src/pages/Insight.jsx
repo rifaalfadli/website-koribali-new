@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { articles } from '../data/articles';
 import SectionWrapper from '../components/ui/SectionWrapper';
-import CTASection from '../components/home/CTASection';
 import PageHero from '../components/ui/PageHero';
 
 const Insight = () => {
@@ -230,8 +229,7 @@ const Insight = () => {
 
         </SectionWrapper>
 
-        <CTASection />
-      </div>
+              </div>
     </>
   );
 };

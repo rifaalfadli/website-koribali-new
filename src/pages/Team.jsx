@@ -1,6 +1,5 @@
 import React from 'react';
 import PageHero from '../components/ui/PageHero';
-import CTASection from '../components/home/CTASection';
 import { teamMembers } from '../data/team';
 
 const Team = () => {
@@ -70,8 +69,7 @@ const Team = () => {
         </div>
       </section>
 
-      <CTASection />
-    </div>
+          </div>
   );
 };
 

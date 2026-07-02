@@ -14,7 +14,7 @@ const ClientSlider = () => {
         {partners.map((partner) => (
           <div
             key={partner.name}
-            className="w-28 md:w-36 h-16 flex items-center justify-center grayscale opacity-40 dark:invert dark:opacity-30 hover:opacity-80 transition-all duration-300"
+            className={`w-40 md:w-56 h-24 md:h-32 flex items-center justify-center p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 ${partner.bgClass || ""}`}
           >
             <img
               src={partner.logo}

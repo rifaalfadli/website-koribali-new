@@ -1,6 +1,5 @@
 import React from 'react';
 import PageHero from '../components/ui/PageHero';
-import CTASection from '../components/home/CTASection';
 
 const Technology = () => {
   return (
@@ -21,40 +20,43 @@ const Technology = () => {
 
           <div className="text-slate-600 dark:text-slate-300 space-y-6">
             <div>
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Infrastruktur Teknologi WAN Teknologi Internasional</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Infrastruktur & Teknologi Kori Bali</h2>
               <p className="text-sm text-slate-500 dark:text-slate-400 mb-8">Terakhir diperbarui: {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
             </div>
 
             <p>
-              WAN Teknologi Internasional (Koribali) mengandalkan teknologi terdepan dan infrastruktur kelas atas untuk memberikan solusi yang andal, aman, dan dapat diskalakan bagi klien kami. Kami mengintegrasikan perangkat keras generasi terbaru dengan arsitektur perangkat lunak modern untuk memastikan performa optimal.
+              Di Kori Bali, kami menggabungkan kecanggihan rekayasa perangkat lunak dengan presisi rekayasa sipil. Teknologi yang kami gunakan dipilih secara ketat untuk memberikan solusi yang akurat, aman, dan dapat diskalakan—baik untuk digitalisasi bisnis Anda maupun keamanan struktur fisik Anda.
             </p>
 
-            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">1. Infrastruktur Cloud & Server</h3>
+            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">1. Teknologi Analitik Data & Kecerdasan Buatan (AI)</h3>
             <p>
-              Kami mengelola ekosistem server hybrid dan infrastruktur cloud yang tangguh. Dengan mengutamakan redundansi dan ketersediaan tinggi (High Availability), sistem kami dirancang untuk meminimalkan waktu henti (downtime) dan memastikan kelancaran operasional bisnis klien setiap saat.
+              Kami mengadopsi model bahasa skala besar (LLM) dan arsitektur analitik data modern untuk mengubah data mentah perusahaan Anda menjadi wawasan visual (insight) yang cerdas. 
             </p>
-
             <ul className="list-disc pl-6 space-y-2 mt-4 text-slate-500 dark:text-slate-400">
-              <li>Pusat Data Bersertifikasi Tier III/IV</li>
-              <li>Load Balancing & Auto-scaling</li>
-              <li>Manajemen Jaringan Enterprise</li>
+              <li>Pemrosesan Data Skala Besar (Pandas, NumPy)</li>
+              <li>Integrasi AI & LLM untuk Otomatisasi Keputusan</li>
+              <li>Visualisasi Data Interaktif secara Real-time</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">2. Keamanan Cyber (Cybersecurity)</h3>
+            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">2. Rekayasa Struktur & Pemodelan 3D (Pole)</h3>
             <p>
-              Keamanan data adalah prioritas utama. Infrastruktur kami dilindungi oleh firewall berlapis, sistem deteksi intrusi (IDS), dan protokol enkripsi standar industri untuk melindungi aset digital klien dari ancaman siber yang terus berkembang.
+              Untuk divisi engineering kami, presisi adalah segalanya. Kami menggunakan perangkat lunak (software) standar industri untuk memastikan setiap rancangan tiang (pole) yang kami buat telah lolos uji keamanan secara virtual sebelum dieksekusi di lapangan.
             </p>
+            <ul className="list-disc pl-6 space-y-2 mt-4 text-slate-500 dark:text-slate-400">
+              <li>Drafting & Pemodelan 2D/3D Presisi Tinggi</li>
+              <li>Simulasi Analisis Beban (Angin, Gravitasi, dan Beban Dinamis)</li>
+              <li>Kalkulasi Kelayakan Struktur & Verifikasi Keamanan (OK/NG)</li>
+            </ul>
 
-            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">3. Teknologi Pengembangan</h3>
+            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">3. Pengembangan Sistem Web & Arsitektur Cloud</h3>
             <p>
-              Tim developer kami menggunakan tech stack modern seperti React, Node.js, Python, dan arsitektur microservices untuk membangun aplikasi yang cepat, responsif, dan mudah dipelihara.
+              Infrastruktur digital Anda didukung oleh teknologi web terkini seperti React, Node.js, dan Python, dipadukan dengan database handal untuk mendigitalisasi proses bisnis yang sebelumnya serba manual. Sistem kami dirancang untuk cepat, responsif, dan mudah di-maintain.
             </p>
           </div>
         </div>
       </section>
 
-      <CTASection />
-    </div>
+          </div>
   );
 };
 

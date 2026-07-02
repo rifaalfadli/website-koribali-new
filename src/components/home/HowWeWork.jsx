@@ -13,25 +13,25 @@ const workSteps = [
     icon: MessageSquare,
     step: "01",
     title: "Konsultasi & Analisis",
-    desc: "Diskusi awal untuk memahami kebutuhan spesifik, tantangan teknis, dan target proyek Anda.",
+    desc: "Diskusi mendalam untuk memahami kebutuhan spesifik, tantangan teknis, serta target objektif dari proyek Anda.",
   },
   {
     icon: PenTool,
     step: "02",
     title: "Perencanaan & Desain",
-    desc: "Tim ahli kami mulai merancang solusi arsitektur, kalkulasi beban, dan blueprint sistem.",
+    desc: "Pembuatan rancangan desain dan arsitektur sistem yang matang untuk memastikan solusi yang dibangun efisien dan tepat sasaran.",
   },
   {
     icon: MonitorCheck,
     step: "03",
-    title: "Pengembangan & Eksekusi",
-    desc: "Fase konstruksi fisik atau penulisan kode software dengan kontrol kualitas yang ketat (SNI/ISO).",
+    title: "Pengembangan & Produksi",
+    desc: "Eksekusi pengerjaan berdasarkan blueprint yang disetujui, merubah konsep menjadi solusi teknis yang siap diimplementasikan.",
   },
   {
     icon: CheckCircle,
     step: "04",
-    title: "Testing & Handover",
-    desc: "Pengujian menyeluruh sebelum serah terima, memastikan semuanya berjalan sempurna.",
+    title: "Verifikasi & Handover",
+    desc: "Tahap pengujian, verifikasi kelayakan (QC) secara menyeluruh, hingga serah terima laporan dan hasil akhir kepada klien.",
   },
 ];
 

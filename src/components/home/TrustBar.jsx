@@ -3,11 +3,10 @@ import { motion } from 'framer-motion';
 import { Briefcase, Award, Users, Cpu, FileText } from 'lucide-react';
 
 const stats = [
-  { icon: Briefcase, value: '100+', label: 'Proyek' },
-  { icon: Award, value: '10+ Tahun', label: 'Berpengalaman' },
-  { icon: Users, value: '30+', label: 'Tim Ahli' },
+  { icon: Briefcase, value: '100+', label: 'Proyek Selesai' },
+  { icon: Award, value: '10+ Tahun', label: 'Pengalaman' },
+  { icon: Users, value: '15+', label: 'Tim Ahli' },
   { icon: Cpu, value: 'Teknologi', label: 'Canggih' },
-  { icon: FileText, value: '100+', label: 'Portofolio' },
 ];
 
 const TrustBar = () => {

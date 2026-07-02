@@ -21,7 +21,7 @@ const pillars = [
     icon: HardHat,
     title: "Konsultasi Engineering",
     description:
-      "Perancangan infrastruktur berbasis teknologi meliputi desain 2D/3D, kalkulasi keamanan struktur, dan engineering report yang terverifikasi.",
+      "Perancangan struktur tiang berbasis teknologi meliputi desain 2D/3D interaktif, kalkulasi keamanan struktur, dan engineering report yang terverifikasi.",
   },
 ];
 
@@ -64,10 +64,8 @@ const AboutPreview = () => {
           </p>
 
           <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed mb-8">
-            Kami membantu bisnis Anda bertransformasi dari sistem manual menjadi
-            ekosistem digital cerdas yang didukung analitik data dan kekuatan
-            AI, sekaligus memastikan infrastruktur fisik Anda dirancang dengan
-            presisi teknologi tertinggi.
+            Kami membantu bisnis Anda bertransformasi dari sistem manual menjadi ekosistem digital cerdas yang didukung analitik data dan kekuatan AI,
+            sekaligus memastikan perancangan struktur tiang Anda memiliki kalkulasi teknis yang presisi dan aman.
           </p>
 
           <Link to="/tentang-kami">

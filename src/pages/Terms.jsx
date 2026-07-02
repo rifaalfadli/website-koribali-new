@@ -1,6 +1,5 @@
 import React from 'react';
 import PageHero from '../components/ui/PageHero';
-import CTASection from '../components/home/CTASection';
 
 const Terms = () => {
   return (
@@ -21,29 +20,26 @@ const Terms = () => {
 
           <div className="text-slate-600 dark:text-slate-300 space-y-6">
             <div>
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">WAN Teknologi Internasional</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Kori Bali</h2>
               <p className="text-sm text-slate-500 dark:text-slate-400 mb-8">Terakhir diperbarui: 1 Januari 2026</p>
             </div>
 
             <p>
-              Syarat & Ketentuan ini mengatur penggunaan website dan layanan yang disediakan oleh WAN Teknologi Internasional ("Perusahaan", "Kami"). Dengan mengakses website atau menggunakan layanan kami, Anda menyatakan telah membaca, memahami, dan menyetujui seluruh ketentuan yang tercantum dalam dokumen ini.
+              Syarat & Ketentuan ini mengatur penggunaan website dan layanan yang disediakan oleh Kori Bali ("Perusahaan", "Kami"). Dengan mengakses website atau menggunakan layanan kami, Anda menyatakan telah membaca, memahami, dan menyetujui seluruh ketentuan yang tercantum dalam dokumen ini.
             </p>
 
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">1. Ruang Lingkup Layanan</h3>
             <p>
-              WAN Teknologi Internasional menyediakan layanan teknologi terpadu, termasuk namun tidak terbatas pada:
+              Kori Bali menyediakan layanan konsultasi teknologi terpadu, secara spesifik meliputi:
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-4 text-slate-500 dark:text-slate-400">
-              <li>Pengembangan website dan aplikasi mobile (Android & iOS)</li>
-              <li>Pengembangan sistem informasi dan enterprise system (ERP, CRM, HRIS, dll)</li>
-              <li>Implementasi Artificial Intelligence dan automasi bisnis</li>
-              <li>Integrasi sistem dan infrastruktur server</li>
-              <li>Manajemen server, networking, dan cloud infrastructure</li>
-              <li>Konsultasi IT dan transformasi digital</li>
-              <li>SEO dan digital marketing</li>
+              <li>Konsultasi teknologi desain dan rekayasa struktur tiang (pole)</li>
+              <li>Pemodelan 2D/3D dan kalkulasi verifikasi kelayakan struktur</li>
+              <li>Transformasi digital operasional bisnis berbasis aplikasi web custom</li>
+              <li>Implementasi kecerdasan buatan (LLM) dan analitik data</li>
             </ul>
             <p className="mt-4">
-              Detail ruang lingkup setiap proyek akan diatur secara spesifik dalam proposal, kontrak, atau perjanjian kerja sama terpisah.
+              Detail ruang lingkup, spesifikasi teknis, serta tingkat keamanan atau toleransi risiko dari setiap proyek akan diatur secara spesifik dalam proposal atau dokumen kontrak terpisah yang disepakati oleh kedua belah pihak.
             </p>
 
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">2. Kewajiban Pengguna</h3>
@@ -53,13 +49,12 @@ const Terms = () => {
 
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">3. Hak Kekayaan Intelektual</h3>
             <p>
-              Semua konten, desain, logo, dan teknologi yang dikembangkan oleh Kami tetap menjadi hak milik intelektual WAN Teknologi Internasional kecuali disepakati lain dalam perjanjian tertulis.
+              Semua konten, desain, logo, dan teknologi yang dikembangkan oleh Kami tetap menjadi hak milik intelektual Kori Bali kecuali disepakati lain dalam perjanjian tertulis.
             </p>
           </div>
         </div>
       </section>
-      <CTASection />
-    </div>
+          </div>
   );
 };
 

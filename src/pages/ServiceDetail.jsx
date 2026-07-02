@@ -5,7 +5,6 @@ import { MessageCircle } from "lucide-react";
 import { services } from "../data/services";
 import SectionWrapper from "../components/ui/SectionWrapper";
 import ProjectPreview from "../components/home/ProjectPreview";
-import CTASection from "../components/home/CTASection";
 import PageHero from "../components/ui/PageHero";
 import ClientSlider from "../components/home/ClientSlider";
 import WhyChooseUs from "../components/home/WhyChooseUs";
@@ -118,8 +117,7 @@ const ServiceDetail = () => {
         <TechStack />
         <ProjectPreview />
         <TestimonialPreview />
-        <CTASection />
-      </div>
+              </div>
     </>
   );
 };

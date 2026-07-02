@@ -1,6 +1,5 @@
 import React from 'react';
 import PageHero from '../components/ui/PageHero';
-import CTASection from '../components/home/CTASection';
 
 const Privacy = () => {
   return (
@@ -21,27 +20,27 @@ const Privacy = () => {
 
           <div className="text-slate-600 dark:text-slate-300 space-y-6">
             <div>
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Kebijakan Privasi WAN Teknologi Internasional</h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Kebijakan Privasi Kori Bali</h2>
               <p className="text-sm text-slate-500 dark:text-slate-400 mb-8">Terakhir diperbarui: {new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
             </div>
 
             <p>
-              Kebijakan Privasi ini menjelaskan bagaimana WAN Teknologi Internasional ("Perusahaan", "Kami") mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda saat menggunakan layanan dan situs web kami. Kami berkomitmen penuh untuk menjaga privasi dan keamanan data Anda.
+              Kebijakan Privasi ini menjelaskan bagaimana Kori Bali ("Perusahaan", "Kami") mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda saat menggunakan layanan dan situs web kami. Kami berkomitmen penuh untuk menjaga privasi dan keamanan data Anda.
             </p>
 
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">1. Informasi yang Kami Kumpulkan</h3>
             <p>
-              Kami dapat mengumpulkan informasi pribadi seperti nama, alamat email, nomor telepon, dan informasi perusahaan saat Anda berinteraksi dengan layanan kami, mengisi formulir kontak, atau berlangganan buletin kami. Kami juga dapat mengumpulkan data teknis seperti alamat IP dan jenis browser.
+              Kami dapat mengumpulkan informasi pribadi (seperti nama, alamat email, nomor telepon) serta dokumen dan data bisnis rahasia Anda, termasuk namun tidak terbatas pada blueprint rekayasa struktur, spesifikasi teknis tiang/pole, dan dataset operasional perusahaan yang diperlukan untuk analisis AI.
             </p>
 
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-8 mb-4">2. Penggunaan Informasi</h3>
             <p>
-              Informasi yang dikumpulkan digunakan untuk:
+              Informasi dan data yang dikumpulkan digunakan semata-mata untuk:
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-4 text-slate-500 dark:text-slate-400">
-              <li>Menyediakan dan meningkatkan layanan kami.</li>
-              <li>Berkomunikasi dengan Anda terkait layanan, pembaruan, atau dukungan teknis.</li>
-              <li>Menganalisis penggunaan situs web untuk meningkatkan pengalaman pengguna.</li>
+              <li>Menganalisis kelayakan dan keamanan desain struktur fisik Anda.</li>
+              <li>Mengembangkan solusi perangkat lunak, integrasi LLM, dan dashboard analitik sesuai kebutuhan bisnis Anda.</li>
+              <li>Berkomunikasi dengan Anda terkait progres layanan, pembaruan, atau dukungan teknis.</li>
               <li>Memenuhi kewajiban hukum yang berlaku.</li>
             </ul>
 
@@ -52,8 +51,7 @@ const Privacy = () => {
           </div>
         </div>
       </section>
-      <CTASection />
-    </div>
+          </div>
   );
 };
 

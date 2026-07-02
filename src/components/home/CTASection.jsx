@@ -9,10 +9,7 @@ const CTASection = () => {
     // agar komponen ini "turun" dan menabrak/menimpa footer di bawahnya.
     <div className="relative w-full px-4 md:px-8 mt-20 z-20 -mb-24">
       {/* Container Utama CTA - Berbentuk kapsul/rounded besar */}
-      <div className="max-w-5xl mx-auto bg-gradient-to-r from-slate-900 via-slate-900 to-blue-600 rounded-[40px] overflow-hidden relative flex flex-col md:flex-row items-center">
-        {/* Dekorasi Glow Latar Belakang */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-600/10 blur-[80px] pointer-events-none" />
-
+      <div className="max-w-5xl mx-auto bg-slate-900 rounded-[40px] overflow-hidden relative flex flex-col md:flex-row items-center">
         {/* Konten Kiri (Teks & Tombol) */}
         <div className="w-full md:w-3/5 p-6 sm:p-8 md:p-10 relative z-10 text-center md:text-left flex flex-col items-center md:items-start">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white font-display mb-4 leading-tight tracking-tight">
@@ -45,9 +42,9 @@ const CTASection = () => {
           {/* Jika kamu punya foto tim/konsultan dengan background transparan (PNG), 
                 kamu bisa mengganti link src ini dan menghapus opacity-60 */}
           <img
-            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-            alt="Konsultan Koribali"
-            className="w-full h-full object-cover object-center opacity-60 mix-blend-lighten"
+            src="/images/cta_hijab_invite.png"
+            alt="Konsultasi Koribali"
+            className="w-full h-full object-cover object-center opacity-50 mix-blend-lighten"
           />
         </div>
       </div>

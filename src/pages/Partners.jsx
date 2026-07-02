@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { partners } from '../data/partners';
 import SectionWrapper from '../components/ui/SectionWrapper';
-import CTASection from '../components/home/CTASection';
 import PageHero from '../components/ui/PageHero';
 
 const Partners = () => {
@@ -27,20 +26,19 @@ const Partners = () => {
             {partners.map((partner) => (
               <div
                 key={partner.id}
-                className="w-full sm:w-72 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-10 flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group"
+                className={`w-full sm:w-72 rounded-3xl p-10 flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group ${partner.bgClass || "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800"}`}
               >
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="max-w-full h-auto opacity-50 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0 group-hover:scale-105"
+                  className="max-w-full h-auto transition-all duration-500 group-hover:scale-105"
                 />
               </div>
             ))}
           </div>
         </SectionWrapper>
 
-        <CTASection />
-      </div>
+              </div>
     </>
   );
 };
