@@ -34,13 +34,13 @@ const ProjectPreview = () => {
     <SectionWrapper className="bg-white dark:bg-slate-950">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
         <SectionHeading
-          title="Project Unggulan"
+          title="Proyek Unggulan"
           description="Karya nyata kami dalam transformasi digital, integrasi AI, dan konsultasi teknologi engineering."
           className="mb-6 md:mb-0"
         />
         <Link to="/project" className="hidden md:block">
           <Button variant="ghost" className="group">
-            Lihat Semua Project
+            Lihat Semua Proyek
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
         </Link>
@@ -127,7 +127,7 @@ const ProjectPreview = () => {
       <div className="mt-12 text-center md:hidden">
         <Link to="/project">
           <Button variant="secondary" className="w-full">
-            Lihat Semua Project
+            Lihat Semua Proyek
           </Button>
         </Link>
       </div>

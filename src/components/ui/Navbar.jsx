@@ -278,7 +278,7 @@ const Navbar = () => {
                 }`}
               >
                 <Globe className="w-5 h-5 mr-1" strokeWidth={1.5} />
-                <span className="text-sm font-medium uppercase">
+                <span translate="no" className="notranslate text-sm font-medium uppercase">
                   {i18n.language}
                 </span>
               </button>
@@ -289,7 +289,8 @@ const Navbar = () => {
                     <button
                       key={lang.code}
                       onClick={() => changeLanguage(lang.code)}
-                      className={`block w-full text-left px-4 py-2 text-sm transition-colors ${
+                      translate="no"
+                      className={`notranslate block w-full text-left px-4 py-2 text-sm transition-colors ${
                         i18n.language === lang.code
                           ? "bg-slate-100 dark:bg-slate-800 text-blue-500 font-medium"
                           : "text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white"
@@ -432,7 +433,8 @@ const Navbar = () => {
               <button
                 key={lang.code}
                 onClick={() => changeLanguage(lang.code)}
-                className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+                translate="no"
+                className={`notranslate px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
                   i18n.language === lang.code
                     ? "bg-blue-500/10 text-blue-500 border border-blue-500/30"
                     : "bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800"

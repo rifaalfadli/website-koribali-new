@@ -30,7 +30,7 @@ const RelatedProjects = ({ category }) => {
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
                     <div>
                         <span className="text-blue-500 font-bold uppercase tracking-widest text-sm">
-                            Project Terkait
+                            Proyek Terkait
                         </span>
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 dark:text-white font-display mt-3 pr-4 leading-tight">
                             Karya Unggulan {category === 'Civil Engineering' ? 'Infrastruktur' : category === 'IT & Digital Solutions' ? 'Sistem Digital' : 'Data & Analitik'}
@@ -104,7 +104,7 @@ const RelatedProjects = ({ category }) => {
 
                         <Link to={`/project/${activeProject.id}`}>
                             <Button variant="primary" className="gap-2">
-                                Lihat Detail Project
+                                Lihat Detail Proyek
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>

@@ -42,16 +42,16 @@ const Projects = () => {
   return (
     <>
       <PageHero
-        title="Project & Portofolio Koribali"
+        title="Proyek & Portofolio Koribali"
         description="Kumpulan karya nyata kami dalam transformasi digital, solusi AI, dan konsultasi teknologi engineering untuk berbagai klien."
-        breadcrumbs={[{ label: "Project" }]}
+        breadcrumbs={[{ label: "Proyek" }]}
       />
 
       <Helmet>
-        <title>Project & Portofolio | Koribali</title>
+        <title>Proyek & Portofolio | Koribali</title>
         <meta
           name="description"
-          content="Portofolio project Koribali meliputi transformasi digital, solusi AI, dan konsultasi teknologi engineering."
+          content="Portofolio proyek Koribali meliputi transformasi digital, solusi AI, dan konsultasi teknologi engineering."
         />
       </Helmet>
 
@@ -113,7 +113,7 @@ const Projects = () => {
 
                     {/* Tombol Footer Action */}
                     <div className="mt-auto pt-4 flex items-center text-blue-500 text-sm font-semibold group-hover:text-blue-400 transition-colors border-t border-slate-200 dark:border-slate-800/50">
-                      Lihat Detail Project
+                      Lihat Detail Proyek
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
                     </div>
                   </div>
@@ -125,7 +125,7 @@ const Projects = () => {
           {/* Pesan Empty State */}
           {filteredProjects.length === 0 && (
             <div className="text-center py-20 text-slate-500 border border-slate-200 dark:border-slate-800 border-dashed rounded-2xl bg-slate-50 dark:bg-slate-900/50">
-              Belum ada project di kategori ini.
+              Belum ada proyek di kategori ini.
             </div>
           )}
         </SectionWrapper>

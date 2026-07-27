@@ -90,7 +90,7 @@ const Footer = () => {
                   to="/project"
                   className="text-slate-400 text-sm hover:text-blue-400 transition-colors"
                 >
-                  Portofolio & Project
+                  Portofolio & Proyek
                 </Link>
               </li>
               <li>

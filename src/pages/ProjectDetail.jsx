@@ -24,7 +24,7 @@ const ProjectDetail = () => {
       <PageHero
         title={project.title}
         description={`Kategori: ${project.category}`}
-        breadcrumbs={[{ label: 'Project', href: '/project' }, { label: project.title }]}
+        breadcrumbs={[{ label: 'Proyek', href: '/project' }, { label: project.title }]}
       />
 
       <div className="pt-10 bg-white dark:bg-slate-950">

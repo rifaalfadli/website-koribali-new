@@ -29,7 +29,7 @@ const FeaturedProject = () => {
 
           <div className="w-full md:w-1/2 relative z-10">
             <div className="inline-flex items-center space-x-2 bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-xs font-semibold px-3 py-1 rounded-full mb-6">
-              <span>⭐ Project Unggulan</span>
+              <span>⭐ Proyek Unggulan</span>
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-white font-display leading-tight mb-4">
@@ -59,7 +59,7 @@ const FeaturedProject = () => {
 
             <Link to="/project/pole-calc-web">
               <Button variant="primary" className="group w-full md:w-auto">
-                Lihat Detail Project
+                Lihat Detail Proyek
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
